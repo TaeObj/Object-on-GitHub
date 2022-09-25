@@ -1,0 +1,32 @@
+.uro-news {
+  h2 {
+    text-align: center;
+    color: $main;
+    padding-bottom: 10px;
+  }
+}
+.news-list {
+  .card {
+    border: none;
+    margin-bottom: 30px;
+    background: $gray-lite;
+    transition: all 0.2s linear;
+    .news-time {
+      color: $gray-dark;
+    }
+    .card-body {
+      overflow: hidden;
+      position: relative;
+      p,
+      small {
+        z-index: 1;
+        position: relative;
+      }
+    }
+    &:hover {
+      color: inherit;
+      box-shadow: 0 0 11px #aaa;
+      transform: translateY(-10px);
+    }
+  }
+}

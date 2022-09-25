@@ -1,0 +1,64 @@
+/*
+* Theme Name: PeepSo Theme: Gecko
+* Theme URI: https://GeckoTheme.com
+* Author: PeepSo, Inc.
+* Author URI: https://PeepSo.com
+* Description: Thank you for choosing Gecko as your theme. We're very passionate about creating the best possible experience for you and your community. Community that can be built with PeepSo - The Next Generation User Profile And Social Networking Plugins for WordPress. For more information about PeepSo go to: <a href="https://PeepSo.com">PeepSo.com</a>.<!--Gecko Parent-->
+* Version: 5.1.4.0
+* Text Domain: peepso-theme-gecko
+* Domain Path: /language
+* Tags: blog, e-commerce, education, three-columns, left-sidebar, right-sidebar,
+* Requires PHP: 7.2
+* Tested up to: 5.8
+* Copyright: (c) PeepSo, Inc. All Rights Reserved.
+* License: GPLv2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+// -------------------------------------------------- \\
+// Base
+// -------------------------------------------------- \\
+@import "base/_variables.scss";
+@import "base/_fonts.scss";
+@import "base/_base.scss";
+@import "base/_forms.scss";
+@import "base/_snippets.scss";
+
+// -------------------------------------------------- \\
+// Modules
+// -------------------------------------------------- \\
+/* Headings */
+@import "modules/_headings.scss";
+/* Buttons */
+@import "modules/_buttons.scss";
+/* Featured Blocks */
+@import "modules/_featured-blocks";
+/* News Blocks */
+@import "modules/_news-blocks";
+
+// -------------------------------------------------- \\
+// Header & Footer
+// -------------------------------------------------- \\
+@import "layout/_main.scss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+
+// -------------------------------------------------- \\
+// Pages
+// -------------------------------------------------- \\
+/* Homepage */
+@import "pages/_page.home.scss";
+@import "pages/_page.bph.scss";
+@import "pages/_page.location.scss";
+@import "pages/_page.details.scss";
+
+// -------------------------------------------------- \\
+// RTL, Variables & Snippets
+// -------------------------------------------------- \\
+@import "miscs/_rtl.scss";
+
+// -------------------------------------------------- \\
+// Components
+// -------------------------------------------------- \\
+@import "components/_owl.carousel.scss";
+@import "components/_gravity-form.scss";

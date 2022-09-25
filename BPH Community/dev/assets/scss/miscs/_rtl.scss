@@ -1,0 +1,65 @@
+/* ---------------------------------------------
+    RTL Edits
+--------------------------------------------- */
+
+.rtl {
+  font: 20px/1 "Noto Naskh Arabic", "Roboto", sans-serif !important;
+
+  /* Header ------------------------------- */
+
+  /* Layout ------------------------------- */
+  .container {
+    text-align: right;
+    direction: rtl;
+  }
+  /* Typo --------------------------------- */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+    font-family: "Cairo", serif;
+  }
+  p {
+    line-height: 1.75rem;
+  }
+  a {
+    font-family: "Cairo", "Roboto", sans-serif;
+  }
+  /* Button --------------------------------- */
+  .btn {
+    .fa,
+    i {
+      margin-right: 0;
+      margin-left: 7px;
+    }
+  }
+  &.page,
+  &.single {
+    button,
+    .btn,
+    .wp-block-button__link,
+    input[type="submit"],
+    button[type="submit"] {
+      line-height: 1.2;
+      font-weight: bold;
+      font-family: "Cairo", "Roboto", sans-serif !important;
+    }
+    /* OWL Carousel --------------------------- */
+    .owl-carousel {
+      direction: ltr;
+    }
+  }
+  /* Footer ----------------------------------- */
+  .gc-footer {
+    .wp-block-media-text {
+      direction: rtl;
+    }
+    a[href^="tel:"] {
+      display: inline-block;
+      direction: ltr;
+    }
+  }
+}

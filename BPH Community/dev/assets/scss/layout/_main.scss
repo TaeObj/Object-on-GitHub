@@ -1,0 +1,32 @@
+/* ---------------------------------------------
+    Main Layout
+--------------------------------------------- */
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333;
+  overflow-x: hidden;
+  font: 16px "Kanit", "Noto Naskh Arabic", sans-serif;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+#uro-main {
+  margin: 45px auto;
+}
+
+/* ------------------------------------------------------------
+    Targeting Firefox Only
+------------------------------------------------------------ */
+@media screen and (min--moz-device-pixel-ratio: 0) {
+}
+/* ------------------------------------------------------------
+    Targeting Chrome & Safari Only
+------------------------------------------------------------ */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+}

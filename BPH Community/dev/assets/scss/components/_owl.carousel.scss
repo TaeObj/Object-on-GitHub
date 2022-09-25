@@ -1,0 +1,126 @@
+/* ---------------------------------------------
+    OWL Carousel
+--------------------------------------------- */
+.owl-carousel {
+  .owl-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      .fa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.5);
+        transition: all 0.2s linear;
+      }
+      &:hover {
+        .fa {
+          background: #fff;
+          color: $third;
+        }
+      }
+    }
+  }
+  .owl-dots {
+    display: flex;
+    /*background: $uro-green;*/
+    padding: 10px;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    justify-content: center;
+    .owl-dot {
+      width: 60px;
+      height: 4px;
+      background: #fff;
+      border-radius: 4px;
+      opacity: 0.5;
+      transition: all 0.2s linear;
+      margin: 0 5px;
+      &.active,
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+/* OWL Item Text ---------------------------- */
+.owl-carousel {
+  .owl-item {
+    > div {
+      height: calc(100vh - 120px);
+      overflow: hidden;
+    }
+    figure {
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0;
+    }
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      // width: auto;
+    }
+    figcaption {
+      color: #fff;
+      left: 90px;
+      width: 30vw;
+      font-family: Montserrat, sans-serif;
+      position: absolute;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.5);
+      max-width: 450px;
+    }
+    h3 {
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 33px;
+      font-size: 1.25em;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+/* Home Slider Social Links ----------------- */
+/* OWL Item Text ---------------------------- */
+.slider-social {
+  position: absolute;
+  z-index: 9;
+  right: 60px;
+  font-family: "Font Awesome 5 Brands";
+  display: flex;
+  flex-direction: column;
+  li {
+    margin: 5px 0;
+  }
+  i {
+    display: block;
+    border-radius: 50%;
+    color: $white;
+    border: 1px solid $white;
+    text-align: center;
+    line-height: 28px;
+    font-style: normal;
+    width: 30px;
+    height: 30px;
+    transition: all 0.25s linear;
+    &:hover {
+      background: $main;
+      border-color: $main;
+    }
+  }
+}
