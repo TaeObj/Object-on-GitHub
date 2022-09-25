@@ -1,0 +1,186 @@
+.single-celebrity .qodef-elements-holder .qodef-elements-holder-item {
+  vertical-align: top;
+}
+
+.cav-celeb-img {
+  height: 100%;
+}
+
+.cav-celeb-img .qodef-elements-holder-item-content,
+.cav-celeb-img .wpb_single_image,
+.cav-celeb-img .wpb_wrapper,
+.cav-celeb-img .vc_single_image-wrapper,
+.cav-celeb-img .vc_single_image-img {
+  height: 100%;
+}
+
+.cav-celeb-img .wpb_single_image .vc_single_image-wrapper,
+.cav-celeb-img .wpb_single_image .vc_figure {
+  width: 100%;
+  background: #070909;
+}
+
+.cav-celeb-img .vc_single_image-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -o-object-position: top;
+     object-position: top;
+}
+
+.cav-celeb-details {
+  background: #070909;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .cav-celeb-details .qodef-elements-holder-item-content {
+    padding: 7% 5% !important;
+  }
+}
+
+.cav-celeb-details .celeb-name {
+  font-size: 86px;
+  line-height: 80px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .cav-celeb-details .celeb-name {
+    font-size: 66px;
+    line-height: 70px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cav-celeb-details .celeb-name {
+    font-size: 60px;
+    line-height: 65px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .cav-celeb-details .celeb-name {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.cav-celeb-details .celeb-category {
+  color: #cc9903;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.cav-celeb-details .celeb-brief {
+  color: #fff;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.cav-celeb-details .celeb-fund {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 30px 0;
+  font-weight: normal;
+  font-family: Montserrat;
+}
+
+.cav-celeb-details .celeb-fund span {
+  color: #cc9903;
+  white-space: nowrap;
+}
+
+.cav-celeb-details .celeb-sig img {
+  max-height: 80px;
+}
+
+.cav-celeb-details .celeb-social {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cav-celeb-details .celeb-social a {
+  width: 28px;
+  height: 28px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.cav-celeb-details .celeb-social a i {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.cav-celeb-details .celeb-social a:hover {
+  color: #cc9903;
+}
+
+.cav-celeb-details .celeb-social a:hover i {
+  color: #cc9903 !important;
+}
+
+.cav-celeb-details .celeb-social a:hover .fa-tiktok {
+  -webkit-filter: brightness(0) saturate(100%) invert(58%) sepia(73%) saturate(2290%) hue-rotate(15deg) brightness(98%) contrast(98%);
+          filter: brightness(0) saturate(100%) invert(58%) sepia(73%) saturate(2290%) hue-rotate(15deg) brightness(98%) contrast(98%);
+}
+
+.cav-celeb-details .celeb-social a .fa-tiktok {
+  background: url(../images/tiktok-brands.svg) center center no-repeat;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.cav-celeb-details .celeb-social.qodef-btn .qodef-btn-text {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.cav-celeb-details .qodef-btn {
+  width: 230px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cav-celeb-details .qodef-btn > [class^="qodef-btn-icon-"] {
+  display: none;
+}
+
+.cav-celeb-details .qodef-btn .qodef-btn-text {
+  margin: 0;
+}
+
+.cav-celeb-details .qodef-btn:hover {
+  background-color: #24262a;
+  border-color: #24262a;
+  color: #fff;
+}
+/*# sourceMappingURL=single-celebrity.css.map */

@@ -1,0 +1,261 @@
+.cav-ptf-gallery article {
+  visibility: visible;
+  display: inline-block;
+  flex-basis: calc(100% / 3);
+  min-width: calc(100% / 3);
+  @media screen and (max-width: 767px) {
+    flex-basis: 50%;
+    min-width: 50%;
+  }
+  @media screen and (max-width: 575px) {
+    flex-basis: 100%;
+    min-width: 100%;
+  }
+  margin: 0;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  .cav-portfolio-item-inner {
+    height: 100%;
+    opacity: 0;
+    position: relative;
+    transform: translateY(120px);
+    transition: opacity 0.6s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+    &:after {
+      content: "";
+      background-image: url(https://caviish.objectsdev.com/wp-content/themes/caviish/assets/images/Path-gray.svg);
+      height: 41px;
+      width: 39px;
+      position: absolute;
+      bottom: 26px;
+      right: 20px;
+      background-repeat: no-repeat;
+    }
+    .cav-portfolio-link {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    .cav-item-image-holder {
+      height: 100%;
+      overflow: hidden;
+      margin-right: -0.5px;
+      position: relative;
+      img {
+        transform: scale(1.005, 1.005);
+        vertical-align: top;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        max-width: 100%;
+        width: 100%;
+        filter: grayscale(1);
+        aspect-ratio: 1 / 1.02;
+      }
+      .pro-status {
+        display: block;
+        max-width: fit-content;
+        padding: 0 15px;
+        height: 34px;
+        text-align: center;
+        color: #fff;
+        background: #cc9903;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        font-size: 14px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        line-height: 32px;
+        z-index: 1;
+        box-sizing: border-box;
+      }
+    }
+    .cav-item-text-overlay-inner {
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      height: 100%;
+      width: 100%;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+    .cav-item-text-holder {
+      position: relative;
+      display: table-cell;
+      height: 100%;
+      width: 100%;
+      vertical-align: middle;
+      text-align: center;
+      .cav-item-title {
+        position: relative;
+        top: 100px;
+        opacity: 0;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.4em;
+        font-style: normal;
+        text-transform: capitalize;
+        letter-spacing: 0;
+      }
+      .cav-ptf-category-holder {
+        line-height: 18px;
+        color: #a9b3bd;
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 5px;
+        position: relative;
+        top: 100px;
+        opacity: 0;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+      }
+    }
+    .cav-item-text-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      background-color: rgba(36, 38, 42, 0.9);
+      transition: opacity 0.3s ease-in-out;
+    }
+    &:hover {
+      @media (hover: hover) {
+        &:after {
+          background-image: url("https://caviish.objectsdev.com/wp-content/themes/caviish/assets/images/Path-hover.svg");
+        }
+        .cav-item-text-overlay {
+          opacity: 1;
+          .cav-item-text-overlay-inner {
+            opacity: 1;
+          }
+        }
+        .cav-item-title {
+          opacity: 1;
+          top: 0;
+          transition-delay: 0s;
+        }
+        .cav-ptf-category-holder {
+          opacity: 1;
+          top: 0;
+          transition-delay: 0.1s;
+        }
+      }
+    }
+    &:active {
+      &:after {
+        background-image: url("https://caviish.objectsdev.com/wp-content/themes/caviish/assets/images/Path-hover.svg");
+      }
+      .cav-item-text-overlay {
+        opacity: 1;
+        .cav-item-text-overlay-inner {
+          opacity: 1;
+        }
+      }
+      .cav-item-title {
+        opacity: 1;
+        top: 0;
+        transition-delay: 0s;
+      }
+      .cav-ptf-category-holder {
+        opacity: 1;
+        top: 0;
+        transition-delay: 0.1s;
+      }
+    }
+  }
+  &.cav-appeared {
+    .cav-portfolio-item-inner {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.cav-portfolio-list-holder-outer {
+  &.cav-animate-appear {
+    article {
+      @media screen and (min-width: 768px) {
+        height: calc((100vh - 85px) / 2);
+      }
+      .cav-portfolio-item-inner {
+        opacity: 0;
+        transform: translateY(120px);
+        transition: opacity 0.6s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      &.cav-appeared {
+        .cav-portfolio-item-inner {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+  .cav-portfolio-list-holder {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.cav-content-aligment-left {
+  text-align: left;
+}
+
+.clearfix {
+  &:after &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/* Gallery Text Box ------------------------------------- */
+.home-gallery-text {
+  .wpb_wrapper {
+    max-width: 510px;
+    h1 {
+      font-size: 38px;
+      text-transform: none;
+      max-width: 390px;
+      line-height: 1;
+    }
+  }
+  .wpb_text_column {
+    & + .wpb_text_column {
+      max-width: 400px;
+      padding-bottom: 15px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    padding: 0 40px !important;
+    .vc_column-inner {
+      padding: 40px 0 !important;
+      .vc_empty_space {
+        height: 22px !important;
+      }
+      .wpb_wrapper {
+        max-width: 100%;
+      }
+      .wpb_text_column + .wpb_text_column {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.qodef-smooth-transition-loader {
+  display: none !important;
+}

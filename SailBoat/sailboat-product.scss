@@ -1,0 +1,64 @@
+@import "root";
+@import "variables";
+.product-template {
+    margin-top: 20px;
+    .northsail-img {
+        margin-top: 22px;
+        text-align: center;
+        img {
+            height: 150px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    }
+    .contact-btn {
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+        min-width: 170px;
+        margin-bottom: 30px
+    }
+}
+
+.product-modal {
+    .product-form {
+        padding: 30px;
+        h2.gform_title {
+            font-weight: 700;
+            color: $primary-color;
+        }
+        .gfield {
+            text-align: left;
+        }
+        .button {
+            padding: 12px 0.75rem;
+            border-radius: 0;
+            font-size: 16px;
+            margin: 16px;
+            width: calc(43% - 32px);
+            background-color: $primary-color;
+            color: #fff;
+            box-shadow: #0000006e 0px 3px 10px 0px;
+            border: unset;
+            transition: .2s;
+            &:hover {
+                color: $primary-color;
+                background-color: $secondary-color;
+                border-color: $secondary-color;
+            }
+        }
+    }
+    .modal-body {
+        .product-form {
+            p {
+                margin: 0;
+            }
+        }
+    }
+    // .modal-dialog {
+    //     border: 5px solid #4aeadc;
+    //     border-radius: 10px;
+    //     top: 15%;
+    // }
+}

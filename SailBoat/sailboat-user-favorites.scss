@@ -1,0 +1,12 @@
+@import "root";
+@import "variables";
+.sailboats-results {
+    .table-results {
+        a.compare-btn {
+            @media (max-width: 767px) {
+                margin: -4px 0px -4px -4px;
+                border-radius: 8px 0 0 8px;
+            }
+        }
+    }
+}

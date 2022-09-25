@@ -1,0 +1,76 @@
+@import "root";
+@import "variables";
+
+/*  Style colored Tables*/
+
+.spec {
+    margin: 12px 0px;
+    .spec-bord {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        margin: 12px 0;
+        box-shadow: #0000002e 0px 5px 12px 0px;
+        table {
+            border: 1px solid #e1e1e1;
+            margin-bottom: 6px;
+            box-shadow: #00000033 1px 3px 12px 0px;
+            @media (max-width: 991px) {
+                display: block;
+            }
+            tbody {
+                @media (max-width: 991px) {
+                    display: block;
+                    tr {
+                        display: flex;
+                        flex-wrap: wrap;
+                        td {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+            tr td {
+                width: 25%;
+                font-size: 14px;
+                text-align: right;
+                &:first-child,
+                &:nth-child(odd) {
+                    background-color: $secondary-color;
+                    text-align: left;
+                    font-weight: bold;
+                }
+            }
+            tr td a {
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-decoration: none;
+                color: $primary-color;
+                transition: 0.2s;
+                font-size: 12px;
+                word-break: break-all;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .sailboat-listing-definitions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .definitions {
+            text-decoration: none;
+            color: #000;
+            font-size: 12px;
+            text-align: left;
+            text-transform: uppercase;
+            transition: 0.2s;
+            &:hover {
+                color: $third-color;
+            }
+        }
+    }
+}

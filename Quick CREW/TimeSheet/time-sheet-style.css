@@ -1,0 +1,256 @@
+.time-sheet-container .tish-job-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.time-sheet-container .tish-job-data .job-headers-data {
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.time-sheet-container .tish-job-data h4 {
+  margin-bottom: 0.6rem;
+}
+
+.time-sheet-container .tish-job-data h4 label {
+  font-weight: bold;
+}
+
+.time-sheet-container .tish-days form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.time-sheet-container .tish-days form label {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.time-sheet-container .tish-days form input[type="hidden"] {
+  display: none;
+}
+
+.time-sheet-container .tish-days form input:not([type="hidden"]) {
+  margin: 0 -1px -1px 0;
+  border: 1px solid #fff !important;
+  padding: 0 !important;
+  width: 36px;
+  height: 36px;
+  min-height: 36px !important;
+  min-width: 36px !important;
+  border-radius: 0 !important;
+}
+
+.time-sheet-container .tish-days form input:not([type="hidden"]).wcpm-notdone-day {
+  background: #ee1d23 !important;
+}
+
+.time-sheet-container .tish-days form input:not([type="hidden"]).wcpm-disabled-day {
+  color: #231f20 !important;
+  background: #e6e7e9 !important;
+}
+
+.time-sheet-container .tish-days form input:not([type="hidden"]).wcpm-completed-day {
+  background: #95dab8 !important;
+}
+
+.time-sheet-container .tish-days form input:not([type="hidden"]).wcpm-active-day {
+  -webkit-box-shadow: 0 0 21px rgba(0, 0, 0, 0.5) inset;
+          box-shadow: 0 0 21px rgba(0, 0, 0, 0.5) inset;
+}
+
+.time-sheet-container .tish-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.time-sheet-container .tish-filter h4 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.time-sheet-container .tish-filter form {
+  margin-bottom: 1rem;
+}
+
+.time-sheet-container .tish-filter label {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.time-sheet-container .tish-filter .button {
+  color: #fff;
+}
+
+.time-sheet-container .tish-day-data {
+  overflow-x: auto;
+}
+
+.time-sheet-container .tish-day-data .time-sheet-table thead th {
+  color: #231f20;
+  font-weight: bold;
+  text-align: center;
+  line-height: normal;
+}
+
+.time-sheet-container .tish-day-data .time-sheet-table thead th span {
+  white-space: normal;
+}
+
+.time-sheet-container .tish-day-data .time-sheet-table td label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-sheet-container .tish-day-data .time-sheet-table td label input {
+  margin-right: 5px;
+}
+
+.time-sheet-container .tish-day-data .time-sheet-table td a.button {
+  padding: 0 10px !important;
+  min-height: 28px !important;
+  line-height: 28px !important;
+  font-size: 1em !important;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: block !important;
+  margin: auto !important;
+}
+
+.time-sheet-container .tish-day-data .time-sheet-table td [data-action="affirm"],
+.time-sheet-container .tish-day-data .time-sheet-table td [data-action="approve"] {
+  display: block;
+  margin: auto;
+}
+
+.time-sheet-container .tish-day-data .time-sheet-table [class^="total_hours_worked"] {
+  color: #333;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.time-sheet-container .tish-day-data .time-sheet-table .approve-all {
+  color: #fff;
+  background: #00e7ff;
+  border-radius: 50px;
+  white-space: nowrap;
+  padding: 3px 8px;
+  margin-top: 7px;
+  display: block;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.time-sheet-container .tish-day-data .time-sheet-table .approve-all:hover {
+  background: #1e28cc;
+}
+
+.time-sheet-container .tish-day-data .tish-totals-table {
+  text-align: center;
+}
+
+#call-times-wrapper .wcpm-time-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+}
+
+#call-times-wrapper .wcpm-time-wrapper:empty {
+  display: none;
+}
+
+#call-times-wrapper .wcpm-time-wrapper .tish-add-new-dates {
+  margin-left: auto;
+}
+
+#call-times-wrapper .wcpm-time-wrapper .tish-add-new-dates::before {
+  margin-right: 5px;
+  content: "\002B";
+}
+
+#call-times-wrapper .wcpm-time-wrapper .remove-times {
+  color: red;
+}
+
+#call-times-wrapper .wcpm-time-wrapper label {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+#call-times-wrapper .wcpm-time-wrapper input {
+  margin-right: 15px;
+}
+
+.wcpm-map-key {
+  padding: 0 0 1.5rem;
+  margin: 0;
+}
+
+.wcpm-map-key li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.wcpm-map-key li span {
+  margin-right: 10px;
+  min-width: 32px;
+  max-width: 32px;
+  height: 32px;
+}
+
+.wcpm-map-key .wcpm-disabled-day {
+  background: #e6e7e9;
+}
+
+.wcpm-map-key .wcpm-notdone-day {
+  background: #ee1d23;
+}
+
+.wcpm-map-key .wcpm-completed-day {
+  background: #95dab8;
+}
+
+.clockpicker-popover {
+  z-index: 99999999;
+}
+/*# sourceMappingURL=time-sheet-style.css.map */

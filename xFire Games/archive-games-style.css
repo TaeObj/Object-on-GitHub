@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 26, 2022, 4:33:04 PM
+    Author     : objects
+*/
+.xfire-archive-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.xfire-archive-wrapper .xfire-list-games-content {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  max-width: 75%;
+}
+
+.xfire-archive-wrapper .xfire-archive-game-aside {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  max-width: 25%;
+}
+
+@media screen and (max-width: 991px) {
+  .xfire-archive-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .xfire-archive-wrapper .xfire-list-games-content,
+  .xfire-archive-wrapper .xfire-archive-game-aside {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.ui-slider-range.ui-corner-all.ui-widget-header {
+  background: #ff0669;
+}
+
+.ui-widget.ui-widget-content {
+  border: none !important;
+}
+/*# sourceMappingURL=archive-games-style.css.map */

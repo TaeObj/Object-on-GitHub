@@ -1,0 +1,169 @@
+@import "root";
+@import "variables";
+
+#bbpress-forums {
+  &.sailboat-myaccount-page-wrap {
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px 15px;
+    #bbp-user-wrapper {
+      display: flex;
+      gap: 15px;
+      #bbp-single-user-details {
+        flex-basis: 25%;
+        min-width: 25%;
+        max-width: 25%;
+      }
+      #bbp-user-body {
+        margin: 0;
+        flex-grow: 1;
+      }
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        #bbp-single-user-details {
+          flex-basis: 100%;
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+    #bbp-user-avatar {
+      background: #fafafa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      width: 100% !important;
+      img {
+        height: auto !important;
+        width: auto !important;
+        max-width: 100%;
+        margin: 0 !important;
+      }
+    }
+    #bbp-user-navigation {
+      border: 1px solid rgba(188, 188, 188, 0.68);
+      margin: 0px;
+      padding: 14px;
+      li {
+        font: 700 16px/24px Tahoma, sans-serif;
+        padding: 7px 0;
+        a {
+          color: #333;
+          padding: 0 !important;
+          border: none !important;
+        }
+      }
+      li.current,
+      li:hover {
+        a {
+          color: $third-color;
+          background: none !important   ;
+        }
+      }
+    }
+    .bbp-user-section {
+      h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        font-size: 30px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        &:before,
+        &:after {
+          content: "";
+          border-top: 1px solid #f4f4f4;
+          display: block;
+          position: relative;
+          top: 1px;
+          width: 33%;
+        }
+        & ~ h3 {
+          margin-top: 30px;
+        }
+      }
+      hr {
+        display: none;
+      }
+    }
+    .bbp-user-topics-started,
+    .bbp-user-replies-created,
+    .bbp-user-engagements,
+    .bbp-user-favorites,
+    .bbp-user-subscriptions {
+      .entry-title {
+        font-weight: bold;
+      }
+      ul.bbp-forums,
+      ul.bbp-lead-topic,
+      ul.bbp-replies,
+      ul.bbp-search-results,
+      ul.bbp-topics {
+        font-size: 14px;
+      }
+      li.bbp-header {
+        background: $secondary-color;
+      }
+      .bbp-topic-permalink {
+        font-weight: bold;
+      }
+    }
+    // .bbp-pagination {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   @media screen and (max-width: 1399px) {
+    //     flex-direction: column;
+    //     align-items: center;
+    //     .bbp-pagination-count {
+    //       margin-bottom: 15px;
+    //     }
+    //   }
+    //   .bbp-pagination-links {
+    //     text-align: center;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    //     align-items: center;
+    //     gap: 5px;
+    //     margin-bottom: 10px;
+    //     a,
+    //     span {
+    //       margin: 0;
+    //       display: block;
+    //       background: var(--primary-color);
+    //       color: #fff;
+    //       padding: 3px 9px 5px 9px;
+    //       border-radius: 50px;
+    //       filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 2px 4px);
+    //       font-size: 15px;
+    //       transition: all 0.2s linear;
+    //       &:hover,
+    //       &:focus,
+    //       &.current {
+    //         background-color: var(--secondary-color);
+    //         color: var(--primary-color);
+    //       }
+    //     }
+    //     .next,
+    //     .prev {
+    //       font-size: 0;
+    //       &::before {
+    //         font-size: 14px;
+    //         vertical-align: middle;
+    //       }
+    //     }
+    //     .next::before {
+    //       content: "\00BB";
+    //     }
+    //     .prev::before {
+    //       content: "\00AB";
+    //     }
+    //   }
+    // }
+  }
+}

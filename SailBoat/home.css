@@ -1,0 +1,296 @@
+:root {
+  --primary-color: #202056;
+  --secondary-color: #0ff0ff;
+  --third-color: #c60000;
+  --light-gray: #cecbcb;
+  --font-tahoma: 'Tahoma', sans-serif;
+}
+
+.seprator-sec {
+  color: #b5b6b8 !important;
+}
+
+.home-boxes {
+  background: #fff;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+  border-radius: 8px;
+  padding: 14px 10px 0px;
+}
+
+.home-boxes h6 {
+  font-weight: 700;
+}
+
+.sailboats-search.wp-block-search.wp-block-search__button-inside {
+  margin-bottom: 15px;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+}
+
+.sailboats-search.wp-block-search.wp-block-search__button-inside #wp-block-search__input-1 {
+  font-size: 12px;
+}
+
+.sailboats-search.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.sailboats-search.wp-block-search.wp-block-search__button-inside button.wp-block-search__button {
+  padding: 5px 0.75rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  min-width: 100px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.sailboats-search.wp-block-search.wp-block-search__button-inside button.wp-block-search__button:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+p.boat-link {
+  margin-bottom: 5px;
+}
+
+p.boat-link a {
+  color: var(--primary-color);
+}
+
+.search-sec h2 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.search-sec .sailboats-search {
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.search-sec .sailboats-search .block-search {
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 576px) {
+  .search-sec .sailboats-search .block-search {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.search-sec .sailboats-search .block-search .search__input {
+  border-radius: 0;
+  border: none;
+  padding: 0 0 0 0.25em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  outline: none;
+}
+
+.search-sec .sailboats-search .block-search .search__button {
+  padding: 4px 0.75rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  min-width: 130px;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 576px) {
+  .search-sec .sailboats-search .block-search .search__button {
+    width: 100%;
+  }
+}
+
+.search-sec .sailboats-search .block-search .sailboat-search-text-wrap {
+  position: relative;
+  width: calc(100% - 130px);
+}
+
+@media only screen and (max-width: 576px) {
+  .search-sec .sailboats-search .block-search .sailboat-search-text-wrap {
+    width: 100%;
+  }
+  .search-sec .sailboats-search .block-search .sailboat-search-text-wrap ::-webkit-input-placeholder {
+    font-size: 11px;
+  }
+  .search-sec .sailboats-search .block-search .sailboat-search-text-wrap :-ms-input-placeholder {
+    font-size: 11px;
+  }
+  .search-sec .sailboats-search .block-search .sailboat-search-text-wrap ::-ms-input-placeholder {
+    font-size: 11px;
+  }
+  .search-sec .sailboats-search .block-search .sailboat-search-text-wrap ::placeholder {
+    font-size: 11px;
+  }
+}
+
+.search-sec .sailboats-search .block-search .sailboat-search-text-wrap img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  max-width: 25px;
+}
+
+.search-sec .sailboats-search .block-search .sailboat-search-text-wrap .search__input {
+  padding-left: 35px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .search-sec .sailboats-search .block-search .sailboat-search-text-wrap .search__input {
+    width: 100%;
+  }
+}
+
+.sailboat-text {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sailboat-text p {
+  color: #343333;
+}
+
+.sailboat-text p.sailboat-linktext {
+  color: var(--third-color);
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.sailboat-text p.sailboat-linktext a.sailboat-link {
+  color: var(--primary-color);
+}
+
+.dealer-title h2 {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.dealer-img {
+  text-align: center;
+}
+
+.dealer-link {
+  color: var(--primary-color);
+  text-align: center;
+  line-height: 60px;
+  font-size: 14px;
+}
+
+.dealer-text {
+  margin-bottom: 20px;
+}
+
+.dealer-description-label {
+  margin-bottom: 0;
+  color: var(--third-color);
+  font-size: 16px;
+}
+
+.dealer-btn {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dealer-btn a,
+.dealer-btn .btn {
+  min-width: 150px;
+}
+
+.dealer-ndtiltle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dealer-ndtiltle h5 {
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.dealer-ndtiltle *:last-child {
+  margin-bottom: 0;
+}
+
+.help-pg {
+  background: #fff;
+  padding: 22px;
+  -webkit-filter: drop-shadow(rgba(52, 51, 51, 0.2) 0px 3px 6px);
+          filter: drop-shadow(rgba(52, 51, 51, 0.2) 0px 3px 6px);
+  border-radius: 11.5px;
+}
+
+.help-pg h4 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.help-pg h5 {
+  margin-bottom: 0px;
+}
+
+.help-pg mark {
+  padding: 0;
+}
+
+.help-pg p {
+  line-height: 22px;
+}
+
+.entry-content {
+  margin: 0;
+}
+
+.about-pg {
+  background: #fff;
+  padding: 22px;
+  -webkit-filter: drop-shadow(rgba(52, 51, 51, 0.2) 0px 3px 6px);
+          filter: drop-shadow(rgba(52, 51, 51, 0.2) 0px 3px 6px);
+  border-radius: 11.5px;
+}
+
+.about-pg p {
+  line-height: 22px;
+}
+
+.about-pg mark {
+  padding: 0;
+}
+
+.creator-sec {
+  margin-top: 25px;
+}
+
+.creator-sec.wp-container-3 {
+  gap: 6px;
+}
+/*# sourceMappingURL=home.css.map */

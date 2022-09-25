@@ -1,0 +1,551 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 26, 2022, 4:33:18 PM
+    Author     : objects
+*/
+.game-wrapper .game-info::after, .game-wrapper .compare-wrapper button:before, .game-wrapper .game-similar p a::before,
+.game-wrapper .game-alternative p a::before {
+  font-family: "ui-icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.game-bg {
+  height: 75vh;
+  width: 100vw;
+  margin-bottom: -75vh;
+  z-index: -1;
+  opacity: 0.5;
+  position: relative;
+}
+
+.game-bg::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 75vh;
+  width: 100vw;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+25,1+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(25%, rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, black 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+}
+
+.cont-with-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+  gap: 30px;
+}
+
+.cont-with-aside .game-description {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  max-width: 75%;
+}
+
+.cont-with-aside .game-sidebar {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  max-width: 25%;
+}
+
+@media screen and (max-width: 991px) {
+  .cont-with-aside {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cont-with-aside .game-description,
+  .cont-with-aside .game-sidebar {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.game-wrapper {
+  margin-top: 30px;
+  /* Rating Section -------------------- */
+}
+
+.game-wrapper .game-title {
+  color: #ff0669;
+  font-size: 3rem;
+}
+
+.game-wrapper .game-title .title-meta .game-info {
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 0;
+}
+
+.game-wrapper .game-title .title-meta .game-info h2 {
+  font-weight: normal;
+  font-size: 0.85rem;
+}
+
+.game-wrapper .game-title h1 {
+  margin-top: 0;
+}
+
+.game-wrapper .game-description p {
+  margin-bottom: 30px;
+}
+
+.game-wrapper .game-description p:empty {
+  display: none;
+}
+
+.game-wrapper .game-info {
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.85rem;
+}
+
+.game-wrapper .game-info h2 {
+  color: #ff0669;
+  text-transform: capitalize;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.game-wrapper .game-info::after {
+  font-size: 34px;
+  position: absolute;
+  right: -5px;
+  color: #b90049;
+  text-shadow: 0 1px 1px #fff;
+}
+
+.game-wrapper .game-badges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.game-wrapper .release-date,
+.game-wrapper .game-metascore {
+  color: #070707;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  min-width: 200px;
+  margin-right: 15px;
+}
+
+.game-wrapper .release-date {
+  background: #e5c687;
+}
+
+.game-wrapper .release-date::after {
+  top: 17px;
+  content: "\e978";
+}
+
+.game-wrapper .release-date h2 {
+  color: #070707;
+}
+
+.game-wrapper .game-metascore {
+  background: #bcb382;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.game-wrapper .game-metascore::after {
+  font-size: 40px;
+  content: "\e90d";
+  right: -13px;
+  top: 15px;
+}
+
+.game-wrapper .game-metascore h2 {
+  color: #070707;
+}
+
+.game-wrapper .compare-wrapper {
+  overflow: visible;
+  margin-right: 15px;
+}
+
+.game-wrapper .compare-wrapper button {
+  height: 100%;
+  background: #ff0669;
+  font-size: 1.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid transparent;
+}
+
+.game-wrapper .compare-wrapper button:before {
+  content: "\e90c";
+  font-size: 34px;
+  margin-right: 7px;
+  color: #fff;
+  vertical-align: middle;
+  text-shadow: 0 1px 1px #b90049;
+}
+
+.game-wrapper .compare-wrapper button:hover {
+  background-color: #b90049;
+}
+
+.game-wrapper .compare-wrapper button.added {
+  color: green;
+  background-color: #141414;
+  border-color: #ff0669;
+}
+
+.game-wrapper .compare-wrapper button.added:before {
+  content: "\2713";
+  margin-right: 5px;
+  color: green;
+  text-shadow: none;
+}
+
+.game-wrapper .compare-wrapper .game-msg {
+  font-size: 14px;
+  position: absolute;
+  width: 100%;
+  top: -20px;
+  left: 0;
+  white-space: nowrap;
+}
+
+.game-wrapper .compare-wrapper .game-msg.fail {
+  color: red;
+}
+
+.game-wrapper .compare-wrapper .game-msg.fail::before {
+  margin-right: 5px;
+  content: "\2715";
+}
+
+.game-wrapper .compare-wrapper .game-msg.sucess {
+  color: green;
+}
+
+.game-wrapper .compare-wrapper .game-msg.sucess::before {
+  margin-right: 5px;
+  content: "\2713";
+}
+
+.game-wrapper .rating-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -25px;
+}
+
+.game-wrapper .rating-wrapper .game-info {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding: 0 25px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.game-wrapper .rating-wrapper .game-info h2 {
+  color: #ff0669;
+  font-size: 1.4rem;
+}
+
+.game-wrapper .rating-wrapper .game-info:not(:last-child) {
+  border-right: 1px solid rgba(229, 198, 135, 0.5);
+}
+
+.game-wrapper .game-website,
+.game-wrapper .game-reddit-url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.game-wrapper .game-website .bb-icon,
+.game-wrapper .game-reddit-url .bb-icon {
+  font-size: 30px;
+  color: #e5c687;
+}
+
+.game-wrapper .game-website a,
+.game-wrapper .game-reddit-url a {
+  color: #e5c687;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.game-wrapper .game-website + .game-reddit-url,
+.game-wrapper .game-reddit-url + .game-reddit-url {
+  margin-top: -28px;
+}
+
+.game-wrapper .game-reddit-url {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.game-wrapper .game-reddit-url .bb-icon {
+  margin-top: 7px;
+}
+
+.game-wrapper .game-reddit-desc {
+  margin-top: 30px;
+}
+
+.game-wrapper .game-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.game-wrapper .game-tags h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.game-wrapper .game-tags a {
+  color: #fff;
+  padding: 4px 10px 7px;
+  font-size: 0.75rem;
+  border: 1px solid #bcb382;
+  border-radius: 3px;
+  background: #000;
+  line-height: 1;
+  opacity: 0.75;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.game-wrapper .game-tags a:hover {
+  opacity: 1;
+}
+
+.game-wrapper .game-genres,
+.game-wrapper .game-developer,
+.game-wrapper .game-publisher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.game-wrapper .game-genres h2,
+.game-wrapper .game-developer h2,
+.game-wrapper .game-publisher h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.game-wrapper .game-genres a,
+.game-wrapper .game-developer a,
+.game-wrapper .game-publisher a {
+  color: #bcb382;
+  line-height: normal;
+}
+
+.game-wrapper .game-genres a:not(:last-child):after,
+.game-wrapper .game-developer a:not(:last-child):after,
+.game-wrapper .game-publisher a:not(:last-child):after {
+  content: "";
+  margin: 0 10px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 13px;
+  border-right: 1px solid #fff;
+}
+
+.game-wrapper .game-genres a:hover,
+.game-wrapper .game-developer a:hover,
+.game-wrapper .game-publisher a:hover {
+  color: #e5c687;
+}
+
+.game-wrapper .game-similar p,
+.game-wrapper .game-alternative p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.game-wrapper .game-similar p a,
+.game-wrapper .game-alternative p a {
+  color: #bcb382;
+}
+
+.game-wrapper .game-similar p a::before,
+.game-wrapper .game-alternative p a::before {
+  content: "\e957";
+  vertical-align: middle;
+  margin-right: 6px;
+  color: #fff;
+}
+
+.game-wrapper .game-similar p a:hover,
+.game-wrapper .game-alternative p a:hover {
+  color: #e5c687;
+}
+
+.game-wrapper .game-similar .xfire-content,
+.game-wrapper .game-alternative .xfire-content {
+  margin-top: 10px;
+}
+
+.game-wrapper .game-similar .xfire-content .game-item .game-item-header,
+.game-wrapper .game-alternative .xfire-content .game-item .game-item-header {
+  gap: 20px;
+}
+
+.game-wrapper .game-similar .xfire-content .game-item .game-item-details,
+.game-wrapper .game-alternative .xfire-content .game-item .game-item-details {
+  height: calc(100% - 120px);
+}
+
+.game-wrapper .game-similar .xfire-content .game-item h2,
+.game-wrapper .game-alternative .xfire-content .game-item h2 {
+  font-size: 0.85rem;
+}
+
+.game-wrapper .game-similar .xfire-content .game-item img,
+.game-wrapper .game-alternative .xfire-content .game-item img {
+  height: 120px;
+}
+
+.game-wrapper .game-similar .xfire-content .game-item .game-meta li,
+.game-wrapper .game-alternative .xfire-content .game-item .game-meta li {
+  gap: 5px;
+}
+
+.game-wrapper .game-similar .xfire-content .game-item .game-meta li a::before,
+.game-wrapper .game-alternative .xfire-content .game-item .game-meta li a::before {
+  display: none;
+}
+
+.game-sidebar .game-screenshots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.game-sidebar .game-screenshots h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  max-width: 100%;
+}
+
+.game-sidebar .game-screenshots a {
+  -ms-flex-preferred-size: calc(50% - 5px);
+      flex-basis: calc(50% - 5px);
+  max-width: calc(50% - 5px);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 361px) and (max-width: 991px) {
+  .game-sidebar .game-screenshots a {
+    -ms-flex-preferred-size: calc((100% / 3) - 7px);
+        flex-basis: calc((100% / 3) - 7px);
+    max-width: calc((100% / 3) - 7px);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .game-sidebar .game-screenshots a {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.game-sidebar .game-screenshots a img {
+  width: 100%;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.game-sidebar .game-screenshots a:hover img {
+  -webkit-transform: scale(1.2) rotate(5deg);
+          transform: scale(1.2) rotate(5deg);
+}
+
+/* ------------------- Comments Module ------------------- */
+#comments {
+  border: 2px solid #bcb382;
+  padding: 15px;
+}
+
+#comments #comment {
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+#comments #submit {
+  background: #353432 !important;
+}
+
+#comments #submit:hover {
+  background: #ff0669 !important;
+}
+/*# sourceMappingURL=single-game-style.css.map */

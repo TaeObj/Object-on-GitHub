@@ -1,0 +1,8 @@
+Wiki:
+https://redmine.objects.ws/projects/store-finder-woocommerce-v2-1/wiki
+
+CSS Path:
+/opt/lampp/htdocs/store/wp-content/plugins/store-finder-for-woocommerce-v2/assets/css 
+
+URL:
+https://green-live.objectsdev.com/store-finder/

@@ -1,0 +1,153 @@
+$bg-dark: #070909;
+$main-color: #cc9903;
+
+.single-celebrity {
+  .qodef-elements-holder .qodef-elements-holder-item {
+    vertical-align: top;
+  }
+}
+
+.cav-celeb-img {
+  height: 100%;
+  .qodef-elements-holder-item-content,
+  .wpb_single_image,
+  .wpb_wrapper,
+  .vc_single_image-wrapper,
+  .vc_single_image-img {
+    height: 100%;
+  }
+  .wpb_single_image .vc_single_image-wrapper,
+  .wpb_single_image .vc_figure {
+    width: 100%;
+    background: $bg-dark;
+  }
+  .vc_single_image-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    // max-height: 100vh;
+    object-position: top;
+    /* -------- for iPhone 5 issues -------- */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+      height: auto;
+    }
+  }
+}
+
+.cav-celeb-details {
+  background: $bg-dark;
+  color: #fff;
+  .qodef-elements-holder-item-content {
+    > *:not(.celeb-name) {
+      // max-width: 505px;
+    }
+    @media screen and (max-width: 1024px) {
+      padding: 7% 5% !important;
+    }
+  }
+  .celeb-name {
+    font-size: 86px;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 30px;
+    @media screen and (max-width: 1024px) {
+      font-size: 66px;
+      line-height: 70px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 60px;
+      line-height: 65px;
+    }
+    @media screen and (max-width: 360px) {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+  .celeb-category {
+    color: $main-color;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+  .celeb-brief {
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .celeb-fund {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 30px 0;
+    font-weight: normal;
+    font-family: Montserrat;
+    span {
+      color: $main-color;
+      white-space: nowrap;
+    }
+  }
+  .celeb-sig {
+    img {
+      max-height: 80px;
+    }
+  }
+  .celeb-social {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    a {
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      transition: all 0.2s linear;
+      i {
+        transition: all 0.2s linear;
+      }
+      &:hover {
+        color: $main-color;
+        i {
+          color: $main-color !important;
+        }
+        .fa-tiktok {
+          filter: brightness(0) saturate(100%) invert(58%) sepia(73%) saturate(2290%) hue-rotate(15deg) brightness(98%) contrast(98%);
+        }
+      }
+      .fa-tiktok {
+        background: url(../images/tiktok-brands.svg) center center no-repeat;
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 3px;
+      }
+    }
+    &.qodef-btn {
+      .qodef-btn-text {
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+  }
+  .qodef-btn {
+    width: 230px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > [class^="qodef-btn-icon-"] {
+      display: none;
+    }
+    .qodef-btn-text {
+      margin: 0;
+    }
+    &:hover {
+      background-color: #24262a;
+      border-color: #24262a;
+      color: #fff;
+    }
+  }
+}

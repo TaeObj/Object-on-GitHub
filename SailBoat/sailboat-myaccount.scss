@@ -1,0 +1,142 @@
+@import "root";
+@import "variables";
+.sailboat-myaccount-page-wrap {
+  background: #fff;
+  filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+  border-radius: 10px;
+  padding: 30px 15px;
+  h1 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    &:before,
+    &:after {
+      content: "";
+      border-top: 1px solid #f4f4f4;
+      display: block;
+      position: relative;
+      top: 1px;
+      width: 33%;
+    }
+  }
+  .sailboat-myaccount-sidebar-wrap {
+    width: 25%;
+    // height: 215px;
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+    }
+    #bbp-user-avatar {
+      background: #fafafa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      width: 100% !important;
+      img {
+        height: auto !important;
+        width: auto !important;
+        min-height: 150px;
+        max-width: 100%;
+        object-fit: cover;
+        margin: 0 !important;
+      }
+    }
+    ul.sailboat-myaccount-sidebar {
+      list-style: none;
+      margin: 0;
+      padding: 14px;
+      border: 1px solid rgba(188, 188, 188, 0.68);
+      li.sailboat-myaccount-sidebar-item {
+        a {
+          color: rgb(51, 51, 51);
+          font-weight: 700;
+          line-height: 38px;
+        }
+        &.active {
+          a {
+            color: $third-color;
+          }
+        }
+      }
+    }
+  }
+  .sailboat-myaccount-sidebar-wrap {
+    // border: 1px solid rgba(188, 188, 188, 0.68);
+  }
+  .sailboat-myaccount-page-content-wrap {
+    display: flex;
+    gap: 15px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+  form.sailboat-EditAccountForm.edit-account {
+    p {
+      label {
+        display: block;
+        color: #8a8a8a;
+        font-size: 16px;
+        line-height: 24px;
+        span.required {
+          color: $third-color;
+        }
+      }
+      input {
+        width: 100%;
+        border-radius: 0;
+        padding: 10px;
+        border-color: #ededed;
+      }
+      span {
+        color: #8a8a8a;
+      }
+      .button {
+        padding: 5px 0.75rem;
+        background-color: $primary-color;
+        color: #fff;
+        border-radius: 5px;
+        min-width: 130px;
+        text-align: center;
+        border: none;
+        &:hover {
+          color: $primary-color;
+          background-color: $secondary-color;
+          border-color: $secondary-color;
+        }
+      }
+    }
+    fieldset {
+      margin-top: 20px;
+      legend {
+        border-bottom: 1px solid #ededed;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    .sailboat-myaccount-error-messages {
+      background: #f1adad;
+      border: 2px solid #e35b5b;
+      padding: 8px 12px 0;
+      margin-bottom: 12px;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    .sailboat-myaccount-success-messages {
+      color: #fff;
+      background: #41c74b;
+      border: 2px solid #53a459;
+      padding: 8px 12px 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

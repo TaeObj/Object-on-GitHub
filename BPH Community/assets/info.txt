@@ -1,0 +1,14 @@
+URL         : https://bph-community-dev.objectsdev.com/wp-admin
+      user         : admin-bph-community-dev
+      pass        : kNGkMNJD5kKZClnZ
+-------------------------------------------------------------------------------------
+db-u         : https://bph-community-dev.objectsdev.com/phpmyadmin
+      db-n         : bph-community-dev_db
+      db-u         : bph-community-dev_u
+      db-p         : Aig5fb3myQcEQzj7
+-------------------------------------------------------------------------------------
+ssh-ip        : 139.162.162.52
+      ssh-user     : bph-community-dev
+      ssh-port    : 4455
+      ssh-command : ssh -p 4455 bph-community-dev@139.162.162.52
+-------------------------------------------------------------------------------------

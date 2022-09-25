@@ -1,0 +1,196 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');*/
+
+$main: #63a803;
+$hover: #63a003;
+
+%submit {
+  text-align: right;
+  margin-top: 0;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  width: 50%;
+  box-sizing: border-box;
+  min-width: 992px;
+  .button-primary {
+    background: $main;
+    height: 60px;
+    min-width: 240px;
+    border: none;
+    transition: all 0.2s linear;
+    font-size: 18px;
+    font-weight: 700;
+    &:hover,
+    &:focus {
+      background: $hover;
+      box-shadow: 0 0 0 1px #fff, 0 0 0 3px $hover;
+    }
+  }
+}
+
+%select2-selection--single {
+  border-radius: 0;
+  height: 42px;
+  background: #fff;
+  border-color: rgba(151, 151, 151, 0.5);
+
+  .select2-selection__arrow {
+    height: 40px;
+  }
+
+  .select2-selection__clear {
+    height: 40px;
+    display: block;
+    line-height: 37px;
+    margin-right: 0 !important;
+    position: absolute;
+    left: 15px;
+  }
+  .select2-selection__rendered {
+    line-height: 40px !important;
+    .select2-selection__choice {
+      padding: 3px 8px 3px 0;
+      .select2-selection__choice__remove {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.zain-installments-rule-form-wrapper,
+.zi-birthdate-settings-form-wrapper,
+.zain-installments-settings-fields-wrapper,
+.zi-settings-fields-wrapper,
+.zi-score-api-forms-wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50%;
+  min-width: 992px;
+  /*font-family: 'Cairo', sans-serif;*/
+  h2 {
+    background: $main;
+    /*font-family: 'Cairo', sans-serif;*/
+    color: #ffffff;
+    padding: 20px;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0;
+    & + .form-table {
+      display: block;
+      padding: 15px 0 0 !important;
+      margin: 0;
+      box-shadow: 1px 1px 3px 0px #000000 20.15%;
+      background: #ffffff;
+    }
+  }
+  .form-table {
+    tbody {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
+    tr {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      th,
+      td {
+        width: auto;
+        padding: 0 15px 15px 0;
+      }
+
+      td {
+        > * {
+          width: 100%;
+          max-width: 600px !important;
+        }
+        input:not([type="checkbox"]):not([type="radio"]):not(.select2-search__field),
+        textarea {
+          width: 100%;
+          max-width: 431px;
+          height: 42px;
+          background: #fff;
+          border: 1px solid rgba(151, 151, 151, 0.5);
+          border-radius: 0;
+        }
+        textarea {
+          height: 115px;
+        }
+        .select2-selection--multiple {
+          &.select2-selection--multiple.select2-selection--clearable {
+            padding-right: 5px;
+          }
+          .select2-search__field {
+            height: 30px !important;
+          }
+          .select2-selection__clear {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .select2-container {
+    width: 100% !important;
+    // max-width: 431px;
+    &[dir="rtl"] {
+    }
+  }
+
+  .select2-container,
+  .select2-container * {
+    outline: none;
+  }
+
+  .select2-container--default {
+    .select2-selection--multiple {
+      border-radius: 0;
+      background: #fff;
+      border-color: rgba(151, 151, 151, 0.5);
+    }
+    .select2-selection--single {
+      @extend %select2-selection--single;
+    }
+  }
+  .submit {
+    @extend %submit;
+  }
+}
+
+.zi-bundle-amount-wrapper {
+  padding-bottom: 15px !important;
+  .zi-bundle-amount-data {
+    .form-table {
+      margin: 0 10px;
+      max-width: calc(100% - 20px);
+      td,
+      th {
+        padding: 5px !important;
+        &:last-child {
+          width: 60px;
+          text-align: center;
+        }
+      }
+      .zi-bundle-amount-cancel-saving {
+        max-width: fit-content;
+        height: 42px;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .select2-selection--single {
+        @extend %select2-selection--single;
+      }
+    }
+  }
+}
+
+.zain-installments-settings-fields-wrapper,
+.zi-settings-fields-wrapper {
+  & + .submit {
+    @extend %submit;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}

@@ -1,0 +1,287 @@
+@import "root";
+@import "variables";
+.search-sec {
+  margin-top: 35px;
+}
+
+.sailboats-results {
+  background: #fff;
+  padding: 12px;
+  filter: drop-shadow(rgba(52, 51, 51, 0.2) 0px 3px 6px);
+  border-radius: 8px;
+  margin-bottom: 30px;
+  .table-features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -8px;
+    p {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+    a.teble-btn {
+      padding: 5px 0.75rem;
+      background-color: $primary-color;
+      color: #fff;
+      border-radius: 5px;
+      min-width: 120px;
+      text-align: center;
+      font-size: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        color: $primary-color;
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+      }
+    }
+    p.sort-item {
+      font-weight: 700;
+      font-size: 14px;
+      select#sort-select {
+        // padding: 2px 2px 2px 2px;
+        padding: 4px 35px 4px 8px;
+        display: inline-block;
+        width: auto;
+        border-radius: 0;
+        font-size: 14px;
+        -webkit-appearance: none;
+      }
+    }
+  }
+  .table-results {
+    background: rgb(201, 199, 199);
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0 4px 10px;
+    gap: 8px;
+    p {
+      margin-bottom: 0;
+      font-weight: 700;
+      color: rgb(51, 51, 51);
+      font-size: 14px;
+    }
+    a.compare-btn {
+      background: $secondary-color;
+      border-radius: 8px;
+      color: #000;
+      padding: 4px 14px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      margin: -4px;
+      &:hover {
+        background: $primary-color;
+        color: #fff;
+      }
+      span.compare-number {
+        border: 1px solid;
+        border-radius: 50px;
+        padding: 2px 8px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .sailboats-table {
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
+    margin-top: 15px;
+    tr {
+      height: 30px;
+      &:nth-child(even) {
+        background: $secondary-color;
+      }
+      &:nth-child(odd) {
+        background: #fff;
+      }
+      th {
+        background: $primary-color;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 6px;
+        border-right: 1px solid grey;
+      }
+      td {
+        padding: 6px;
+        border-right: 1px solid #e3e3e3;
+        font-size: 14px;
+        color: rgb(51, 51, 51);
+        a {
+          color: rgb(51, 51, 51);
+        }
+        &.favorite-icon {
+          text-align: center;
+          img {
+            width: 24px;
+          }
+        }
+        &.compare-icon {
+          text-align: center;
+          img {
+            height: 18px;
+            width: 18px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+  &.sailboat-one-column-list {
+    .sailboats-table {
+      @media (max-width: 768px) {
+        display: table;
+        thead {
+          display: table-header-group;
+        }
+        tr {
+          td,
+          th {
+            padding: 8px 12px;
+          }
+          td {
+            display: table-cell;
+            text-align: left;
+            min-height: 37px;
+          }
+          td::before {
+            content: none;
+          }
+          td.favorite-icon,
+          td.compare-icon {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 781px) {
+  .wp-block-columns.search-sec .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:not(:only-child) {
+    flex-basis: calc(90% - var(--wp--style--block-gap, 2em) / 2) !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home-boxes {
+    margin-bottom: 15px;
+  }
+  .sailboats-results {
+    .table-results {
+      p {
+        width: 100%;
+      }
+      a.compare-btn {
+        padding: 8px;
+      }
+    }
+    .table-features p.sort-item {
+      select#sort-select {
+        // padding: 2px 2px 2px 2px;
+        padding: 4px 35px 4px 8px;
+        display: inline-block;
+        width: auto;
+        border-radius: 0;
+        font-size: 14px;
+      }
+    }
+    .sailboats-table {
+      display: inline-table;
+      thead {
+        display: none;
+      }
+      tr {
+        td,
+        th {
+          padding: 8px 12px;
+        }
+        td {
+          display: block;
+          text-align: right;
+          min-height: 37px;
+        }
+        td::before {
+          content: attr(data-title) ": ";
+          font-weight: 700;
+          float: left;
+        }
+        td.favorite-icon,
+        td.compare-icon {
+          text-align: right;
+        }
+      }
+    }
+    // .table-features {
+    //     a.teble-btn {
+    //         margin-right: 0px;
+    //         display: initial;
+    //     }
+    // }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 510px) {
+  .sailboats-results {
+    .table-features {
+      p {
+        flex-wrap: nowrap;
+      }
+      a.teble-btn {
+        min-width: fit-content;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .sailboats-results {
+    .table-features {
+      flex-direction: column;
+      p {
+        width: 100%;
+        a.teble-btn {
+          flex-basis: calc(50% - 5px);
+        }
+      }
+      .sort-item {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        #sort-select {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .search-sec {
+    .sailboats-search {
+      .block-search {
+        .search__input {
+          width: 150px;
+        }
+        .search__button {
+          min-width: calc(100% - 150px);
+        }
+      }
+    }
+  }
+  .sailboats-results {
+    // .table-features {
+    //     a.teble-btn {
+    //         display: inline-block;
+    //         margin-bottom: 4px;
+    //         margin-right: 0px;
+    //     }
+    // }
+    .table-results p {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.loader-wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full-loader.loader-wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #63a803;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.loader-wrapper.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#poststuff form .select2-container {
+  width: 250px !important;
+}
+
+/* Modal ---------------------- */
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog .wc-backbone-modal-content {
+  width: 90vh;
+  max-width: 500px;
+}
+
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .widefat {
+  display: block;
+  max-width: 100%;
+}
+
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .widefat thead,
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .widefat tbody {
+  display: block;
+  max-width: 100%;
+}
+
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .widefat tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .widefat tr th,
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .widefat tr td {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .widefat tr th > *,
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .widefat tr td > * {
+  max-width: 100%;
+}
+
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .widefat tr th:first-child,
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .widefat tr td:first-child {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  max-width: 70%;
+}
+
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .widefat tr th:last-child,
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .widefat tr td:last-child {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  max-width: 30%;
+}
+
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article .notice,
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article div.updated,
+.zain-installments_page_list-zi-products #wc-backbone-modal-dialog article div.error {
+  margin: 0;
+}
+/*# sourceMappingURL=product-price.css.map */

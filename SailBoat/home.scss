@@ -1,0 +1,241 @@
+@import "root";
+@import "variables";
+.seprator-sec {
+    color: #b5b6b8 !important;
+}
+
+.home-boxes {
+    background: #fff;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+    border-radius: 8px;
+    padding: 14px 10px 0px;
+    h6 {
+        font-weight: 700;
+    }
+}
+
+.sailboats-search.wp-block-search.wp-block-search__button-inside {
+    margin-bottom: 15px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+    #wp-block-search__input-1 {
+        font-size: 12px;
+    }
+    .wp-block-search__inside-wrapper {
+        background: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 8px;
+    }
+    button.wp-block-search__button {
+        padding: 5px 0.75rem;
+        background-color: $primary-color;
+        color: #fff;
+        border-radius: 5px;
+        min-width: 100px;
+        text-align: center;
+        font-size: 12px;
+        &:hover {
+            color: $primary-color;
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+        }
+    }
+}
+
+p.boat-link {
+    margin-bottom: 5px;
+    a {
+        color: $primary-color;
+    }
+}
+
+.search-sec {
+    h2 {
+        text-align: center;
+        font-weight: 700;
+    }
+    .sailboats-search {
+        filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        .block-search {
+            background: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            display: flex;
+            flex: auto;
+            flex-wrap: nowrap;
+            @media only screen and (max-width: 576px) {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .search__input {
+                border-radius: 0;
+                border: none;
+                padding: 0 0 0 0.25em;
+                flex-grow: 1;
+                outline: none;
+            }
+            .search__button {
+                padding: 4px 0.75rem;
+                background-color: $primary-color;
+                color: #fff;
+                border-radius: 5px;
+                min-width: 130px;
+                text-align: center;
+                font-size: 12px;
+                text-transform: uppercase;
+                @media only screen and (max-width: 576px) {
+                    width: 100%;
+                }
+            }
+            .sailboat-search-text-wrap {
+                position: relative;
+                width: calc(100% - 130px);
+                @media only screen and (max-width: 576px) {
+                    width: 100%;
+                     ::-webkit-input-placeholder {
+                        font-size: 11px;
+                    }
+                     :-ms-input-placeholder {
+                        font-size: 11px;
+                    }
+                     ::placeholder {
+                        font-size: 11px;
+                    }
+                }
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    max-width: 25px;
+                }
+                .search__input {
+                    padding-left: 35px;
+                    width: 100%;
+                    @media only screen and (max-width: 576px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sailboat-text {
+    width: 90%;
+    margin: 0 auto;
+    p {
+        color: rgb(52, 51, 51);
+    }
+    p.sailboat-linktext {
+        color: $third-color;
+        margin-bottom: 0px;
+        font-weight: 700;
+        a.sailboat-link {
+            color: $primary-color;
+        }
+    }
+}
+
+.dealer-title {
+    h2 {
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.dealer-img {
+    text-align: center;
+    // img {
+    //     max-width: 350px;
+    // }
+}
+
+.dealer-link {
+    color: $primary-color;
+    text-align: center;
+    line-height: 60px;
+    font-size: 14px;
+}
+
+.dealer-text {
+    margin-bottom: 20px;
+}
+
+.dealer-description-label {
+    margin-bottom: 0;
+    color: $third-color;
+    font-size: 16px;
+}
+
+.dealer-btn {
+    text-align: center;
+    margin-bottom: 20px;
+    a,
+    .btn {
+        min-width: 150px;
+    }
+}
+
+.dealer-ndtiltle {
+    text-align: center;
+    margin-bottom: 20px;
+    h5 {
+        text-align: center;
+        color: $primary-color;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.help-pg {
+    background: #fff;
+    padding: 22px;
+    filter: drop-shadow(rgba(52, 51, 51, 0.2) 0px 3px 6px);
+    border-radius: 11.5px;
+    h4 {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    h5 {
+        margin-bottom: 0px;
+    }
+    mark {
+        padding: 0;
+    }
+    p {
+        line-height: 22px;
+    }
+}
+
+.entry-content {
+    margin: 0;
+}
+
+.about-pg {
+    background: #fff;
+    padding: 22px;
+    filter: drop-shadow(rgba(52, 51, 51, 0.2) 0px 3px 6px);
+    border-radius: 11.5px;
+    p {
+        line-height: 22px;
+    }
+    mark {
+        padding: 0;
+    }
+}
+
+.creator-sec {
+    margin-top: 25px;
+    &.wp-container-3 {
+        gap: 6px;
+    }
+}

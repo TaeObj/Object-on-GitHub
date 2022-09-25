@@ -1,0 +1,29 @@
+.site-footer {
+    color: #fff;
+    text-align: center;
+    padding: 22px 0;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
+    background-color: rgba(32, 32, 86, 0.5);
+    background-blend-mode: multiply;
+    @media (min-width: 992px) {
+        min-height: 180px;
+        padding: 45px 0 20px;
+        margin-top: 3rem;
+    }
+    .footer-banner-adds {
+        text-align: center;
+        margin: 0 0 20px;
+        img {
+            max-width: 700px;
+            margin: auto;
+            display: inline-block;
+        }
+    }
+    a {
+        color: inherit;
+    }
+}

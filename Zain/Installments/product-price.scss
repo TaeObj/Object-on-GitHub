@@ -1,0 +1,88 @@
+.loader-wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-loader.loader-wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #63a803;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.loader-wrapper.show {
+  display: flex;
+}
+
+#poststuff form .select2-container {
+  width: 250px !important;
+}
+
+/* Modal ---------------------- */
+.zain-installments_page_list-zi-products {
+  #wc-backbone-modal-dialog {
+    .wc-backbone-modal-content {
+      width: 90vh;
+      max-width: 500px;
+    }
+    article {
+      .widefat {
+        display: block;
+        max-width: 100%;
+        thead,
+        tbody {
+          display: block;
+          max-width: 100%;
+        }
+        tr {
+          display: flex;
+          align-items: center;
+          th,
+          td {
+            box-sizing: border-box;
+            > * {
+              max-width: 100%;
+            }
+            &:first-child {
+              flex-basis: 70%;
+              max-width: 70%;
+            }
+            &:last-child {
+              flex-basis: 30%;
+              max-width: 30%;
+            }
+          }
+        }
+      }
+      .notice,
+      div.updated,
+      div.error {
+        margin: 0;
+      }
+    }
+  }
+}

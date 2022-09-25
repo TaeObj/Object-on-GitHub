@@ -1,0 +1,18 @@
+#reg_phone{
+    position: relative;
+    width: 100%;
+    margin: 0 0 14px;
+    padding: 12px 20px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #848892;
+    background-color: transparent;
+    border: 1px solid #e1e1e1;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

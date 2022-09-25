@@ -1,0 +1,289 @@
+@import "root";
+@import "variables";
+.register-pg {
+    background: #fff;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+    border-radius: 8px;
+    padding: 24px 30px;
+    h4 {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        display: flex;
+        gap: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        &:after,
+        &:before {
+            content: '';
+            border-top: 1px solid #f4f4f4;
+            display: block;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            flex: 1 0 auto;
+        }
+    }
+    p.register-info {
+        position: relative;
+        border: 2px solid #d4d4d4;
+        padding: 10px 10px 10px 45px;
+        filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 1px 1px);
+        background: #fff;
+        font-size: 12px;
+        font-family: dashicons;
+        mark {
+            font-family: 'Tahoma';
+        }
+        &:before {
+            content: '\f14c';
+            position: absolute;
+            left: -1px;
+            top: 0;
+            bottom: 0;
+            background: #0780a4;
+            padding: 5px 10px;
+            color: #fff;
+            font-size: 20px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .gform_wrapper.gravity-theme {
+        .gform_fields {
+            @media (max-width: 767px) {
+                display: flex;
+                flex-wrap: wrap;
+                .gfield.gfield--width-half {
+                    flex: 1 0 auto;
+                    max-width: 100%;
+                    &.register-form-title,
+                    &.register-password-field {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .register-form {
+            label {
+                margin-bottom: 0;
+                font-size: 16px;
+                font-weight: 400;
+                color: #8a8a8a;
+                span.gfield_required {
+                    color: #8a8a8a;
+                }
+            }
+            input {
+                // border-color: rgb(204, 0, 0);
+                border-color: #ededed;
+                border-width: 2px;
+                border-radius: 0;
+                background: #fafafa;
+                padding: 8px;
+                font-size: 1rem;
+            }
+            // input[type="password"]{
+            //     border-color: #ededed;
+            // }
+            .gfield_description {
+                color: #8a8a8a;
+                font-size: 14px;
+            }
+            .name-field .gfield_description {
+                font-style: italic;
+                padding-top: 0px;
+            }
+            .validation_message {
+                background: none;
+                border: none;
+                font-size: 14.992px;
+                margin-top: 0px;
+                padding: 0;
+                color: $third-color;
+            }
+            span.password_input_container {
+                display: inline-flex;
+                gap: 30px;
+            }
+            .gform_show_password {
+                // right: 85px;
+                border: 2px solid #ededed;
+                padding: 10px;
+                position: relative;
+            }
+            .gfield_password_strength {
+                border-bottom: none;
+                border-radius: 4px;
+                width: 190px;
+                padding: 8px 20px;
+                border: 2px solid #ededed;
+                &.strong {
+                    border-color: #5dc264;
+                    background: #65d66d;
+                }
+                &.short {
+                    background-color: #f1adad;
+                    border-color: #e35b5b;
+                }
+                &.bad {
+                    background-color: #fbc5a9;
+                    border-color: #f78b53;
+                }
+                &.good {
+                    background-color: #ffe399;
+                    border-color: #ffc733;
+                }
+            }
+            .button {
+                border-color: $primary-color;
+                color: #fff;
+                text-transform: uppercase;
+                background: $primary-color;
+                padding: 8px 1.75rem;
+                border-radius: 5px;
+                &:hover {
+                    border-color: $secondary-color;
+                    background: $secondary-color;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.login-pg {
+    background: #fff;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+    border-radius: 8px;
+    padding: 24px 30px;
+    h3 {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        display: flex;
+        gap: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        &:after,
+        &:before {
+            content: '';
+            border-top: 1px solid #f4f4f4;
+            display: block;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            flex: 1 0 auto;
+        }
+    }
+    #gform_fields_login {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        // text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        .gfield_contains_required {
+            width: 50%;
+        }
+        li {
+            .ginput_container_text {
+                input {
+                    width: 90%;
+                    // border-color: #cc0000;
+                    border-color: #ededed;
+                    border-width: 2px;
+                    border-radius: 0;
+                    background: #fafafa;
+                    padding: 8px;
+                    font-size: 1rem;
+                }
+            }
+            label {
+                margin-bottom: 0;
+                font-size: 16px;
+                font-weight: 400;
+                color: #8a8a8a;
+                span.gfield_required {
+                    color: #8a8a8a;
+                }
+            }
+        }
+        .ginput_container_checkbox {
+            ul {
+                margin: 0;
+                padding: 14px 0px;
+                list-style: none;
+            }
+        }
+        .gfield_error label {
+            color: $third-color;
+            font-weight: 700;
+        }
+        .validation_message {
+            color: $third-color;
+            margin-top: 5px;
+        }
+        .gfield_error [aria-invalid=true] {
+            border: 1px solid $third-color;
+        }
+    }
+    .gform_footer .button {
+        border-color: $primary-color;
+        color: #fff;
+        text-transform: uppercase;
+        background: $primary-color;
+        padding: 8px 1.75rem;
+        border-radius: 5px;
+        &:hover {
+            border-color: $secondary-color;
+            background: $secondary-color;
+            color: $primary-color;
+        }
+    }
+    nav.gf_login_links {
+        padding-top: 10px;
+        a {
+            line-height: 28px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .register-pg {
+        h4 {
+            display: block;
+            &:after,
+            &:before {
+                display: none;
+            }
+        }
+        .register-form {
+            .profile-field {
+                order: 2;
+            }
+            .name-field {
+                order: 3;
+            }
+            .agree-field {
+                order: 4;
+            }
+        }
+    }
+    .login-pg {
+        h3 {
+            display: block;
+            &:after,
+            &:before {
+                display: none;
+            }
+        }
+        #gform_fields_login {
+            .gfield_contains_required,
+            li .ginput_container_text input {
+                width: 100%;
+            }
+        }
+    }
+}

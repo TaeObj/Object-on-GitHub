@@ -1,0 +1,274 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');*/
+.zain-installments-rule-form-wrapper .submit,
+.zi-birthdate-settings-form-wrapper .submit,
+.zain-installments-settings-fields-wrapper .submit,
+.zi-settings-fields-wrapper .submit,
+.zi-score-api-forms-wrapper .submit, .zain-installments-settings-fields-wrapper + .submit,
+.zi-settings-fields-wrapper + .submit {
+  text-align: right;
+  margin-top: 0;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 992px;
+}
+
+.zain-installments-rule-form-wrapper .submit .button-primary, .zi-birthdate-settings-form-wrapper .submit .button-primary, .zain-installments-settings-fields-wrapper .submit .button-primary, .zi-settings-fields-wrapper .submit .button-primary, .zi-score-api-forms-wrapper .submit .button-primary, .zain-installments-settings-fields-wrapper + .submit .button-primary, .zi-settings-fields-wrapper + .submit .button-primary {
+  background: #63a803;
+  height: 60px;
+  min-width: 240px;
+  border: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.zain-installments-rule-form-wrapper .submit .button-primary:hover, .zi-birthdate-settings-form-wrapper .submit .button-primary:hover, .zain-installments-settings-fields-wrapper .submit .button-primary:hover, .zi-settings-fields-wrapper .submit .button-primary:hover, .zi-score-api-forms-wrapper .submit .button-primary:hover, .zain-installments-settings-fields-wrapper + .submit .button-primary:hover, .zi-settings-fields-wrapper + .submit .button-primary:hover, .zain-installments-rule-form-wrapper .submit .button-primary:focus, .zi-birthdate-settings-form-wrapper .submit .button-primary:focus, .zain-installments-settings-fields-wrapper .submit .button-primary:focus, .zi-settings-fields-wrapper .submit .button-primary:focus, .zi-score-api-forms-wrapper .submit .button-primary:focus, .zain-installments-settings-fields-wrapper + .submit .button-primary:focus, .zi-settings-fields-wrapper + .submit .button-primary:focus {
+  background: #63a003;
+  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #63a003;
+          box-shadow: 0 0 0 1px #fff, 0 0 0 3px #63a003;
+}
+
+.zain-installments-rule-form-wrapper .select2-container--default .select2-selection--single,
+.zi-birthdate-settings-form-wrapper .select2-container--default .select2-selection--single,
+.zain-installments-settings-fields-wrapper .select2-container--default .select2-selection--single,
+.zi-settings-fields-wrapper .select2-container--default .select2-selection--single,
+.zi-score-api-forms-wrapper .select2-container--default .select2-selection--single, .zi-bundle-amount-wrapper .zi-bundle-amount-data .form-table .select2-selection--single {
+  border-radius: 0;
+  height: 42px;
+  background: #fff;
+  border-color: rgba(151, 151, 151, 0.5);
+}
+
+.zain-installments-rule-form-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow, .zi-birthdate-settings-form-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow, .zain-installments-settings-fields-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow, .zi-settings-fields-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow, .zi-score-api-forms-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow, .zi-bundle-amount-wrapper .zi-bundle-amount-data .form-table .select2-selection--single .select2-selection__arrow {
+  height: 40px;
+}
+
+.zain-installments-rule-form-wrapper .select2-container--default .select2-selection--single .select2-selection__clear, .zi-birthdate-settings-form-wrapper .select2-container--default .select2-selection--single .select2-selection__clear, .zain-installments-settings-fields-wrapper .select2-container--default .select2-selection--single .select2-selection__clear, .zi-settings-fields-wrapper .select2-container--default .select2-selection--single .select2-selection__clear, .zi-score-api-forms-wrapper .select2-container--default .select2-selection--single .select2-selection__clear, .zi-bundle-amount-wrapper .zi-bundle-amount-data .form-table .select2-selection--single .select2-selection__clear {
+  height: 40px;
+  display: block;
+  line-height: 37px;
+  margin-right: 0 !important;
+  position: absolute;
+  left: 15px;
+}
+
+.zain-installments-rule-form-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered, .zi-birthdate-settings-form-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered, .zain-installments-settings-fields-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered, .zi-settings-fields-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered, .zi-score-api-forms-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered, .zi-bundle-amount-wrapper .zi-bundle-amount-data .form-table .select2-selection--single .select2-selection__rendered {
+  line-height: 40px !important;
+}
+
+.zain-installments-rule-form-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered .select2-selection__choice, .zi-birthdate-settings-form-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered .select2-selection__choice, .zain-installments-settings-fields-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered .select2-selection__choice, .zi-settings-fields-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered .select2-selection__choice, .zi-score-api-forms-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered .select2-selection__choice, .zi-bundle-amount-wrapper .zi-bundle-amount-data .form-table .select2-selection--single .select2-selection__rendered .select2-selection__choice {
+  padding: 3px 8px 3px 0;
+}
+
+.zain-installments-rule-form-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove, .zi-birthdate-settings-form-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove, .zain-installments-settings-fields-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove, .zi-settings-fields-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove, .zi-score-api-forms-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove, .zi-bundle-amount-wrapper .zi-bundle-amount-data .form-table .select2-selection--single .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+  margin-right: 5px;
+}
+
+.zain-installments-rule-form-wrapper,
+.zi-birthdate-settings-form-wrapper,
+.zain-installments-settings-fields-wrapper,
+.zi-settings-fields-wrapper,
+.zi-score-api-forms-wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50%;
+  min-width: 992px;
+  /*font-family: 'Cairo', sans-serif;*/
+}
+
+.zain-installments-rule-form-wrapper h2,
+.zi-birthdate-settings-form-wrapper h2,
+.zain-installments-settings-fields-wrapper h2,
+.zi-settings-fields-wrapper h2,
+.zi-score-api-forms-wrapper h2 {
+  background: #63a803;
+  /*font-family: 'Cairo', sans-serif;*/
+  color: #ffffff;
+  padding: 20px;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.zain-installments-rule-form-wrapper h2 + .form-table,
+.zi-birthdate-settings-form-wrapper h2 + .form-table,
+.zain-installments-settings-fields-wrapper h2 + .form-table,
+.zi-settings-fields-wrapper h2 + .form-table,
+.zi-score-api-forms-wrapper h2 + .form-table {
+  display: block;
+  padding: 15px 0 0 !important;
+  margin: 0;
+  -webkit-box-shadow: 1px 1px 3px 0px #000000 20.15%;
+          box-shadow: 1px 1px 3px 0px #000000 20.15%;
+  background: #ffffff;
+}
+
+.zain-installments-rule-form-wrapper .form-table tbody,
+.zi-birthdate-settings-form-wrapper .form-table tbody,
+.zain-installments-settings-fields-wrapper .form-table tbody,
+.zi-settings-fields-wrapper .form-table tbody,
+.zi-score-api-forms-wrapper .form-table tbody {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.zain-installments-rule-form-wrapper .form-table tr,
+.zi-birthdate-settings-form-wrapper .form-table tr,
+.zain-installments-settings-fields-wrapper .form-table tr,
+.zi-settings-fields-wrapper .form-table tr,
+.zi-score-api-forms-wrapper .form-table tr {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.zain-installments-rule-form-wrapper .form-table tr th,
+.zain-installments-rule-form-wrapper .form-table tr td,
+.zi-birthdate-settings-form-wrapper .form-table tr th,
+.zi-birthdate-settings-form-wrapper .form-table tr td,
+.zain-installments-settings-fields-wrapper .form-table tr th,
+.zain-installments-settings-fields-wrapper .form-table tr td,
+.zi-settings-fields-wrapper .form-table tr th,
+.zi-settings-fields-wrapper .form-table tr td,
+.zi-score-api-forms-wrapper .form-table tr th,
+.zi-score-api-forms-wrapper .form-table tr td {
+  width: auto;
+  padding: 0 15px 15px 0;
+}
+
+.zain-installments-rule-form-wrapper .form-table tr td > *,
+.zi-birthdate-settings-form-wrapper .form-table tr td > *,
+.zain-installments-settings-fields-wrapper .form-table tr td > *,
+.zi-settings-fields-wrapper .form-table tr td > *,
+.zi-score-api-forms-wrapper .form-table tr td > * {
+  width: 100%;
+  max-width: 600px !important;
+}
+
+.zain-installments-rule-form-wrapper .form-table tr td input:not([type="checkbox"]):not([type="radio"]):not(.select2-search__field),
+.zain-installments-rule-form-wrapper .form-table tr td textarea,
+.zi-birthdate-settings-form-wrapper .form-table tr td input:not([type="checkbox"]):not([type="radio"]):not(.select2-search__field),
+.zi-birthdate-settings-form-wrapper .form-table tr td textarea,
+.zain-installments-settings-fields-wrapper .form-table tr td input:not([type="checkbox"]):not([type="radio"]):not(.select2-search__field),
+.zain-installments-settings-fields-wrapper .form-table tr td textarea,
+.zi-settings-fields-wrapper .form-table tr td input:not([type="checkbox"]):not([type="radio"]):not(.select2-search__field),
+.zi-settings-fields-wrapper .form-table tr td textarea,
+.zi-score-api-forms-wrapper .form-table tr td input:not([type="checkbox"]):not([type="radio"]):not(.select2-search__field),
+.zi-score-api-forms-wrapper .form-table tr td textarea {
+  width: 100%;
+  max-width: 431px;
+  height: 42px;
+  background: #fff;
+  border: 1px solid rgba(151, 151, 151, 0.5);
+  border-radius: 0;
+}
+
+.zain-installments-rule-form-wrapper .form-table tr td textarea,
+.zi-birthdate-settings-form-wrapper .form-table tr td textarea,
+.zain-installments-settings-fields-wrapper .form-table tr td textarea,
+.zi-settings-fields-wrapper .form-table tr td textarea,
+.zi-score-api-forms-wrapper .form-table tr td textarea {
+  height: 115px;
+}
+
+.zain-installments-rule-form-wrapper .form-table tr td .select2-selection--multiple.select2-selection--multiple.select2-selection--clearable,
+.zi-birthdate-settings-form-wrapper .form-table tr td .select2-selection--multiple.select2-selection--multiple.select2-selection--clearable,
+.zain-installments-settings-fields-wrapper .form-table tr td .select2-selection--multiple.select2-selection--multiple.select2-selection--clearable,
+.zi-settings-fields-wrapper .form-table tr td .select2-selection--multiple.select2-selection--multiple.select2-selection--clearable,
+.zi-score-api-forms-wrapper .form-table tr td .select2-selection--multiple.select2-selection--multiple.select2-selection--clearable {
+  padding-right: 5px;
+}
+
+.zain-installments-rule-form-wrapper .form-table tr td .select2-selection--multiple .select2-search__field,
+.zi-birthdate-settings-form-wrapper .form-table tr td .select2-selection--multiple .select2-search__field,
+.zain-installments-settings-fields-wrapper .form-table tr td .select2-selection--multiple .select2-search__field,
+.zi-settings-fields-wrapper .form-table tr td .select2-selection--multiple .select2-search__field,
+.zi-score-api-forms-wrapper .form-table tr td .select2-selection--multiple .select2-search__field {
+  height: 30px !important;
+}
+
+.zain-installments-rule-form-wrapper .form-table tr td .select2-selection--multiple .select2-selection__clear,
+.zi-birthdate-settings-form-wrapper .form-table tr td .select2-selection--multiple .select2-selection__clear,
+.zain-installments-settings-fields-wrapper .form-table tr td .select2-selection--multiple .select2-selection__clear,
+.zi-settings-fields-wrapper .form-table tr td .select2-selection--multiple .select2-selection__clear,
+.zi-score-api-forms-wrapper .form-table tr td .select2-selection--multiple .select2-selection__clear {
+  display: none;
+}
+
+.zain-installments-rule-form-wrapper .select2-container,
+.zi-birthdate-settings-form-wrapper .select2-container,
+.zain-installments-settings-fields-wrapper .select2-container,
+.zi-settings-fields-wrapper .select2-container,
+.zi-score-api-forms-wrapper .select2-container {
+  width: 100% !important;
+}
+
+.zain-installments-rule-form-wrapper .select2-container,
+.zain-installments-rule-form-wrapper .select2-container *,
+.zi-birthdate-settings-form-wrapper .select2-container,
+.zi-birthdate-settings-form-wrapper .select2-container *,
+.zain-installments-settings-fields-wrapper .select2-container,
+.zain-installments-settings-fields-wrapper .select2-container *,
+.zi-settings-fields-wrapper .select2-container,
+.zi-settings-fields-wrapper .select2-container *,
+.zi-score-api-forms-wrapper .select2-container,
+.zi-score-api-forms-wrapper .select2-container * {
+  outline: none;
+}
+
+.zain-installments-rule-form-wrapper .select2-container--default .select2-selection--multiple,
+.zi-birthdate-settings-form-wrapper .select2-container--default .select2-selection--multiple,
+.zain-installments-settings-fields-wrapper .select2-container--default .select2-selection--multiple,
+.zi-settings-fields-wrapper .select2-container--default .select2-selection--multiple,
+.zi-score-api-forms-wrapper .select2-container--default .select2-selection--multiple {
+  border-radius: 0;
+  background: #fff;
+  border-color: rgba(151, 151, 151, 0.5);
+}
+
+.zi-bundle-amount-wrapper {
+  padding-bottom: 15px !important;
+}
+
+.zi-bundle-amount-wrapper .zi-bundle-amount-data .form-table {
+  margin: 0 10px;
+  max-width: calc(100% - 20px);
+}
+
+.zi-bundle-amount-wrapper .zi-bundle-amount-data .form-table td,
+.zi-bundle-amount-wrapper .zi-bundle-amount-data .form-table th {
+  padding: 5px !important;
+}
+
+.zi-bundle-amount-wrapper .zi-bundle-amount-data .form-table td:last-child,
+.zi-bundle-amount-wrapper .zi-bundle-amount-data .form-table th:last-child {
+  width: 60px;
+  text-align: center;
+}
+
+.zi-bundle-amount-wrapper .zi-bundle-amount-data .form-table .zi-bundle-amount-cancel-saving {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  height: 42px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.zain-installments-settings-fields-wrapper + .submit,
+.zi-settings-fields-wrapper + .submit {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+/*# sourceMappingURL=zain-installments-rule-settings.css.map */

@@ -1,0 +1,199 @@
+$red: #ee1d23;
+$green: #95dab8;
+$gray: #e6e7e9;
+$blue: #1e28cc;
+$dark: #231f20;
+
+.time-sheet-container {
+  .tish-job-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .job-headers-data {
+      margin-right: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    h4 {
+      margin-bottom: 0.6rem;
+      label {
+        font-weight: bold;
+      }
+    }
+  }
+  .tish-days form {
+    display: flex;
+    flex-wrap: wrap;
+    label {
+      flex-basis: 100%;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input[type="hidden"] {
+      display: none;
+    }
+    input:not([type="hidden"]) {
+      margin: 0 -1px -1px 0;
+      border: 1px solid #fff !important;
+      padding: 0 !important;
+      width: 36px;
+      height: 36px;
+      min-height: 36px !important;
+      min-width: 36px !important;
+      border-radius: 0 !important;
+      &.wcpm-notdone-day {
+        background: $red !important;
+      }
+      &.wcpm-disabled-day {
+        color: $dark !important;
+        background: $gray !important;
+      }
+      &.wcpm-completed-day {
+        background: $green !important;
+      }
+      &.wcpm-active-day {
+        box-shadow: 0 0 21px rgba(0, 0, 0, 0.5) inset;
+      }
+    }
+  }
+  .tish-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h4 {
+      margin-bottom: 1rem;
+      font-weight: bold;
+      margin-right: 2rem;
+    }
+    form {
+      margin-bottom: 1rem;
+    }
+    label {
+      font-weight: 500;
+      margin-right: 10px;
+    }
+    .button {
+      color: #fff;
+    }
+  }
+  .tish-day-data {
+    overflow-x: auto;
+
+    .time-sheet-table {
+      thead th {
+        color: $dark;
+        font-weight: bold;
+        text-align: center;
+        line-height: normal;
+        span {
+          white-space: normal;
+        }
+      }
+      td {
+        label {
+          display: flex;
+          white-space: nowrap;
+          align-items: center;
+          input {
+            margin-right: 5px;
+          }
+        }
+        a.button {
+          padding: 0 10px !important;
+          min-height: 28px !important;
+          line-height: 28px !important;
+          font-size: 1em !important;
+          max-width: fit-content;
+          display: block !important;
+          margin: auto !important;
+        }
+        [data-action="affirm"],
+        [data-action="approve"] {
+          display: block;
+          margin: auto;
+        }
+      }
+      [class^="total_hours_worked"] {
+        color: #333;
+        font-size: 1.5em;
+        text-align: center;
+      }
+      .approve-all {
+        color: #fff;
+        background: #00e7ff;
+        border-radius: 50px;
+        white-space: nowrap;
+        padding: 3px 8px;
+        margin-top: 7px;
+        display: block;
+        max-width: fit-content;
+        transition: all 0.2s linear;
+        &:hover {
+          background: $blue;
+        }
+      }
+    }
+    .tish-totals-table {
+      text-align: center;
+    }
+  }
+}
+
+#call-times-wrapper {
+  .wcpm-time-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+    &:empty {
+      display: none;
+    }
+    .tish-add-new-dates {
+      margin-left: auto;
+      &::before {
+        margin-right: 5px;
+        content: "\002B";
+      }
+    }
+    .remove-times {
+      color: red;
+    }
+    label {
+      font-weight: 500;
+      margin-right: 10px;
+    }
+    input {
+      margin-right: 15px;
+    }
+  }
+}
+
+.wcpm-map-key {
+  padding: 0 0 1.5rem;
+  margin: 0;
+  li {
+    display: flex;
+    margin-bottom: 10px;
+    span {
+      margin-right: 10px;
+      min-width: 32px;
+      max-width: 32px;
+      height: 32px;
+    }
+  }
+  .wcpm-disabled-day {
+    background: $gray;
+  }
+  .wcpm-notdone-day {
+    background: $red;
+  }
+  .wcpm-completed-day {
+    background: $green;
+  }
+}
+
+.clockpicker-popover {
+  z-index: 99999999;
+}

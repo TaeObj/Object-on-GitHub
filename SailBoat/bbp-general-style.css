@@ -1,0 +1,249 @@
+:root {
+  --primary-color: #202056;
+  --secondary-color: #0ff0ff;
+  --third-color: #c60000;
+  --light-gray: #cecbcb;
+  --font-tahoma: "Tahoma", sans-serif;
+}
+
+#bbpress-forums .bbp-forums > li.bbp-header {
+  background: var(--secondary-color);
+}
+
+.bbp-login-form {
+  background: #fff;
+}
+
+.bbp-login-form .bbp-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.bbp-login-form .bbp-form > div {
+  padding: 0 15px;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.bbp-login-form .bbp-form .bbp-username label,
+.bbp-login-form .bbp-form .bbp-password label {
+  margin-bottom: 5px !important;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+
+.bbp-login-form .bbp-form .bbp-username input,
+.bbp-login-form .bbp-form .bbp-password input {
+  border-color: #ededed;
+  border-width: 2px;
+  border-radius: 0;
+  background: #fafafa;
+  padding: 8px !important;
+  font-size: 1rem;
+  height: auto !important;
+}
+
+.bbp-login-form .bbp-form .bbp-username,
+.bbp-login-form .bbp-form .bbp-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.bbp-login-form .bbp-submit-wrapper button,
+#subscription-toggle .subscription-toggle,
+#favorite-toggle .favorite-toggle {
+  background: var(--primary-color) !important;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  min-height: 28px;
+  padding: 0 0.75rem !important;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s linear !important;
+  height: 38px;
+  font-size: 16px;
+  min-width: 100px;
+}
+
+.bbp-login-form .bbp-submit-wrapper button:hover,
+#subscription-toggle .subscription-toggle:hover,
+#favorite-toggle .favorite-toggle:hover {
+  background: var(--secondary-color) !important;
+  color: var(--primary-color);
+}
+
+.bbp-login-form .bbp-remember-me {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 16px;
+}
+
+.bbp-login-form .bbp-remember-me input {
+  margin: 2px 0 0 !important;
+}
+
+@media screen and (max-width: 575px) {
+  .bbp-login-form .bbp-form {
+    flex-direction: column;
+  }
+  .bbp-login-form .bbp-form > div {
+    min-width: 100%;
+  }
+}
+
+#subscription-toggle {
+  /* float: none !important; */
+  display: block;
+  margin-bottom: 10px;
+}
+
+#subscription-toggle .subscription-toggle,
+#favorite-toggle .favorite-toggle {
+  height: auto;
+  font-size: 14px;
+}
+
+#bbpress-forums #subscription-toggle {
+  font-size: 0;
+}
+
+#bbpress-forums #subscription-toggle > * {
+  font-size: 14px;
+}
+
+#bbpress-forums .bb-topic-forums-list {
+  clear: both;
+}
+
+#bbpress-forums .bbp-topic-tags a {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 50px;
+  border: 1px solid var(--primary-color);
+  background: #fff;
+  transition: all 0.2s linear;
+  margin-right: 5px;
+}
+
+#bbpress-forums .bbp-topic-tags a:last-child {
+  margin-right: 0;
+}
+
+#bbpress-forums .bbp-topic-tags a:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+#bbpress-forums #favorite-toggle,
+#bbpress-forums #subscription-toggle {
+  float: left !important;
+  margin-right: 10px;
+}
+
+#bbpress-forums .bb-topic-forums-list {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+#bbpress-forums .bb-topic-forums-list li {
+  margin-right: 15px;
+}
+
+#bbpress-forums .bb-topic-forums-list li::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 8px;
+  height: 8px;
+  margin-right: 2px;
+}
+
+#bbpress-forums .bb-topic-forums-list li a {
+  text-decoration: underline;
+}
+
+#bbpress-forums .bb-topic-forums-list li:first-child::before {
+  background: #f1592a;
+}
+
+#bbpress-forums .bb-topic-forums-list li:nth-child(2)::before {
+  background: #0088cc;
+}
+
+#bbpress-forums .bb-topic-forums-list li:nth-child(3)::before {
+  background: #00cc59;
+}
+
+#bbpress-forums .bb-topic-forums-list li:nth-child(4)::before {
+  background: #00c7cc;
+}
+
+#bbpress-forums .bbp-topic-welcome-msg {
+  padding-left: 32px;
+  background: url(../images/welcome.png) 5px center no-repeat #f0f8ff;
+}
+
+#bbpress-forums.single-topic-wrapper {
+  background: #fff;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.bbp-topic-header .bbp-admin-links a::before {
+  font-family: "dashicons";
+  display: inline-block;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: never;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin-right: 5px;
+  vertical-align: top;
+  text-align: center;
+  transition: color 0.1s ease-in;
+}
+
+.bbp-topic-header .bbp-admin-links .bbp-topic-edit-link::before {
+  content: "\f464";
+}
+.bbp-topic-header .bbp-admin-links .bbp-topic-merge-link::before {
+  content: "\f103";
+}
+.bbp-topic-header .bbp-admin-links .bbp-topic-close-link::before {
+  content: "\f335";
+}
+.bbp-topic-header .bbp-admin-links .bbp-topic-sticky-link::before {
+  content: "\f109";
+}
+.bbp-topic-header .bbp-admin-links .bbp-topic-super-sticky-link::before {
+  content: "\f157";
+}
+.bbp-topic-header .bbp-admin-links .bbp-topic-trash-link::before {
+  content: "\f182";
+}
+.bbp-topic-header .bbp-admin-links .bbp-topic-spam-link::before {
+  content: "\f332";
+}
+.bbp-topic-header .bbp-admin-links .bbp-topic-approve-link::before {
+  content: "\f117";
+}
+.bbp-topic-header .bbp-admin-links .bbp-topic-reply-link::before {
+  content: "\f171";
+}

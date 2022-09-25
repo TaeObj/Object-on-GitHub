@@ -1,0 +1,164 @@
+@import "root";
+@import "variables";
+
+#refine-search {
+  @media (min-width: 576px) {
+    .modal-dialog,
+    .modal-content {
+      max-width: 600px;
+    }
+  }
+  .modal-header {
+    right: 0;
+    left: auto;
+  }
+  .modal-body {
+    padding-bottom: 0;
+    text-align: left;
+    h4 {
+      margin: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+    }
+    .sailboat-refine-search {
+      padding: 0 15px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      label {
+        font-weight: 600;
+        font-size: 0.85em;
+        color: #333;
+        margin-bottom: 5px;
+      }
+      @media screen and (max-width: 767px) {
+        .col-md-6 + .col-md-6 {
+          margin-top: 10px;
+        }
+      }
+    }
+    .form-control {
+      padding: 6px 12px;
+    }
+    select.form-control {
+      appearance: none;
+      background: url(../images/select-arrow.png) 98% center no-repeat;
+    }
+    .radio-inline,
+    .checkbox-inline {
+      display: inline-flex;
+      margin-right: 30px;
+      input {
+        margin-right: 5px;
+      }
+    }
+    .sailboats-first-letter {
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        min-width: 30px;
+        height: 30px;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: -1px;
+        margin-right: -1px;
+        transition: all 0.2s linear;
+        &:hover,
+        &.active {
+          background: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+    .select2-container--default .select2-selection--single {
+      .select2-selection__rendered {
+        line-height: 38px;
+      }
+      .select2-selection__arrow {
+        margin-top: 5px;
+      }
+    }
+    .select2-container .select2-selection--single {
+      height: 38px;
+    }
+  }
+  .modal-footer {
+    border-top: 1px solid #ccc;
+    .sailboat-reset {
+      background: none;
+      border: 1px solid #ccc;
+      color: #999;
+      box-shadow: none;
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}
+
+.modal-backdrop.fade.show {
+  opacity: 0.5;
+  display: block;
+}
+
+#sailboat-list-pagination {
+  &.sailboat-pagination {
+    text-align: center;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 10px;
+      li {
+        a,
+        span {
+          display: block;
+          background: var(--primary-color);
+          color: #fff;
+          padding: 3px 11px 5px 11px;
+          border-radius: 50px;
+          filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 2px 4px);
+          font-size: 15px;
+          transition: all 0.2s linear;
+          &:hover,
+          &:focus {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+          }
+        }
+      }
+      li.active {
+        a,
+        a:hover,
+        a:focus,
+        span,
+        span:hover,
+        span:focus {
+          background-color: var(--secondary-color);
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
+
+#sailboat_ratio_results_box_form {
+  [disabled] {
+    opacity: 1;
+    color: #000;
+    background: rgba(239, 239, 239, 0.3);
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  #sailboat_ratio_results_box_form {
+    [disabled] {
+    }
+  }
+}

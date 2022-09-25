@@ -1,0 +1,236 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 26, 2022, 4:33:18 PM
+    Author     : objects
+*/
+.xfire-compare-wrapper .comparing-list li::before, .xfire-compare-wrapper table .game_genre a::before,
+.xfire-compare-wrapper table .game_developer a::before,
+.xfire-compare-wrapper table .game_publisher a::before,
+.xfire-compare-wrapper table .game_platform a::before {
+  content: "\2022";
+}
+
+.hs-wrapper-1 {
+  margin: 30px 0;
+  display: none;
+}
+
+.hs-wrapper-1,
+.hs-div-1 {
+  overflow-y: hidden;
+  height: 20px;
+}
+
+.hs-wrapper-2 {
+  margin-top: 30px;
+}
+
+.xfire-compare-wrapper {
+  margin-top: 30px;
+}
+
+.xfire-compare-wrapper .comparing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.xfire-compare-wrapper .comparing-list li {
+  font-weight: normal;
+}
+
+.xfire-compare-wrapper .comparing-list li::before {
+  color: #e5c687;
+  margin-right: 5px;
+  font-size: 1.75em;
+  position: relative;
+  top: 4px;
+}
+
+.xfire-compare-wrapper .hs-wrapper-2 {
+  overflow-x: auto;
+}
+
+.xfire-compare-wrapper table {
+  width: auto;
+  max-width: none;
+}
+
+.xfire-compare-wrapper table td,
+.xfire-compare-wrapper table th {
+  word-break: keep-all;
+  vertical-align: top;
+  font-weight: normal;
+}
+
+.xfire-compare-wrapper table th {
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.xfire-compare-wrapper table tr td:first-child {
+  color: #ff0669;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.xfire-compare-wrapper table a {
+  color: #bcb382;
+}
+
+.xfire-compare-wrapper table a:hover {
+  color: #e5c687;
+}
+
+.xfire-compare-wrapper table p {
+  min-width: 150px;
+}
+
+.xfire-compare-wrapper table .remove-item-from-compare {
+  margin: 10px 0;
+}
+
+.xfire-compare-wrapper table h3 {
+  min-width: 150px;
+  font-size: 1rem;
+  line-height: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+.xfire-compare-wrapper table h3 a {
+  color: #ff0669;
+}
+
+.xfire-compare-wrapper table h3 a:hover {
+  color: #d20053;
+}
+
+.xfire-compare-wrapper table .compare-game-image {
+  width: 100%;
+}
+
+.xfire-compare-wrapper table .xfire-desc-load-more::before {
+  content: "+ ";
+}
+
+.xfire-compare-wrapper table .xfire-desc-show-less::before {
+  content: "- ";
+}
+
+.xfire-compare-wrapper table .compare-site {
+  padding: 7px 15px;
+  color: #fff;
+  background: #141414;
+  border-radius: 4px;
+  white-space: nowrap;
+  min-width: -webkit-fit-content !important;
+  min-width: -moz-fit-content !important;
+  min-width: fit-content !important;
+  max-width: -webkit-fit-content !important;
+  max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #bcb382;
+  border: 1px solid transparent;
+}
+
+.xfire-compare-wrapper table .compare-site:hover {
+  color: #ff0669;
+  border-color: #ff0669;
+}
+
+.xfire-compare-wrapper table .compare-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+}
+
+.xfire-compare-wrapper table .compare-gallery a {
+  min-width: 63px;
+  -ms-flex-preferred-size: calc((100% / 3) - 4px);
+      flex-basis: calc((100% / 3) - 4px);
+  max-width: calc((100% / 3) - 4px);
+}
+
+.xfire-compare-wrapper table .compare-gallery a img {
+  width: 100%;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.xfire-compare-wrapper table .game_tag {
+  min-width: 200px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.xfire-compare-wrapper table .game_genre,
+.xfire-compare-wrapper table .game_developer,
+.xfire-compare-wrapper table .game_publisher,
+.xfire-compare-wrapper table .game_platform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.xfire-compare-wrapper table .game_genre h2,
+.xfire-compare-wrapper table .game_developer h2,
+.xfire-compare-wrapper table .game_publisher h2,
+.xfire-compare-wrapper table .game_platform h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.xfire-compare-wrapper table .game_genre a,
+.xfire-compare-wrapper table .game_developer a,
+.xfire-compare-wrapper table .game_publisher a,
+.xfire-compare-wrapper table .game_platform a {
+  color: #bcb382;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.xfire-compare-wrapper table .game_genre a::before,
+.xfire-compare-wrapper table .game_developer a::before,
+.xfire-compare-wrapper table .game_publisher a::before,
+.xfire-compare-wrapper table .game_platform a::before {
+  margin-right: 5px;
+  color: #fff;
+  font-size: 1.75em;
+  position: relative;
+  top: 4px;
+}
+
+.xfire-compare-wrapper table .game_genre a:hover,
+.xfire-compare-wrapper table .game_developer a:hover,
+.xfire-compare-wrapper table .game_publisher a:hover,
+.xfire-compare-wrapper table .game_platform a:hover {
+  color: #e5c687;
+}
+/*# sourceMappingURL=compare-game-style.css.map */

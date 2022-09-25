@@ -1,0 +1,373 @@
+.specs-header {
+    display: inline-flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+    h4 {
+        margin-bottom: 0;
+        font-weight: 700;
+    }
+
+    .filter-list {
+        width: 58%;
+
+        .filter-btn {
+            div {
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+}
+
+h6.calculator-title,
+.ratio-title {
+    font-weight: 700;
+}
+
+#sailboat_custom_specs_form {
+    margin-top: 20px;
+
+    input {
+        border-radius: 5.5px;
+        filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
+        margin-right: 10px;
+
+        // max-width: 165px;
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    label {
+        font-weight: 700;
+        padding-right: 10px;
+        font-size: 14px;
+
+        @media only screen and (max-width: 767px) {
+            display: block;
+        }
+    }
+
+    div {
+        margin-bottom: 15px;
+        display: inline-block;
+
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+    }
+
+    input.sailboat-name {
+        width: 50%;
+
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .specs-name {
+        display: inherit;
+    }
+
+    .specs-items {
+        margin-top: 15px;
+    }
+
+    .sailboat-name {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #submit_specs_form {
+        padding: 5px 0.75rem;
+        background-color: var(--primary-color);
+        color: #fff;
+        border-radius: 5px;
+        min-width: 130px;
+        text-align: center;
+        border: none;
+    }
+
+    .specs-btn {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+
+        @media only screen and (max-width: 767px) {
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        p span {
+            color: rgb(204, 0, 0);
+        }
+    }
+}
+
+.specs-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media only screen and (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#sailboat_ratio_results_box_form label {
+    font-weight: 700;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.sailboat-ratio-results-box-form-wrapper {
+    input.sailboat-name {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    input.submit-btn {
+        padding: 5px 0.75rem;
+        background-color: var(--primary-color);
+        color: #fff;
+        border-radius: 5px;
+        min-width: 130px;
+        text-align: center;
+        border: none;
+    }
+
+    h6 {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .measurements-items input {
+        border-radius: 5.5px;
+        filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
+        margin-right: 10px;
+        /* max-width: 90px; */
+    }
+
+    .measurements-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 0;
+        margin-bottom: 15px;
+    }
+
+    .derived-items {
+        display: flex;
+        gap: 30px 14px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    input {
+        border-radius: 5.5px;
+        filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
+        margin-right: 10px;
+    }
+
+    .derived-items input {
+        max-width: 170px;
+    }
+
+    .rig-items {
+        display: flex;
+        gap: 30px 14px;
+        flex-wrap: wrap;
+        width: 100%;
+
+        div {
+            position: relative;
+
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+            }
+
+            span {
+                position: absolute;
+                left: -2px;
+                bottom: -20px;
+                font-weight: 700;
+                font-size: 14px;
+
+                @media only screen and (min-width: 1920px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .ratio-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+        margin-top: 22px;
+        margin-bottom: 10px;
+
+        p {
+            margin-bottom: 0;
+            width: 35%;
+            text-align: right;
+        }
+    }
+}
+
+
+.entry-header {
+    h1.entry-title {
+        text-transform: uppercase;
+        // font-size: 35px;
+        margin-bottom: 0.5rem;
+        line-height: 1.2;
+    }
+}
+
+.entry-content {
+    >p {
+        * {
+            color: #343333 !important;
+            font-weight: 400;
+        }
+    }
+
+    .sailboats-search-result-wrap {
+        h2 {
+            text-transform: uppercase;
+        }
+
+        .sailboats-results.sailboats-calculator-results {
+            h2 {
+                font-size: 13px;
+            }
+
+            >p {
+                margin: 12px 0;
+                font-size: 13px;
+            }
+
+            .sailboats-table {
+                border-collapse: separate;
+                border-spacing: 0;
+
+                tr.active {
+                    border-radius: 10px;
+
+                    td {
+                        border-top: 2px solid #b80103;
+                        border-bottom: 2px solid #b80103;
+
+                        &:first-child {
+                            border-left: 2px solid #b80103;
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                        }
+
+                        &:last-child {
+                            border-right: 2px solid #b80103;
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .sailboat-ratio-results-box-wrapper{
+        > p{
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    #sailboat_custom_specs_form .specs-btn div:first-child {
+        display: inherit;
+        margin-top: 20px;
+    }
+
+    #sailboat_ratio_results_box_form .measurements-items input,
+    #sailboat_ratio_results_box_form .derived-items input {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #sailboat_ratio_results_box_form input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sailboat-ratio-results-box-form-wrapper .ratio-bottom p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .ratio-bottom {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .derived-items div {
+        width: 100%;
+    }
+
+    .measurements-items div {
+        width: 100%;
+    }
+
+    .specs-header .filter-list {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 789px) and (max-width: 1199px) {
+    .specs-header {
+        h4 {
+            font-size: 21px;
+        }
+
+        .filter-list {
+            width: 55%;
+
+            .filter-btn {
+                div {
+                    padding: 10px 12px;
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    #sailboat_ratio_results_box_form .measurements-items input {
+        max-width: 90px;
+    }
+
+    #sailboat_custom_specs_form label,
+    #sailboat_ratio_results_box_form label {
+        font-size: 16px;
+    }
+
+}

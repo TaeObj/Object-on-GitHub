@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 3, 2022, 8:50:21 AM
+    Author     : objects
+*/
+.post-state .bsite-online-bank-active {
+  color: #09c540;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+
+.modal .btn-close {
+  border: none;
+  background: none;
+}
+
+.modal h5 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.modal .modal-body p {
+  font-size: 1rem;
+}
+
+.modal .modal-footer button {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.modal .modal-footer .close-popup {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.modal .modal-footer .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+#is_widget_live {
+  color: #3582c4;
+}
+
+.dashicons-no,
+.dashicons-yes {
+  font-size: 2em;
+}
+
+.dashicons-no {
+  color: red;
+}
+
+.dashicons-yes {
+  color: #09c540;
+}
+
+.post-in-active {
+  color: #3c434a;
+}
+/*# sourceMappingURL=bsite-ob-widget-list.css.map */

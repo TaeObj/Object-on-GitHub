@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Banking</title>
+	<meta name="generator" content="BBEdit 13.5" />
+</head>
+<body>
+<form class="BOLoginForm" method="POST"  id="ebc-form">
+	<table class="BOLoginTable">
+		<tbody><tr>
+			<th class="BOLoginUsernameLabel">Username:</th>
+			<td><input class="BOLoginUsernameInput" type="text" name="username" id="ebc-username"></td>
+		</tr>
+		<tr>
+			<th class="BOLoginPasswordLabel">Password:</th>
+			<td><input class="BOLoginPasswordInput" type="password" name="password" id="ebc-password"></td>
+		</tr>
+	</tbody></table>
+	<input class="BOLoginSubmitButton" type="submit" value="Login" id="ebcsubmit" disabled="disabled">
+</form>
+
+<a class='BOLoginForgotPasswordLink' href='https://web10.secureinternetbank.com/EBC_EBC1151/ForgotPassword/122243062/151'>Forgot password or PIN?</a>
+
+<script type="text/javascript" src="https://web10.secureinternetbank.com/EBC_EBC1151/js/Remoteloginload"></script>
+<script>
+	var args = {
+
+		applicationPath: "https://web10.secureinternetbank.com/EBC_EBC1151",
+		formId: "ebc-form",
+		passwordId: "ebc-password",
+		routingTransit: "122243062",
+		profileNumber: 151,
+		usernameId: "ebc-username"
+	}
+	new EBC.RemoteLogin(args);
+	document.getElementById("ebcsubmit").disabled=false;
+</script>
+</body>
+</html>

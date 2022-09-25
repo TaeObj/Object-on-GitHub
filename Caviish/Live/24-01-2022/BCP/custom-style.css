@@ -1,0 +1,95 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'Goldenbook';
+    src: url('../fonts/Goldenbook.eot');
+    src: url('../fonts/Goldenbook.eot?#iefix') format('embedded-opentype'), url('../fonts/Goldenbook.woff2') format('woff2'), url('../fonts/Goldenbook.woff') format('woff'), url('../fonts/Goldenbook.ttf') format('truetype'), url('../fonts/Goldenbook.svg#Goldenbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* END FONTS */
+
+body h1 {
+    font-family: 'Goldenbook';
+    font-weight: normal;
+}
+
+body .light-content * {
+    color: #fff;
+}
+
+.custom-portfolio .qodef-portfolio-item .qodef-portfolio-item-inner:after {
+    content: "";
+    background-image: url('../images/Path-gray.svg');
+    height: 41px;
+    width: 39px;
+    position: absolute;
+    bottom: 26px;
+    right: 20px;
+    background-repeat: no-repeat;
+}
+
+.custom-portfolio .qodef-portfolio-item:hover .qodef-portfolio-item-inner:after {
+    background-image: url('../images/Path-hover.svg');
+}
+
+.subscribe-form-container .qodef-contact-form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.subscribe-form-container .wpcf7-form-control {
+    margin-bottom: 0 !important;
+}
+
+.subscribe-form-container .wpcf7-spinner,
+.subscribe-form-container .wpcf7-response-output {
+    display: none;
+}
+
+.subscribe-form-container .wpcf7-not-valid-tip {
+    text-align: left !important;
+}
+
+footer .qodef-footer-top-holder,
+footer .qodef-footer-bottom-holder {
+    background-color: #070909 !important;
+}
+
+body footer .widget .qodef-footer-widget-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FCFCFC;
+    margin-bottom: 0;
+}
+
+body footer .widget ul {
+    margin-top: 5px;
+}
+
+body footer .widget ul .menu-item {
+    margin-bottom: 5px;
+}
+
+body footer .widget ul .menu-item a:hover {
+    color: #CC9903;
+}
+
+body footer .widget ul .menu-item a::before {
+    content: "";
+    margin-right: 0;
+}
+
+body footer .qodef-footer-top-holder .qodef-column {
+    border-right: 0;
+}
+
+body footer .widget a .footer-logo {
+    max-width: 170px;
+}

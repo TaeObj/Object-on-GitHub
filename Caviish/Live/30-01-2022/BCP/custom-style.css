@@ -1,0 +1,274 @@
+/* FONTS */
+@font-face {
+  font-family: "Goldenbook";
+  src: url("../fonts/Goldenbook.eot");
+  src: url("../fonts/Goldenbook.eot?#iefix") format("embedded-opentype"), url("../fonts/Goldenbook.woff2") format("woff2"), url("../fonts/Goldenbook.woff") format("woff"), url("../fonts/Goldenbook.ttf") format("truetype"), url("../fonts/Goldenbook.svg#Goldenbook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* END FONTS */
+
+body {
+  color: #070909;
+}
+
+body h1 {
+  font-family: "Goldenbook";
+  font-weight: normal;
+}
+
+body p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+body p:first-child {
+  margin-top: 0;
+}
+
+body .light-content * {
+  color: #fff;
+}
+
+.custom-portfolio .qodef-portfolio-item .qodef-portfolio-item-inner:after {
+  content: "";
+  background-image: url("../images/Path-gray.svg");
+  height: 41px;
+  width: 39px;
+  position: absolute;
+  bottom: 26px;
+  right: 20px;
+  background-repeat: no-repeat;
+}
+
+.custom-portfolio .qodef-portfolio-item:hover .qodef-portfolio-item-inner:after {
+  background-image: url("../images/Path-hover.svg");
+}
+
+.subscribe-form-container .qodef-contact-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.subscribe-form-container .wpcf7-form-control {
+  margin-bottom: 0 !important;
+}
+
+.subscribe-form-container .wpcf7-spinner,
+.subscribe-form-container .wpcf7-response-output {
+  display: none;
+}
+
+.subscribe-form-container .wpcf7-not-valid-tip {
+  text-align: left !important;
+}
+
+footer .qodef-footer-top-holder,
+footer .qodef-footer-bottom-holder {
+  background-color: #070909 !important;
+}
+
+body footer .widget .qodef-footer-widget-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fcfcfc;
+  margin-bottom: 0;
+}
+
+body footer .widget ul {
+  margin-top: 5px;
+}
+
+body footer .widget ul .menu-item {
+  margin-bottom: 5px;
+}
+
+body footer .widget ul .menu-item a:hover {
+  color: #cc9903;
+}
+
+body footer .widget ul .menu-item a::before {
+  content: "";
+  margin-right: 0;
+}
+
+body footer .qodef-footer-top-holder .qodef-column {
+  border-right: 0;
+}
+
+body footer .widget a .footer-logo {
+  max-width: 170px;
+}
+
+body footer .widget .gallery {
+  display: flex;
+}
+
+body footer .widget .gallery .gallery-item {
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body footer .widget .gallery .gallery-icon {
+  margin: 0 7px 0 0 !important;
+}
+
+body footer .widget .gallery .gallery-icon img {
+  vertical-align: top;
+  border: none !important;
+  filter: grayscale(1);
+  transition: all 0.25s linear;
+}
+
+body footer .widget .gallery:hover .gallery-icon img {
+  filter: grayscale(0);
+}
+
+body footer .widget .flip-icon-holder {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s linear;
+}
+
+body footer .widget .flip-icon-holder:hover {
+  border-color: #eaeaea;
+}
+
+body footer .widget .icon-flip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body footer .widget .flip-icon-holder .fa {
+  font-size: 18px !important;
+}
+
+/* Templates
+------------------------------- */
+/* Heading with 2 columns below */
+@media screen and (max-width: 991px) {
+  .heading-w2col {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .heading-w2col {
+    padding-top: 50px !important;
+  }
+}
+
+/* Contact form 2 columns ----- */
+/* Only in Contact page ------- */
+.wpcf7 .n-contact-page .qodef-two-columns-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.wpcf7 .n-contact-page .qodef-column {
+  padding: 0 10px;
+  flex-basis: 50%;
+  min-width: 50%;
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (max-width: 575px) {
+  .wpcf7 .n-contact-page .qodef-column {
+    flex-basis: 100%;
+    min-width: 100%;
+  }
+}
+.wpcf7 .n-contact-page .wpcf7-form-control-wrap {
+  position: static;
+}
+.wpcf7 .n-contact-page .qodef-column:last-child {
+  flex-basis: 100%;
+  min-width: 100%;
+}
+.wpcf7 .n-contact-page .qodef-column .wpcf7-form-control-wrap > *,
+.wpcf7 .n-contact-page .qodef-column .wpcf7-form-control-wrap textarea {
+  margin-bottom: 15px;
+  border-color: #070909;
+  border-radius: 4px;
+}
+.wpcf7 .n-contact-page p {
+  display: flex;
+  position: relative;
+  margin: 0;
+}
+.wpcf7 .n-contact-page p .wpcf7-submit {
+  min-width: 100%;
+  background: #070909;
+  border-color: #070909;
+}
+.wpcf7 .n-contact-page p .wpcf7-spinner {
+  position: absolute;
+  right: 0;
+  transform: translateY(50%);
+}
+.wpcf7 .n-contact-page .wpcf7-response-output {
+  border-radius: 4px;
+  margin: 10px 0 0;
+  border-width: 1px;
+  text-align: center;
+}
+.wpcf7 .n-contact-page .qodef-column .wpcf7-not-valid-tip {
+  margin: -15px 0 0;
+  font-size: 12px;
+}
+
+/* Modify icon list spacing ------- */
+.qodef-icon-list-item .qodef-icon-list-text {
+  padding: 0 0 0 6px;
+}
+
+/* FAQs page, changing blue color to caviish color ------- */
+.qodef-accordion-holder .qodef-title-holder .qodef-accordion-mark-icon .qodef-accordion-plus,
+.qodef-icon-shortcode .qodef-icon-element:hover {
+  color: #cc9903 !important;
+}
+
+.qodef-sidebar .widget:last-child {
+  padding: 0;
+}
+
+.qodef-sidebar .widget:last-child img {
+  vertical-align: top;
+  border-radius: 3px;
+}
+
+/* Newsletter Subscription Wrapper ------- */
+@media screen and (max-width: 600px) {
+  .qodef-grid-section.subscribe-form-container .qodef-section-inner {
+    width: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .subscribe-form-container .qodef-section-inner input.wpcf7-form-control.wpcf7-submit {
+    max-width: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .subscribe-form-container .qodef-section-inner .qodef-contact-form {
+    flex-direction: column;
+  }
+  .subscribe-form-container .qodef-section-inner input.wpcf7-form-control.wpcf7-submit {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
