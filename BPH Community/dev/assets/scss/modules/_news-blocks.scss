@@ -6,9 +6,12 @@
   }
 }
 .news-list {
+  li {
+    margin-bottom: 30px;
+  }
   .card {
     border: none;
-    margin-bottom: 30px;
+    height: 100%;
     background: $gray-lite;
     transition: all 0.2s linear;
     .news-time {
@@ -17,10 +20,22 @@
     .card-body {
       overflow: hidden;
       position: relative;
+      display: flex;
+      flex-direction: column;
       p,
       small {
         z-index: 1;
         position: relative;
+      }
+      p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+      small {
+        margin-top: auto;
       }
     }
     &:hover {

@@ -1,5 +1,9 @@
 .geodir-listings {
   .card {
+    .card-body {
+      display: flex;
+      flex-direction: column;
+    }
     p:empty {
       display: none;
     }
@@ -14,6 +18,7 @@
     .wp-block-geodirectory-geodir-widget-post-content {
       & + p + p {
         margin-bottom: 0;
+        margin-top: auto;
       }
     }
     .gd-badge {

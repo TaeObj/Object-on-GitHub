@@ -4,38 +4,6 @@
 
 .rtl {
   font: 20px/1 "Noto Naskh Arabic", "Roboto", sans-serif !important;
-
-  /* Header ------------------------------- */
-
-  /* Layout ------------------------------- */
-  .container {
-    text-align: right;
-    direction: rtl;
-  }
-  /* Typo --------------------------------- */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: normal;
-    font-family: "Cairo", serif;
-  }
-  p {
-    line-height: 1.75rem;
-  }
-  a {
-    font-family: "Cairo", "Roboto", sans-serif;
-  }
-  /* Button --------------------------------- */
-  .btn {
-    .fa,
-    i {
-      margin-right: 0;
-      margin-left: 7px;
-    }
-  }
   &.page,
   &.single {
     button,
@@ -47,9 +15,47 @@
       font-weight: bold;
       font-family: "Cairo", "Roboto", sans-serif !important;
     }
+    /* Header ------------------------------- */
+    ul.hm-header__menu-list > li.menu-item-has-children > a:after {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+
+    /* Layout ------------------------------- */
+    .container {
+      text-align: right;
+      direction: rtl;
+    }
+    /* Typo --------------------------------- */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+      font-family: "Cairo", serif;
+    }
+    p {
+      line-height: 1.75rem;
+    }
+    a {
+      font-family: "Cairo", "Roboto", sans-serif;
+    }
+    /* Button --------------------------------- */
+    .btn {
+      .fa,
+      i {
+        margin-right: 0;
+        margin-left: 7px;
+      }
+    }
     /* OWL Carousel --------------------------- */
     .owl-carousel {
       direction: ltr;
+      .owl-item figcaption p {
+        font-size: 1.05em;
+      }
     }
   }
   /* Footer ----------------------------------- */
@@ -60,6 +66,26 @@
     a[href^="tel:"] {
       display: inline-block;
       direction: ltr;
+    }
+    .gc-footer__copyrights {
+      direction: ltr;
+    }
+  }
+  /* Single Doctor Details -------------------- */
+  .fa-phone {
+    transform: rotate(245deg);
+  }
+  .gd-tab-list-title {
+    .mr-1 {
+      margin-right: 0 !important;
+      margin-left: 0.35rem !important;
+    }
+  }
+  /* Page :: Commnuity ------------------------ */
+  .ps-page--activity {
+    .ps-post__call-to-action i {
+      border-right: 0;
+      border-left: 1px solid rgba(70, 77, 87, 0.1);
     }
   }
 }

@@ -66,6 +66,11 @@
   .wp-block-media-text__content {
     padding: 0;
   }
+  .wp-block-media-text__media,
+  .wp-block-media-text__content {
+    align-self: flex-start;
+  }
+
   .gc-footer__copyrights {
     text-align: center;
     flex-basis: 100%;

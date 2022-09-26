@@ -1,0 +1,26 @@
+/* Page :: Commnuity ------------------------ */
+.ps-page--activity {
+  .psf-login {
+    background: #fafafa;
+  }
+  #ps-form-login-main {
+    .ps-input,
+    .ps-btn {
+      height: 44px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .ps-input {
+      font-size: 14px;
+    }
+    .ps-btn {
+      span {
+        white-space: nowrap;
+      }
+    }
+    .ps-checkbox__label {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
