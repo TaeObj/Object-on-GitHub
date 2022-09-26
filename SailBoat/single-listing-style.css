@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #202056;
+  --secondary-color: #0ff0ff;
+  --third-color: #c60000;
+  --light-gray: #cecbcb;
+  --font-tahoma: 'Tahoma', sans-serif;
+}
+
+/*  Style Single listing*/
+.dealer-img {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dealer-title h2 {
+  margin-bottom: 25px;
+}
+/*# sourceMappingURL=single-listing-style.css.map */

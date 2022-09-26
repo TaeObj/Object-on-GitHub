@@ -1,0 +1,160 @@
+:root {
+  --primary-color: #202056;
+  --secondary-color: #0ff0ff;
+  --third-color: #c60000;
+  --light-gray: #cecbcb;
+  --font-tahoma: 'Tahoma', sans-serif;
+}
+
+.sailboat-myaccount-page-wrap {
+  background: #fff;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+  border-radius: 10px;
+  padding: 30px 15px;
+}
+
+.sailboat-myaccount-page-wrap h1 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sailboat-myaccount-page-wrap h1:before, .sailboat-myaccount-page-wrap h1:after {
+  content: "";
+  border-top: 1px solid #f4f4f4;
+  display: block;
+  position: relative;
+  top: 1px;
+  width: 33%;
+}
+
+.sailboat-myaccount-page-wrap .sailboat-myaccount-sidebar-wrap {
+  border: 1px solid rgba(188, 188, 188, 0.68);
+  width: 25%;
+  height: 215px;
+}
+
+@media (max-width: 768px) {
+  .sailboat-myaccount-page-wrap .sailboat-myaccount-sidebar-wrap {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.sailboat-myaccount-page-wrap .sailboat-myaccount-sidebar-wrap ul.sailboat-myaccount-sidebar {
+  list-style: none;
+  margin: 0;
+  padding: 14px;
+}
+
+.sailboat-myaccount-page-wrap .sailboat-myaccount-sidebar-wrap ul.sailboat-myaccount-sidebar li.sailboat-myaccount-sidebar-item a {
+  color: #333333;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.sailboat-myaccount-page-wrap .sailboat-myaccount-sidebar-wrap ul.sailboat-myaccount-sidebar li.sailboat-myaccount-sidebar-item.active a {
+  color: var(--third-color);
+}
+
+.sailboat-myaccount-page-wrap .sailboat-myaccount-sidebar-wrap {
+  border: 1px solid rgba(188, 188, 188, 0.68);
+}
+
+.sailboat-myaccount-page-wrap .sailboat-myaccount-page-content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .sailboat-myaccount-page-wrap .sailboat-myaccount-page-content-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.sailboat-myaccount-page-wrap form.sailboat-EditAccountForm.edit-account p label {
+  display: block;
+  color: #8a8a8a;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sailboat-myaccount-page-wrap form.sailboat-EditAccountForm.edit-account p label span.required {
+  color: var(--third-color);
+}
+
+.sailboat-myaccount-page-wrap form.sailboat-EditAccountForm.edit-account p input {
+  width: 100%;
+  border-radius: 0;
+  padding: 10px;
+  border-color: #ededed;
+}
+
+.sailboat-myaccount-page-wrap form.sailboat-EditAccountForm.edit-account p span {
+  color: #8a8a8a;
+}
+
+.sailboat-myaccount-page-wrap form.sailboat-EditAccountForm.edit-account p .button {
+  padding: 5px 0.75rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  min-width: 130px;
+  text-align: center;
+  border: none;
+}
+
+.sailboat-myaccount-page-wrap form.sailboat-EditAccountForm.edit-account p .button:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.sailboat-myaccount-page-wrap form.sailboat-EditAccountForm.edit-account fieldset {
+  margin-top: 20px;
+}
+
+.sailboat-myaccount-page-wrap form.sailboat-EditAccountForm.edit-account fieldset legend {
+  border-bottom: 1px solid #ededed;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sailboat-myaccount-page-wrap form.sailboat-EditAccountForm.edit-account .sailboat-myaccount-error-messages {
+  background: #f1adad;
+  border: 2px solid #e35b5b;
+  padding: 8px 12px 0;
+  margin-bottom: 12px;
+}
+
+.sailboat-myaccount-page-wrap form.sailboat-EditAccountForm.edit-account .sailboat-myaccount-error-messages p {
+  margin-bottom: 10px;
+}
+
+.sailboat-myaccount-page-wrap form.sailboat-EditAccountForm.edit-account .sailboat-myaccount-success-messages {
+  color: #fff;
+  background: #41c74b;
+  border: 2px solid #53a459;
+  padding: 8px 12px 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.sailboat-myaccount-page-wrap form.sailboat-EditAccountForm.edit-account .sailboat-myaccount-success-messages p {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=sailboat-myaccount.css.map */

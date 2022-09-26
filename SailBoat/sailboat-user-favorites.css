@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #202056;
+  --secondary-color: #0ff0ff;
+  --third-color: #c60000;
+  --light-gray: #cecbcb;
+  --font-tahoma: 'Tahoma', sans-serif;
+}
+
+@media (max-width: 767px) {
+  .sailboats-results .table-results a.compare-btn {
+    margin: -4px 0px -4px -4px;
+    border-radius: 8px 0 0 8px;
+  }
+}
+/*# sourceMappingURL=sailboat-user-favorites.css.map */

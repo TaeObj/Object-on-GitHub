@@ -1,0 +1,183 @@
+:root {
+  --primary-color: #202056;
+  --secondary-color: #0ff0ff;
+  --third-color: #c60000;
+  --light-gray: #cecbcb;
+  --font-tahoma: 'Tahoma', sans-serif;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap {
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+  background: white;
+  border-radius: 10px;
+  padding: 30px 15px;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap #bbp-user-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap #bbp-user-wrapper #bbp-single-user-details {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  min-width: 25%;
+  max-width: 25%;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap #bbp-user-wrapper #bbp-user-body {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media screen and (max-width: 767px) {
+  #bbpress-forums.sailboat-myaccount-page-wrap #bbp-user-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #bbpress-forums.sailboat-myaccount-page-wrap #bbp-user-wrapper #bbp-single-user-details {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap #bbp-user-avatar {
+  background: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  width: 100% !important;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap #bbp-user-avatar img {
+  height: auto !important;
+  width: auto !important;
+  max-width: 100%;
+  margin: 0 !important;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap #bbp-user-navigation {
+  border: 1px solid rgba(188, 188, 188, 0.68);
+  margin: 0px;
+  padding: 14px;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap #bbp-user-navigation li {
+  font: 700 16px/24px Tahoma, sans-serif;
+  padding: 7px 0;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap #bbp-user-navigation li a {
+  color: #333;
+  padding: 0 !important;
+  border: none !important;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap #bbp-user-navigation li.current a,
+#bbpress-forums.sailboat-myaccount-page-wrap #bbp-user-navigation li:hover a {
+  color: var(--third-color);
+  background: none !important;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-section h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-section h3:before, #bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-section h3:after {
+  content: "";
+  border-top: 1px solid #f4f4f4;
+  display: block;
+  position: relative;
+  top: 1px;
+  width: 33%;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-section h3 ~ h3 {
+  margin-top: 30px;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-section hr {
+  display: none;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-topics-started .entry-title,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-replies-created .entry-title,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-engagements .entry-title,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-favorites .entry-title,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-subscriptions .entry-title {
+  font-weight: bold;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-topics-started ul.bbp-forums,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-topics-started ul.bbp-lead-topic,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-topics-started ul.bbp-replies,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-topics-started ul.bbp-search-results,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-topics-started ul.bbp-topics,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-replies-created ul.bbp-forums,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-replies-created ul.bbp-lead-topic,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-replies-created ul.bbp-replies,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-replies-created ul.bbp-search-results,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-replies-created ul.bbp-topics,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-engagements ul.bbp-forums,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-engagements ul.bbp-lead-topic,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-engagements ul.bbp-replies,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-engagements ul.bbp-search-results,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-engagements ul.bbp-topics,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-favorites ul.bbp-forums,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-favorites ul.bbp-lead-topic,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-favorites ul.bbp-replies,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-favorites ul.bbp-search-results,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-favorites ul.bbp-topics,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-subscriptions ul.bbp-forums,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-subscriptions ul.bbp-lead-topic,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-subscriptions ul.bbp-replies,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-subscriptions ul.bbp-search-results,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-subscriptions ul.bbp-topics {
+  font-size: 14px;
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-topics-started li.bbp-header,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-replies-created li.bbp-header,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-engagements li.bbp-header,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-favorites li.bbp-header,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-subscriptions li.bbp-header {
+  background: var(--secondary-color);
+}
+
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-topics-started .bbp-topic-permalink,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-replies-created .bbp-topic-permalink,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-engagements .bbp-topic-permalink,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-favorites .bbp-topic-permalink,
+#bbpress-forums.sailboat-myaccount-page-wrap .bbp-user-subscriptions .bbp-topic-permalink {
+  font-weight: bold;
+}
+/*# sourceMappingURL=bbp-user-profile.css.map */

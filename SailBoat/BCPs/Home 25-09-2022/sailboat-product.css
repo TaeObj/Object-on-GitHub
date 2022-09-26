@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #202056;
+  --secondary-color: #0ff0ff;
+  --third-color: #c60000;
+  --light-gray: #cecbcb;
+  --font-tahoma: 'Tahoma', sans-serif;
+}
+
+.product-template {
+  margin-top: 20px;
+}
+
+.product-template .northsail-img {
+  margin-top: 22px;
+  text-align: center;
+}
+
+.product-template .northsail-img img {
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.product-template .contact-btn {
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  min-width: 170px;
+  margin-bottom: 30px;
+}
+
+.product-modal .product-form {
+  padding: 30px;
+}
+
+.product-modal .product-form h2.gform_title {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.product-modal .product-form .gfield {
+  text-align: left;
+}
+
+.product-modal .product-form .button {
+  padding: 12px 0.75rem;
+  border-radius: 0;
+  font-size: 16px;
+  margin: 16px;
+  width: calc(43% - 32px);
+  background-color: var(--primary-color);
+  color: #fff;
+  -webkit-box-shadow: #0000006e 0px 3px 10px 0px;
+          box-shadow: #0000006e 0px 3px 10px 0px;
+  border: unset;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.product-modal .product-form .button:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.product-modal .modal-body .product-form p {
+  margin: 0;
+}
+/*# sourceMappingURL=sailboat-product.css.map */

@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,KAAK,CAAC;EACF,eAAe,CAAA,QAAC;EAChB,iBAAiB,CAAA,QAAC;EAClB,aAAa,CAAA,QAAC;EACd,YAAY,CAAA,QAAC;EACb,aAAa,CAAA,qBAAC;CACjB;;ADDW,MAAM,EAAE,SAAS,EAAE,KAAK;EAHpC,AAEQ,kBAFU,CACd,cAAc,CACV,CAAC,AAAA,YAAY,CAAC;IAEN,MAAM,EAAE,kBAAkB;IAC1B,aAAa,EAAE,WAAW;GAEjC",
+    "sources": [
+        "sailboat-user-favorites.scss",
+        "_root.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "sailboat-user-favorites.css"
+}

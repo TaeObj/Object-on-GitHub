@@ -1,0 +1,343 @@
+:root {
+  --primary-color: #202056;
+  --secondary-color: #0ff0ff;
+  --third-color: #c60000;
+  --light-gray: #cecbcb;
+  --font-tahoma: 'Tahoma', sans-serif;
+}
+
+.register-pg {
+  background: #fff;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+  border-radius: 8px;
+  padding: 24px 30px;
+}
+
+.register-pg h4 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register-pg h4:after, .register-pg h4:before {
+  content: '';
+  border-top: 1px solid #f4f4f4;
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.register-pg p.register-info {
+  position: relative;
+  border: 2px solid #d4d4d4;
+  padding: 10px 10px 10px 45px;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 1px 1px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 1px 1px);
+  background: #fff;
+  font-size: 12px;
+  font-family: dashicons;
+}
+
+.register-pg p.register-info mark {
+  font-family: 'Tahoma';
+}
+
+.register-pg p.register-info:before {
+  content: '\f14c';
+  position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  background: #0780a4;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .register-pg .gform_wrapper.gravity-theme .gform_fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .register-pg .gform_wrapper.gravity-theme .gform_fields .gfield.gfield--width-half {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    max-width: 100%;
+  }
+  .register-pg .gform_wrapper.gravity-theme .gform_fields .gfield.gfield--width-half.register-form-title, .register-pg .gform_wrapper.gravity-theme .gform_fields .gfield.gfield--width-half.register-password-field {
+    width: 100%;
+  }
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form label {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form label span.gfield_required {
+  color: #8a8a8a;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form input {
+  border-color: #ededed;
+  border-width: 2px;
+  border-radius: 0;
+  background: #fafafa;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form .gfield_description {
+  color: #8a8a8a;
+  font-size: 14px;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form .name-field .gfield_description {
+  font-style: italic;
+  padding-top: 0px;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form .validation_message {
+  background: none;
+  border: none;
+  font-size: 14.992px;
+  margin-top: 0px;
+  padding: 0;
+  color: var(--third-color);
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form span.password_input_container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 30px;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form .gform_show_password {
+  border: 2px solid #ededed;
+  padding: 10px;
+  position: relative;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form .gfield_password_strength {
+  border-bottom: none;
+  border-radius: 4px;
+  width: 190px;
+  padding: 8px 20px;
+  border: 2px solid #ededed;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form .gfield_password_strength.strong {
+  border-color: #5dc264;
+  background: #65d66d;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form .gfield_password_strength.short {
+  background-color: #f1adad;
+  border-color: #e35b5b;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form .gfield_password_strength.bad {
+  background-color: #fbc5a9;
+  border-color: #f78b53;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form .gfield_password_strength.good {
+  background-color: #ffe399;
+  border-color: #ffc733;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form .button {
+  border-color: var(--primary-color);
+  color: #fff;
+  text-transform: uppercase;
+  background: var(--primary-color);
+  padding: 8px 1.75rem;
+  border-radius: 5px;
+}
+
+.register-pg .gform_wrapper.gravity-theme .register-form .button:hover {
+  border-color: var(--secondary-color);
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.login-pg {
+  background: #fff;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 6px);
+  border-radius: 8px;
+  padding: 24px 30px;
+}
+
+.login-pg h3 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-pg h3:after, .login-pg h3:before {
+  content: '';
+  border-top: 1px solid #f4f4f4;
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.login-pg #gform_fields_login {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.login-pg #gform_fields_login .gfield_contains_required {
+  width: 50%;
+}
+
+.login-pg #gform_fields_login li .ginput_container_text input {
+  width: 90%;
+  border-color: #ededed;
+  border-width: 2px;
+  border-radius: 0;
+  background: #fafafa;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.login-pg #gform_fields_login li label {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+
+.login-pg #gform_fields_login li label span.gfield_required {
+  color: #8a8a8a;
+}
+
+.login-pg #gform_fields_login .ginput_container_checkbox ul {
+  margin: 0;
+  padding: 14px 0px;
+  list-style: none;
+}
+
+.login-pg #gform_fields_login .gfield_error label {
+  color: var(--third-color);
+  font-weight: 700;
+}
+
+.login-pg #gform_fields_login .validation_message {
+  color: var(--third-color);
+  margin-top: 5px;
+}
+
+.login-pg #gform_fields_login .gfield_error [aria-invalid=true] {
+  border: 1px solid var(--third-color);
+}
+
+.login-pg .gform_footer .button {
+  border-color: var(--primary-color);
+  color: #fff;
+  text-transform: uppercase;
+  background: var(--primary-color);
+  padding: 8px 1.75rem;
+  border-radius: 5px;
+}
+
+.login-pg .gform_footer .button:hover {
+  border-color: var(--secondary-color);
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.login-pg nav.gf_login_links {
+  padding-top: 10px;
+}
+
+.login-pg nav.gf_login_links a {
+  line-height: 28px;
+}
+
+@media only screen and (max-width: 768px) {
+  .register-pg h4 {
+    display: block;
+  }
+  .register-pg h4:after, .register-pg h4:before {
+    display: none;
+  }
+  .register-pg .register-form .profile-field {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .register-pg .register-form .name-field {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .register-pg .register-form .agree-field {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .login-pg h3 {
+    display: block;
+  }
+  .login-pg h3:after, .login-pg h3:before {
+    display: none;
+  }
+  .login-pg #gform_fields_login .gfield_contains_required,
+  .login-pg #gform_fields_login li .ginput_container_text input {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=login-register.css.map */

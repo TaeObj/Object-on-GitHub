@@ -1,0 +1,186 @@
+/* Sailboat variables
+--------------------------------------------- */
+:root {
+  --primary-color: #202056;
+  --secondary-color: #0ff0ff;
+  --third-color: #c60000;
+  --light-gray: #cecbcb;
+  --font-tahoma: 'Tahoma', sans-serif;
+}
+
+.boats-dimension {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boats-dimension h1 {
+  font-weight: bold;
+}
+
+.boats-dimension .logo {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.boats-dimension .logo img {
+  max-width: 250px;
+  height: 100%;
+}
+
+.boats-dimension .boat {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.boats-dimension .boat img {
+  max-width: 430px;
+  height: 100%;
+  width: 100%;
+}
+
+.boats-dimension .dimen {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.boats-dimension .dimen img {
+  max-width: 400px;
+  height: 100%;
+  width: 100%;
+}
+
+.ad {
+  text-align: center;
+  padding: 14px 0;
+  margin: 0 50px;
+}
+
+@media (max-width: 767px) {
+  .ad {
+    margin: 0;
+  }
+}
+
+.ad img {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: #00000047 0px 5px 12px 0px;
+          box-shadow: #00000047 0px 5px 12px 0px;
+}
+
+@media (max-width: 767px) {
+  .ad img {
+    padding: 10px;
+  }
+}
+
+.filter-list {
+  margin: 20px 0px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: #00000047 0px 5px 12px 0px;
+          box-shadow: #00000047 0px 5px 12px 0px;
+}
+
+.filter-list .filter-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter-list .filter-btn div {
+  text-align: center;
+  padding: 12px 32px;
+  font-weight: bold;
+  font-size: 14px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.filter-list .filter-btn div:hover {
+  -webkit-box-shadow: #00000047 0px 5px 12px 0px;
+          box-shadow: #00000047 0px 5px 12px 0px;
+}
+
+.filter-list .filter-btn div a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.filter-list .filter-btn .active {
+  background-color: var(--secondary-color);
+}
+
+.filter-list .filter-btn div:nth-child(2) {
+  border-right: 1px solid #cdcdcd;
+  border-left: 1px solid #cdcdcd;
+}
+
+.spec {
+  margin: 12px 0px;
+}
+
+.spec h4 {
+  font-weight: bold;
+  margin: 0 16px 16px;
+}
+
+.spec .spec-notes {
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .single-sailboat .spec .spec-bord table {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .single-sailboat .spec .spec-bord table tbody {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .single-sailboat .spec .spec-bord table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.single-sailboat .spec .spec-bord table tr td {
+  text-align: right;
+  word-break: break-word;
+}
+
+@media (max-width: 991px) {
+  .single-sailboat .spec .spec-bord table tr td {
+    width: 50%;
+  }
+}
+
+.single-sailboat .spec .spec-bord table tr td:first-child, .single-sailboat .spec .spec-bord table tr td:nth-child(odd) {
+  text-align: left;
+}
+/*# sourceMappingURL=single-sailboat.css.map */

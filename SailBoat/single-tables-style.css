@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #202056;
+  --secondary-color: #0ff0ff;
+  --third-color: #c60000;
+  --light-gray: #cecbcb;
+  --font-tahoma: 'Tahoma', sans-serif;
+}
+
+/*  Style colored Tables*/
+.spec {
+  margin: 12px 0px;
+}
+
+.spec .spec-bord {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 12px 0;
+  -webkit-box-shadow: #0000002e 0px 5px 12px 0px;
+          box-shadow: #0000002e 0px 5px 12px 0px;
+}
+
+.spec .spec-bord table {
+  border: 1px solid #e1e1e1;
+  margin-bottom: 6px;
+  -webkit-box-shadow: #00000033 1px 3px 12px 0px;
+          box-shadow: #00000033 1px 3px 12px 0px;
+}
+
+@media (max-width: 991px) {
+  .spec .spec-bord table {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .spec .spec-bord table tbody {
+    display: block;
+  }
+  .spec .spec-bord table tbody tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .spec .spec-bord table tbody tr td {
+    width: 50%;
+  }
+}
+
+.spec .spec-bord table tr td {
+  width: 25%;
+  font-size: 14px;
+  text-align: right;
+}
+
+.spec .spec-bord table tr td:first-child, .spec .spec-bord table tr td:nth-child(odd) {
+  background-color: var(--secondary-color);
+  text-align: left;
+  font-weight: bold;
+}
+
+.spec .spec-bord table tr td a {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--primary-color);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.spec .spec-bord table tr td a:hover {
+  color: var(--primary-color);
+}
+
+.spec .sailboat-listing-definitions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.spec .sailboat-listing-definitions .definitions {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.spec .sailboat-listing-definitions .definitions:hover {
+  color: var(--third-color);
+}
+/*# sourceMappingURL=single-tables-style.css.map */

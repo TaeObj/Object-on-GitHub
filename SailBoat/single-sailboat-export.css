@@ -1,0 +1,42 @@
+:root {
+  --primary-color: #202056;
+  --secondary-color: #0ff0ff;
+  --third-color: #c60000;
+  --light-gray: #cecbcb;
+  --font-tahoma: 'Tahoma', sans-serif;
+}
+
+.pdf-header .text-center {
+  text-align: center;
+}
+
+.pdf-body table {
+  table-layout: fixed;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 6px;
+  width: 100%;
+  -webkit-box-shadow: #00000033 1px 3px 12px 0px;
+          box-shadow: #00000033 1px 3px 12px 0px;
+}
+
+.pdf-body table td {
+  padding: 8px;
+  width: 25%;
+  font-size: 14px;
+  background-color: #f8f9fa;
+  border-bottom-width: 1px;
+  border-color: #dfe0e1;
+}
+
+.pdf-body table th {
+  padding: 8px;
+  width: 25%;
+  font-size: 14px;
+  background-color: #0ff0ff;
+  text-align: right;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom-width: 1px;
+  border-color: #dfe0e1;
+}
+/*# sourceMappingURL=single-sailboat-export.css.map */
