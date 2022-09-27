@@ -4,6 +4,16 @@
     background: #fafafa;
   }
   #ps-form-login-main {
+    .ps-form__row {
+      flex-direction: column;
+      > * {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+      .ps-btn {
+        width: 100%;
+      }
+    }
     .ps-input,
     .ps-btn {
       height: 44px;

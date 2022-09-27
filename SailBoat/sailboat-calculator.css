@@ -5,11 +5,11 @@
   width: 100%;
   gap: 10px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .specs-header h4 {
@@ -28,7 +28,7 @@
 @media only screen and (max-width: 767px) {
   .specs-header {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -44,7 +44,7 @@ h6.calculator-title,
 #sailboat_custom_specs_form input {
   border-radius: 5.5px;
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
-  filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
   margin-right: 10px;
 }
 
@@ -118,15 +118,15 @@ h6.calculator-title,
   display: flex;
   gap: 40px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 767px) {
   #sailboat_custom_specs_form .specs-btn {
     gap: 10px;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -142,14 +142,14 @@ h6.calculator-title,
 .specs-items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [4];
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
 
 @media only screen and (max-width: 767px) {
   .specs-items {
-    -ms-grid-columns: (1fr) [1];
-    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -191,7 +191,7 @@ h6.calculator-title,
 .sailboat-ratio-results-box-form-wrapper .measurements-items input {
   border-radius: 5.5px;
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
-  filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
   margin-right: 10px;
   /* max-width: 90px; */
 }
@@ -201,7 +201,7 @@ h6.calculator-title,
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 15px 0;
   margin-bottom: 15px;
 }
@@ -212,14 +212,14 @@ h6.calculator-title,
   display: flex;
   gap: 30px 14px;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
 .sailboat-ratio-results-box-form-wrapper input {
   border-radius: 5.5px;
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
-  filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 3px 6px);
   margin-right: 10px;
 }
 
@@ -233,7 +233,7 @@ h6.calculator-title,
   display: flex;
   gap: 30px 14px;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -266,11 +266,11 @@ h6.calculator-title,
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   gap: 10px;
   margin-top: 22px;
   margin-bottom: 10px;
@@ -356,10 +356,10 @@ h6.calculator-title,
   }
   .ratio-bottom {
     -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
   }
   .derived-items div {
