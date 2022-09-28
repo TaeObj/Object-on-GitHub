@@ -1,4 +1,8 @@
 .gc-header__wrapper {
+  .widget {
+    padding: 0;
+    box-shadow: none !important;
+  }
   @media screen and (max-width: 767px) {
     .gc-header__inner {
       flex-wrap: wrap;

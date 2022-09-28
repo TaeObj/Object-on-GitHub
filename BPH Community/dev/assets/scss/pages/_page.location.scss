@@ -1,8 +1,29 @@
-.geodir-listings {
+.geodir-wgt-map {
+  width: 100vw;
+  margin-left: calc((100% - 100vw) / 2);
+}
+
+.geodir-search-container {
+  position: relative;
+  z-index: 9999;
+  background: #eee;
+  padding: 15px 15px 0;
+  border-radius: 5px;
+}
+
+.geodir-listings,
+.geodir-loop-container {
   .card {
     .card-body {
       display: flex;
       flex-direction: column;
+    }
+    .geodir-entry-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .list-group-item {
+      border: none;
     }
     p:empty {
       display: none;
@@ -15,6 +36,32 @@
         display: none;
       }
     }
+    .wp-block-geodirectory-geodir-widget-post-title,
+    .wp-block-geodirectory-geodir-widget-output-location,
+    .wp-block-geodirectory-geodir-widget-post-content {
+      & + p {
+        display: none;
+      }
+    }
+    .geodir_post_meta {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+      br:last-child {
+        display: none;
+      }
+      .geodir_post_meta_icon {
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: $third;
+        & + span {
+          padding-left: 23px;
+        }
+        & + a {
+          margin-left: 23px;
+        }
+      }
+    }
     .wp-block-geodirectory-geodir-widget-post-content {
       & + p + p {
         margin-bottom: 0;
@@ -22,6 +69,7 @@
       }
     }
     .gd-badge {
+      margin-top: 20px;
       padding: 12px 16px;
       text-transform: uppercase;
       font-size: 1rem;

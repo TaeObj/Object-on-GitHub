@@ -27,8 +27,6 @@
 // -------------------------------------------------- \\
 // Modules
 // -------------------------------------------------- \\
-/* Headings */
-@import "modules/_headings.scss";
 /* Buttons */
 @import "modules/_buttons.scss";
 /* Featured Blocks */
@@ -42,6 +40,7 @@
 @import "layout/_main.scss";
 @import "layout/_header.scss";
 @import "layout/_footer.scss";
+@import "layout/_sidebar.scss";
 
 // -------------------------------------------------- \\
 // Pages
@@ -53,6 +52,8 @@
 @import "pages/_page.details.scss";
 @import "pages/_page.community.scss";
 @import "pages/_page.profile.scss";
+@import "pages/_page.activity.scss";
+@import "pages/_page.search-results.scss";
 
 // -------------------------------------------------- \\
 // RTL, Variables & Snippets

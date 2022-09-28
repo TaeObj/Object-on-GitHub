@@ -106,7 +106,7 @@ gulp.task('sass', function () {
       browsersList: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(concat('style.css'))
+    .pipe(concat('uro-main.css'))
     .pipe(gulp.dest('../dist/assets/css'))
     .pipe(reload({ start: true }));
 })

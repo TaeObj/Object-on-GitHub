@@ -14,6 +14,10 @@
     height: 100%;
     background: $gray-lite;
     transition: all 0.2s linear;
+    img {
+      height: 260px;
+      object-fit: cover;
+    }
     .news-time {
       color: $gray-dark;
     }

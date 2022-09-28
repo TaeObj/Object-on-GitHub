@@ -96,4 +96,9 @@ blockquote {
       background: lighten($main, 15%);
     }
   }
+  .entry-header .entry-title {
+    font-weight: bold;
+    font-size: 150%;
+    color: $main;
+  }
 }
