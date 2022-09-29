@@ -1,0 +1,45 @@
+.uro-call2action {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-left: calc((100% - 100vw) / 2);
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.65);
+    z-index: 0;
+  }
+  .action-wrapper {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    max-width: 1280px; //Container width
+    padding: 90px 30px;
+    text-align: center;
+    > * {
+      max-width: 575px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h2,
+    p {
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: $main;
+    }
+    p {
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+  }
+}

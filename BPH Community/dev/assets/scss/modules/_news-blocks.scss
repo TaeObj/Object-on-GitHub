@@ -2,7 +2,7 @@
   h2 {
     text-align: center;
     color: $main;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
   }
 }
 .news-list {
@@ -12,7 +12,9 @@
   .card {
     border: none;
     height: 100%;
-    background: $gray-lite;
+    color: $main;
+    background: #fff;
+    border: 1px solid #eee;
     transition: all 0.2s linear;
     img {
       height: 260px;
@@ -43,9 +45,13 @@
       }
     }
     &:hover {
-      color: inherit;
-      box-shadow: 0 0 11px #aaa;
+      color: #fff;
+      background: $main;
+      box-shadow: 0 0 11px #eee;
       transform: translateY(-10px);
+      small {
+        color: #fff;
+      }
     }
   }
 }
