@@ -3,6 +3,15 @@
     padding: 0;
     box-shadow: none !important;
   }
+  .gc-header__widget {
+    .wp-block-button__link {
+      background-image: url(../imgs/icon-doctor.png);
+      background-position: 8px bottom;
+      background-repeat: no-repeat;
+      padding-left: 50px !important;
+      background-size: 34px;
+    }
+  }
   @media screen and (max-width: 767px) {
     .gc-header__inner {
       flex-wrap: wrap;
@@ -27,8 +36,5 @@
         border-radius: 4px;
       }
     }
-  }
-  .hm-header__menu-list {
-    font-weight: bold;
   }
 }

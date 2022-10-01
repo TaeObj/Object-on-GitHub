@@ -1,7 +1,8 @@
 .uro-fea-blocks {
   width: 100vw;
-  margin-left: calc((100% - 100vw) / 2) !important;
+  margin-inline-start: calc((100% - 100vw) / 2) !important;
   padding: 90px 0;
+  min-height: 70vh;
   background: url(../imgs/tabs-bg.jpg) right center / cover no-repeat;
   margin: auto;
   position: relative;
@@ -20,15 +21,15 @@
   }
   .row {
     z-index: 0;
-    width: 100%;
-    max-width: 1300px;
   }
   [class^="col"] {
+    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 30px;
   }
   .wrapper {
     height: 100%;
-    margin: 0 15px;
+    margin: 0;
     color: $main;
     background: rgba($secondary, 0.9);
     background: rgba($white, 0.9);
@@ -45,9 +46,11 @@
       margin-bottom: 0;
       color: $main;
       transition: all 0.25s linear;
+      font-weight: 700;
+      font-size: 1.75rem !important;
     }
     img {
-      max-width: 48px;
+      max-width: 64px;
     }
     &:hover {
       h4 {

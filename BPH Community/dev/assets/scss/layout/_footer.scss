@@ -29,7 +29,9 @@
   .gc-widget__title {
     padding: 0;
   }
-  h3 {
+  h2,
+  h3,
+  .widgettitle {
     color: #fff;
     font-family: "Kanit";
     font-weight: normal;
@@ -39,25 +41,27 @@
   }
   img {
     max-width: 150px;
-    margin-bottom: 30px;
+    margin-bottom: 19px;
   }
   p {
     font-size: 1rem;
     max-width: 350px;
   }
+  ul {
+    padding: 0 !important;
+  }
   li {
     font-size: 1rem;
     color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
   }
   a {
+    padding: 0 !important;
     color: $white !important;
     &:hover {
+      background: none !important;
       color: $secondary !important;
     }
-  }
-  .menu {
-    margin-top: -10px !important;
   }
   .wp-block-media-text {
     display: flex;

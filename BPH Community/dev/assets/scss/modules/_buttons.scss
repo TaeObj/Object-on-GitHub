@@ -1,13 +1,14 @@
 button,
 .btn {
+  transition: all 0.25s linear;
   &.btn-primary {
     background: $main;
     border-color: darken($main, 5%);
     &:hover,
     &:focus {
       outline: none;
-      background: $secondary;
-      border-color: darken($secondary, 2%);
+      background: #0260c1;
+      border-color: darken(#0260c1, 2%);
     }
   }
 }
@@ -23,11 +24,11 @@ button,
 }
 
 .btn-xl {
-      font-size: 20px;
-    padding-left: 1.25rem;
-    padding-right: 1.2rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+  font-size: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .page,

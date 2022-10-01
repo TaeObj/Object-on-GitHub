@@ -82,6 +82,7 @@ blockquote {
   .gc-header__menu > ul > .menu-item > a {
     padding-top: 0;
     padding-bottom: 0;
+    font-size: 18px;
   }
   .wp-block-button__link {
     background: $main;
@@ -96,9 +97,27 @@ blockquote {
       background: lighten($main, 15%);
     }
   }
-  .entry-header .entry-title {
+  .page__header,
+  .entry-header {
+    padding-bottom: 30px;
+  }
+  .entry-title,
+  .page-title {
     font-weight: bold;
     font-size: 150%;
     color: $main;
+  }
+  .page-title {
+    span {
+      font-weight: 500;
+    }
+  }
+  .entry-content {
+    > .wp-block-group {
+      margin-bottom: 30px;
+      & + .wp-block-buttons {
+        margin-bottom: 30px;
+      }
+    }
   }
 }

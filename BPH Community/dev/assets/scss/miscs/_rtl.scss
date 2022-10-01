@@ -60,8 +60,14 @@
   }
   /* Footer ----------------------------------- */
   .gc-footer {
+    .gc-footer__grid {
+      padding: 20px 30px;
+    }
     .wp-block-media-text {
       direction: rtl;
+    }
+    a {
+      font-family: Roboto, "Noto Naskh Arabic", sans-serif;
     }
     a[href^="tel:"] {
       display: inline-block;
@@ -69,6 +75,12 @@
     }
     .gc-footer__copyrights {
       direction: ltr;
+      padding: 20px 0;
+    }
+    .widgettitle,
+    h2,
+    h3 {
+      font-weight: 600;
     }
   }
   /* Single Doctor Details -------------------- */
