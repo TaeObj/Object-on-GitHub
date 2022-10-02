@@ -82,3 +82,37 @@
     }
   }
 }
+
+.location-join {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  .wp-block-column {
+    display: flex;
+    align-items: center;
+  }
+  p {
+    width: 100%;
+  }
+  @media screen and (min-width: 782px) {
+    p {
+      margin: 0;
+    }
+    .wp-block-buttons {
+      margin-inline-start: auto;
+    }
+  }
+  @media screen and (max-width: 781px) {
+    text-align: center;
+    .wp-block-buttons {
+      margin: auto !important;
+    }
+  }
+}
+
+.entry-content {
+  > .wp-block-geodirectory-geodir-widget-notifications {
+    margin-top: -28px;
+  }
+}

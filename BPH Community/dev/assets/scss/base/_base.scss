@@ -19,15 +19,19 @@ img {
 }
 p,
 ul,
-address,
+address {
+  padding: 0px;
+  margin: 0px;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 ul {
@@ -70,6 +74,34 @@ blockquote {
     transform: rotate(180deg);
   }
 }
+.gc-preset--gecko_bph {
+  .wp-container-5 {
+    gap: 0;
+  }
+}
+
+/* ----------------------------------------------------
+    Page Loader
+---------------------------------------------------- */
+.no-js #loader {
+  display: none;
+}
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../imgs/Preloader_2.gif) center no-repeat #fff;
+}
+
 /* ----------------------------------------------------
     Override Theme Styles
 ---------------------------------------------------- */
@@ -106,6 +138,7 @@ blockquote {
     font-weight: bold;
     font-size: 150%;
     color: $main;
+    margin: 0;
   }
   .page-title {
     span {
@@ -118,6 +151,12 @@ blockquote {
       & + .wp-block-buttons {
         margin-bottom: 30px;
       }
+    }
+  }
+  .gc-scroll__to-top {
+    background: $main;
+    &:hover {
+      background: lighten($main, 15%);
     }
   }
 }

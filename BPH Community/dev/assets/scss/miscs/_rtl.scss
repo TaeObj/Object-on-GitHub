@@ -5,7 +5,8 @@
 .rtl {
   font: 20px/1 "Noto Naskh Arabic", "Roboto", sans-serif !important;
   &.page,
-  &.single {
+  &.single,
+  &.archive {
     button,
     .btn,
     .wp-block-button__link,
@@ -14,6 +15,11 @@
       line-height: 1.2;
       font-weight: bold;
       font-family: "Cairo", "Roboto", sans-serif !important;
+    }
+    @media (min-width: 768px) {
+      .text-md-start {
+        text-align: right !important;
+      }
     }
     /* Header ------------------------------- */
     ul.hm-header__menu-list > li.menu-item-has-children > a:after {
@@ -33,7 +39,7 @@
     h4,
     h5,
     h6 {
-      font-weight: normal;
+      font-weight: 600;
       font-family: "Cairo", serif;
     }
     p {
