@@ -1,0 +1,42 @@
+#uro-quiz {
+  .gfield {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    border-radius: 4px;
+  }
+  .gchoice:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .validation_message {
+    padding: 5px 15px;
+    border-radius: 4px;
+    margin-top: 12px;
+  }
+  .gform_wrapper .gfield_error .gfield_repeater_cell label,
+  .gform_wrapper .gfield_error label,
+  .gform_wrapper .gfield_error legend,
+  .gform_wrapper [aria-invalid="true"] + label,
+  .gform_wrapper label + [aria-invalid="true"] {
+    color: inherit;
+  }
+  .gfield_error {
+    border-color: #c02b0a;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+.rtl {
+  #uro-quiz {
+    .gform_wrapper .gform_description,
+    .gform_wrapper.gravity-theme .gfield_label {
+      font-family: "Cairo", sans-serif;
+    }
+    .gform_wrapper.gravity-theme .gfield_label {
+      line-height: normal;
+      margin-bottom: 15px;
+    }
+  }
+}

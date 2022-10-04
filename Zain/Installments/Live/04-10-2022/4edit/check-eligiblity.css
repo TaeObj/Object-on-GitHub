@@ -1,0 +1,756 @@
+.check-eligiblity-block-modal {
+    --primary-color: #3ca347;
+    --border-color: #dedede;
+    --text-color: #333333;
+}
+
+.check-eligiblity {
+    margin-bottom: 15px;
+}
+
+.check-eligiblity a {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    display: block;
+    padding: 13px 16px;
+    background-image: url('../images/pattern.png');
+    background-position: right center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.check-eligiblity .check-eligiblity-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.check-eligiblity .img-container svg {
+    display: block;
+}
+
+.check-eligiblity .content-container {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--text-color);
+    max-width: calc(100% - 58px);
+}
+
+.check-eligiblity .content-container p {
+    margin: 0;
+}
+
+.check-eligiblity-block-modal .primary-color {
+    color: var(--primary-color);
+}
+
+.check-eligiblity-block-modal b {
+    font-weight: 700;
+}
+
+.check-eligiblity .content-title {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.check-eligiblity-container-recheck {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.recheck-eligiblity {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--text-color);
+    text-align: right;
+}
+
+/* Modal Style */
+
+.check-eligiblity-modal .modal__container {
+    border-radius: 10px;
+    padding: 0 30px 30px;
+}
+
+.check-eligiblity-modal .modal__close {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    outline: none !important;
+}
+
+[dir="rtl"] .check-eligiblity-modal .modal__close {
+    left: 0;
+    right: auto;
+}
+
+.check-eligiblity-modal .modal__container .modal__header.header-sticky {
+    padding: 44px 20px 0;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.check-eligiblity-modal .modal__header {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.check-eligiblity-modal .modal__footer {
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+
+.check-eligiblity-modal .modal__footer button {
+    margin: 18px auto 0 !important;
+    letter-spacing: 0.31875px;
+    background: #80bd38;
+    border-radius: 10px;
+    padding: 12px 40px;
+    flex: 1 0 auto;
+    background: #80BD38;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.check-eligiblity-modal .modal__footer button.close-modal {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    background: transparent;
+    text-transform: capitalize;
+}
+
+.check-eligiblity-modal .modal__header p {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    line-height: 28px;
+}
+
+.check-eligiblity-modal .modal__header .img-container {
+    margin-bottom: 12px;
+}
+
+.check-eligiblity-modal .modal__header .img-container h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #80BD38;
+}
+
+.check-eligiblity-modal .modal__body {
+    color: var(--text-color);
+    position: relative;
+    margin: 10px 0 0;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.check-eligiblity-modal .modal__body > * {
+    width: 100%;
+}
+
+.check-eligiblity-modal .modal__body .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.check-eligiblity-modal .modal__body .form-group input {
+    flex: 1 0 0%;
+}
+
+.check-eligiblity-modal .modal__body .form-row label {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 0;
+    /* color: #9F9F9F; */
+}
+
+/* Checkbox Style */
+
+.check-eligiblity-modal .modal__body .form-row label.checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333 !important;
+    text-transform: unset;
+    padding-left: 36px;
+    position: relative;
+}
+
+.check-eligiblity-modal .modal__body .form-row label.woocommerce-form__label-for-checkbox input {
+    height: 0;
+    opacity: 0;
+    position: absolute !important;
+    width: 0;
+}
+
+.check-eligiblity-modal .modal__body .form-row label.checkbox span {
+    max-width: calc(100% - 32px);
+}
+
+.check-eligiblity-modal .modal__body label.woocommerce-form__label-for-checkbox span:before {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 5px;
+    height: 22px;
+    width: 22px;
+    border: 1.5px solid #323232;
+}
+
+.check-eligiblity-modal .modal__body label.woocommerce-form__label-for-checkbox span:after {
+    content: "";
+    left: 9px;
+    top: 9px;
+    width: 5px;
+    height: 10px;
+    border: solid #323232;
+    border-width: 0 1.5px 1.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    display: none;
+}
+
+.check-eligiblity-modal .modal__body .form-row label.woocommerce-form__label-for-checkbox input:checked~span:after {
+    display: block;
+}
+
+.check-eligiblity-payment-methods .payment-method {
+    background: #FFFFFF;
+    border: 1px solid #EFEEEE;
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    padding: 17px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.check-eligiblity-payment-methods .payment-method.active {
+    border-color: #80BD38;
+}
+
+.check-eligiblity-payment-methods .payment-method-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color);
+}
+
+.check-eligiblity-payment-methods .payment-method-price {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.check-eligiblity-payment-methods .eligiblity-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    display: block;
+    color: #80BD38;
+}
+
+.check-eligiblity-payment-methods .eligiblity-old-price {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.31875px;
+    color: #E85190;
+    display: block;
+    -webkit-text-decorations-in-effect: 62px;
+    position: relative;
+}
+
+.check-eligiblity-payment-methods .eligiblity-old-price::after {
+    content: '';
+    height: 1px;
+    background: #E85190;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.check-eligiblity-payment-methods .payment-method small {
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.31875px;
+    color: #9F9F9F;
+}
+
+.verify-code-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.verify-code-container label {
+    flex: 0 0 100%;
+}
+
+.verify-code-container .input-wrapper {
+    flex: 1 0 0%;
+}
+
+.verify-code-container .input-text {
+    text-align: center;
+}
+
+.verify-code-container .v-code-text-info {
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 15px;
+}
+
+.verify-code-container .v-code-text-info .primary-color {
+    color: #80BD38;
+}
+
+.error-text {
+    color: #FF0000;
+}
+
+.third-step .text-center {
+    text-align: center;
+    /* height: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    gap: 30px;
+}
+
+.third-step .text-center h4 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.31875px;
+}
+
+.third-step .text-center h4.error-text {
+    font-weight: bold;
+}
+
+.third-step .text-center p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.third-step .text-center .links-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.bundle-form .variation-control {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.bundle-form .variation-option {
+    position: relative;
+}
+
+.bundle-form .variation-option input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.bundle-form .variation-option span {
+    display: block;
+    padding: 7px 11px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.bundle-form .variation-option input:checked + span {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+.variation-control-package-type .variation-option {
+    flex: 0 0 calc(50% - 5px);
+    max-width: 50%;
+}
+
+/* .variation-control-package-type .variation-option span {
+    border-radius: 50px;
+} */
+
+.variation-control-package-type .variation-option input:checked + span {
+    border-color: var(--primary-color);
+    background-color: #f1f7eb;
+}
+
+.installment-plan-selection,
+.installment-plan-selection .zain-oms-installment-dropdown span:first-child {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+.installment-plan-selection div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px 10px;
+}
+
+.installment-plan-selection div span:first-child {
+    font-weight: 700;
+}
+
+.installment-plan-selection .zain-oms-installment-down-payment-line-device-wrapper span.zain-oms-installment-value,
+.installment-plan-selection .zain-oms-installment-total-monthly-payment-wrapper span.zain-oms-installment-value,
+.installment-plan-selection .zain-oms-installment-after-total-monthly-payment-wrapper span.zain-oms-installment-value {
+    color: #63a803;
+    font-weight: bold;
+}
+
+.installment-plan-selection .zain-oms-installment-package-deposit-fees-wrapper,
+.installment-plan-selection .zain-oms-installment-contract-duration-wrapper,
+.installment-plan-selection .zain-oms-installment-installment-amount-wrapper,
+.installment-plan-selection .zain-oms-installment-installment-discount-on-device-wrapper,
+.installment-plan-selection .zain-oms-installment-down-payment-line-device-wrapper,
+.installment-plan-selection .zain-oms-installment-total-monthly-payment-wrapper,
+.installment-plan-selection .zain-oms-installment-after-total-monthly-payment-wrapper,
+.installment-plan-selection .zain-oms-installment-title {
+    display: none;
+}
+
+.installment-plan-selection .zain-oms-wpaf-show-field {
+    display: flex;
+}
+
+.installment-plan-selection .zain-oms-installment-dropdown {
+    padding: 12px 30px 12px 10px !important;
+    border: 0;
+    border: 1px solid #9B9B9B;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: .3s all ease;
+}
+
+.installment-plan-selection .zain-oms-installment-dropdown span:first-child {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.installment-plan-selection .zain-oms-installment-dropdown:after {
+    content: "\e612";
+    font-family: nm-font!important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 9px;
+}
+
+.installment-plan-selection .open-up .zain-oms-installment-dropdown:after {
+    content: "\e114";
+    font-size: 12px;
+}
+
+.installment-plan-selection .opend .zain-oms-installment-dropdown:after {
+    transform: translateY(-50%) rotate( -180deg);
+}
+
+.installment-plan-selection .open-up.opend .zain-oms-installment-dropdown:after {
+    content: "\e115";
+}
+
+.installment-plan-selection .opend .zain-oms-installment-dropdown {
+    border-radius: 10px 10px 0 0;
+}
+
+.installment-plan-selection .open-up.opend .zain-oms-installment-dropdown {
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.installment-plan-selection .zain-oms-installment-dropdown-content {
+    margin-top: -20px;
+    padding: 30px 0 0;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #9b9b9b;
+    border-radius: 10px;
+}
+
+.installment-plan-selection .open-up .zain-oms-installment-dropdown-content {
+    padding: 10px 0 45px;
+    margin-bottom: -45px;
+    margin-top: 0px;
+}
+
+.installment-plan-selection .zain-oms-installment-dropdown-content div span:first-child {
+    font-weight: 400;
+}
+
+.installment-plan-selection .zain-oms-installment-dropdown-content .zain-oms-installment-total-monthly-payment-wrapper span:first-child,
+.installment-plan-selection .zain-oms-installment-dropdown-content .zain-oms-installment-after-total-monthly-payment-wrapper span:first-child {
+    font-weight: 700;
+}
+
+.installment-plan-selection .zain-oms-installment-dropdown-content .zain-oms-installment-total-monthly-payment-wrapper {
+    border-top: 1px solid #9b9b9b;
+    padding-top: 10px;
+}
+
+.installment-plan-selection .zain-oms-installment-dropdown-container {
+    padding: 0px;
+    display: block;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.installment-plan-selection .zain-oms-installment-dropdown-container.zain-oms-installment-dropdown-container-show {
+    margin-bottom: 20px;
+}
+
+.installment-plan-selection .zain-oms-installment-dropdown-container.open-up {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.installment-plan-selection .open-up .zain-oms-installment-dropdown {
+    order: 1;
+}
+
+.installment-plan-selection .zain-oms-installment-title {
+    /* border-top: 1px solid #dadada; */
+    margin-bottom: 12px;
+    color: #333333;
+}
+
+.installment-plan-selection div .zain-oms-installment-sub-complete {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.installment-plan-selection div .zain-oms-installment-sub-complete span:first-child {
+    font-weight: 400 !important;
+}
+
+
+
+
+
+
+
+
+
+/* Overdue Modal Style */
+
+.overdue-content .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.overdue-content {
+    font-size: 12px;
+    text-align: center;
+}
+
+.overdue-content h6,
+.overdue-content b {
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+}
+
+.overdue-content .iqama-contract-num {
+    margin-bottom: 15px;
+}
+
+.overdue-content .text-red {
+    color: #EC000A;
+}
+
+.overdue-content p a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 3px;
+    color: #63a803;
+}
+
+.overdue-content p a::after {
+    content: '';
+    background-image: url('../images/link-arrow.svg');
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overdue-content .modal__footer {
+    justify-content: center;
+}
+
+@media (min-width: 1600px) {
+    .overdue-content {
+        font-size: 16px;
+    }
+    .overdue-content h6,
+    .overdue-content b,
+    .overdue-content p a {
+        font-size: 18px;
+    }
+}
+
+
+/* width */
+
+.check-eligiblity-modal .modal__container::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+/* Track */
+
+.check-eligiblity-modal .modal__container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Handle */
+
+.check-eligiblity-modal .modal__container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+
+/* Handle on hover */
+
+.check-eligiblity-modal .modal__container::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width:1920px) {
+    .modal__container {
+        max-width: 500px;
+        width: 100%;
+    }
+    .check-eligiblity-modal .modal__header p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    
+    .check-eligiblity-modal .modal__footer div {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .check-eligiblity-modal .modal__footer button {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 991px) {
+    .modal__overlay {
+        align-items: flex-end;
+    }
+    .check-eligiblity-modal .modal__container {
+        border-radius: 10px 10px 0 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .micromodal-slide {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s all ease;
+    }
+    .micromodal-slide.is-open {
+        opacity: 1;
+        visibility: visible;
+        z-index: 999999;
+        position: relative;
+    }
+    .check-eligiblity-modal .modal__body {
+        min-height: calc(100vh - 270px);
+    }
+}
