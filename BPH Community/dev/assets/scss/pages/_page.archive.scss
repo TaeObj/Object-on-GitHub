@@ -152,4 +152,13 @@
   a {
     margin-top: auto;
   }
+  .page__header-desc {
+    h1 {
+      margin-bottom: 10px;
+      margin-top: 15px;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
 }
