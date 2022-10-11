@@ -28,6 +28,7 @@
     h2,
     p {
       margin-bottom: 30px;
+      text-align: start;
     }
     h2 {
       color: $main;
@@ -39,6 +40,17 @@
     a {
       display: block;
       max-width: fit-content;
+      margin-inline-start: auto;
+      margin-inline-end: 0;
+    }
+    @media screen and (max-width: 767px) {
+      h2,
+      p {
+        text-align: center;
+      }
+      a {
+        margin-inline-end: auto;
+      }
     }
   }
 }

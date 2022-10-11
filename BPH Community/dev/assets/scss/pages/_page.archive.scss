@@ -45,6 +45,12 @@
         }
       }
     }
+    .page__header-desc {
+      p {
+        font-size: 1.25em;
+        line-height: normal;
+      }
+    }
   }
   .content__posts {
     display: flex;
@@ -151,14 +157,5 @@
   }
   a {
     margin-top: auto;
-  }
-  .page__header-desc {
-    h1 {
-      margin-bottom: 10px;
-      margin-top: 15px;
-      span {
-        font-weight: 600;
-      }
-    }
   }
 }
