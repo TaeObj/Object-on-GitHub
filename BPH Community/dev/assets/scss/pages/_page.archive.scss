@@ -142,7 +142,7 @@
     flex-direction: column;
     align-items: center;
   }
-  &:after {
+  &:not(.single-item)::after {
     display: block;
     content: "";
     width: 1px;
@@ -157,5 +157,10 @@
   }
   a {
     margin-top: auto;
+  }
+  &.single-item {
+    p {
+      font-size: 1.25em;
+    }
   }
 }
