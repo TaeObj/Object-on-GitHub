@@ -6,6 +6,7 @@ button,
     border-color: darken($main, 5%);
     &:hover,
     &:focus {
+      color: #fff;
       outline: none;
       background: #0260c1;
       border-color: darken(#0260c1, 2%);
@@ -17,7 +18,11 @@ button,
   height: 24px;
   line-height: 20px;
   font-size: 12px;
-  padding: 0 0.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
   .fa {
     margin-left: 7px;
   }
