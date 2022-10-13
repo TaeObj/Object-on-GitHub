@@ -22,11 +22,16 @@ body.rtl {
       }
     }
     /* Header ------------------------------- */
-    ul.hm-header__menu-list > li.menu-item-has-children > a:after {
-      margin-left: 0;
-      margin-right: 10px;
+    ul.hm-header__menu-list {
+      > li.menu-item-has-children > a:after {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+      li > ul {
+        right: 0;
+        left: auto;
+      }
     }
-
     /* Layout ------------------------------- */
     .container {
       text-align: right;
