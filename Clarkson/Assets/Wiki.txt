@@ -1,0 +1,13 @@
+URL : https://clarcksonsegypt.objectsdev.com/wp-admin
+user : admin-clarcksonsegypt
+pass : nUMpKPbevuPfhIFo
+
+db-u : https://clarcksonsegypt.objectsdev.com/phpmyadmin
+db-n : clarcksonsegypt_db
+db-u : clarcksonsegypt_u
+db-p : vzkQnSVSA7zyJVLF
+
+ssh-ip : 139.162.162.52
+ssh-user : clarcksonsegypt
+ssh-port : 4455
+ssh-command : ssh -p 4455 clarcksonsegypt@139.162.162.52

@@ -23,9 +23,9 @@ button,
   display: flex;
   align-items: center;
   border-radius: 4px;
-  .fa {
+  /*.fa {
     margin-left: 7px;
-  }
+  }*/
 }
 
 .btn-xl {
@@ -52,4 +52,8 @@ button,
       background: lighten($main, 15%);
     }
   }
+}
+
+#gd-list-view-select-grid {
+  border-radius: 4px;
 }

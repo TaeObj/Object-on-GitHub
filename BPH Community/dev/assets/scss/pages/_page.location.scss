@@ -21,6 +21,7 @@
     .geodir-entry-title {
       font-size: 1.5rem;
       font-weight: 600;
+      margin-bottom: 0;
     }
     .list-group-item {
       border: none;
@@ -47,18 +48,24 @@
       display: flex;
       flex-direction: column;
       padding-bottom: 0;
+      padding-inline-start: 30px !important;
       br:last-child {
         display: none;
       }
       .geodir_post_meta_icon {
         font-weight: 500;
         margin-bottom: 5px;
+        margin-inline-start: -23px;
+        line-height: normal;
         color: $third;
         & + span {
-          padding-left: 23px;
+          padding-inline-start: 8px;
         }
         & + a {
-          margin-left: 23px;
+          margin-inline-start: 8px;
+          [dir="rtl"] {
+            font-family: "Noto Naskh Arabic";
+          }
         }
       }
     }
@@ -114,5 +121,19 @@
 .entry-content {
   > .wp-block-geodirectory-geodir-widget-notifications {
     margin-top: -28px;
+  }
+}
+
+.rtl {
+  .geodir-listings .card .geodir_post_meta,
+  .geodir-loop-container .card .geodir_post_meta {
+    font-size: 1.15rem;
+    .geodir_post_meta_icon {
+      font-family: "Cairo", sans-serif;
+      font-weight: 600;
+      + span {
+        line-height: 1.25;
+      }
+    }
   }
 }
