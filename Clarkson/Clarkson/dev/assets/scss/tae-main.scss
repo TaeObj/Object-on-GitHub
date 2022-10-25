@@ -1,0 +1,28 @@
+/*!
+ * Project Custom Stylesheet
+ * Author : Ahmed Abdel Moula
+ */
+
+/* -----------------------------------------------
+    Variables
+----------------------------------------------- */
+:root {
+  --primary: #203171;
+  --secondary: #f24c4e;
+  --gray-light: #f6f6f6;
+  --text: #343434;
+  --clock-height: 37px;
+}
+
+// -------------------------------------------------- \\
+// Pages
+// -------------------------------------------------- \\
+@import "global.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "widget.weather.scss";
+@import "widget.pagebanner";
+@import "page.home.scss";
+@import "page.team.scss";
+@import "page.strategy.scss";
+@import "elements.scss";

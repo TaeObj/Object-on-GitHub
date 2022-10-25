@@ -1,0 +1,110 @@
+/* -----------------------------------------------
+    Pages :: Home
+----------------------------------------------- */
+// Slider Section
+.elementor-swiper .elementor-slides-wrapper .elementor-slides {
+  .swiper-slide {
+    height: calc(100vh - 94px);
+    .swiper-slide-inner {
+      padding: 90px 15px;
+      width: 100%;
+      max-width: (1185px + 30px);
+    }
+    .elementor-slide-heading {
+      margin-bottom: 20px;
+      &::before {
+        content: "Clarksons Global Reach";
+        line-height: normal;
+        margin-bottom: 50px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: normal;
+        text-transform: uppercase;
+        display: block;
+      }
+    }
+    .elementor-slide-description {
+      margin-bottom: 65px;
+    }
+    @media screen and (max-width: 1024px) {
+      height: calc(100vh - 75px);
+      .swiper-slide-inner {
+        padding: 60px;
+        .swiper-slide-contents {
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+      .elementor-slide-heading {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+        &::before {
+          margin-bottom: 20px;
+        }
+      }
+      .elementor-slide-description {
+        margin-bottom: 50px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      height: calc(100vh - 60px);
+      .swiper-slide-inner {
+        padding: 45px 60px;
+      }
+      .elementor-slide-heading {
+        font-size: 28px;
+        line-height: 40px;
+      }
+      .elementor-slide-description {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// Services Section
+.cls-services {
+  .elementor-column-gap-default {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: auto;
+    max-width: none !important;
+    // Equal column height for two white text blocks
+    @media screen and (min-width: 768px) {
+      .elementor-widget-wrap,
+      .elementor-widget,
+      .elementor-widget-container {
+        height: 100%;
+      }
+    }
+  }
+  h3 {
+    color: var(--primary);
+  }
+}
+
+// Newsletter Section
+.cls-newsletter {
+  .elementor-message-success {
+    color: #0be562;
+  }
+  .elementor-form-fields-wrapper {
+    @media screen and (min-width: 1025px) {
+      .elementor-field-group {
+        width: auto;
+        flex-grow: 1;
+      }
+      .e-form__buttons {
+        max-width: fit-content;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .elementor-form {
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

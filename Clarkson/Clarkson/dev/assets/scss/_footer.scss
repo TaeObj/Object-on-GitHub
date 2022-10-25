@@ -1,0 +1,36 @@
+/* -----------------------------------------------
+    Footer Custom Styles
+----------------------------------------------- */
+.cls-footer {
+  nav {
+    margin-top: 0px !important;
+  }
+  .elementor-nav-menu {
+    .menu-item {
+      margin-bottom: 8px;
+      a {
+        display: inline-flex;
+        padding: 0;
+        font-size: 16px;
+        line-height: 20px;
+        &:hover {
+          background: none;
+          color: var(--secondary);
+        }
+      }
+    }
+  }
+  .elementor-container {
+    .elementor-column {
+      flex-grow: 1;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .elementor-column-gap-no {
+      > .elementor-column:nth-child(2) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

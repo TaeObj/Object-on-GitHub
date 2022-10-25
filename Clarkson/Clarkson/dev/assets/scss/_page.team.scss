@@ -1,0 +1,120 @@
+/* -----------------------------------------------
+    Pages :: Team Members
+----------------------------------------------- */
+.elementor-pagination {
+  padding: 10px 0;
+  margin: 45px 0 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.cls-dep-filter {
+  .searchandfilter {
+    ul,
+    li {
+      padding: 0;
+      margin: 0;
+    }
+    div > ul:first-of-type {
+      display: flex;
+      > li {
+        flex-grow: 1;
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+    ul ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+      li {
+        font-weight: normal;
+        margin: 0 20px;
+        margin-bottom: -17px;
+        font-weight: bold;
+        label {
+          cursor: pointer;
+          display: block;
+          color: var(--text);
+          border-color: var(--text);
+          padding-bottom: 15px;
+          border-bottom: 3px solid transparent;
+          transition: all 0.25s linear;
+          input {
+            display: none;
+          }
+        }
+        &.current-cat,
+        &:hover {
+          label {
+            color: var(--secondary);
+            border-color: var(--secondary);
+          }
+        }
+      }
+    }
+  }
+}
+
+.cls-dep-filter-mobile {
+  ul,
+  li {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    &:first-child {
+      position: relative;
+      &::after {
+        content: "\f078";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        top: 9px;
+        right: 14px;
+      }
+    }
+    &:last-child {
+      display: none;
+    }
+  }
+  .clrk-team-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    #ofdepartment {
+      border-color: #ddd;
+      margin: 0;
+      appearance: none;
+    }
+    &::before {
+      content: "Select Department";
+      font-weight: normal;
+      font-size: 18px;
+      color: var(--primary);
+    }
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      #ofdepartment {
+        width: calc(100vw - 60px);
+      }
+    }
+  }
+}
+
+.team_member {
+  .elementor-icon-list-item {
+    padding-left: calc((100% - 300px) / 2) !important;
+    padding-right: calc((100% - 300px) / 2) !important;
+    .elementor-icon-list-text {
+      text-align: left;
+      span {
+        font-size: 17px;
+        color: var(--primary);
+      }
+    }
+  }
+}

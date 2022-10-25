@@ -1,0 +1,53 @@
+/* -----------------------------------------------
+    Global Custom Styles
+----------------------------------------------- */
+body {
+  font-family: "Gotham", sans-serif !important;
+  padding-top: 94px;
+  @media screen and (max-width: 1024px) {
+    padding-top: 75px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
+  .elementor-section {
+    &.elementor-section-height-full {
+      height: auto;
+      min-height: calc(100vh - 60px);
+      @media screen and (min-width: 768px) {
+        min-height: calc(100vh - 75px);
+      }
+      @media screen and (min-width: 1025px) {
+        min-height: calc(100vh - 94px);
+      }
+    }
+
+    .elementor-column-gap-extended {
+      margin-left: -15px;
+      margin-right: -15px;
+      width: auto;
+      .elementor-column {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    .elementor-column-gap-wide {
+      margin-left: -20px;
+      margin-right: -20px;
+      width: auto;
+      .elementor-column {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    .elementor-column-gap-wider {
+      margin-left: -30px;
+      margin-right: -30px;
+      width: auto;
+      .elementor-column {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+}

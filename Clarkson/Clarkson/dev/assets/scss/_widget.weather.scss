@@ -1,0 +1,95 @@
+/* -----------------------------------------------
+    Weather Widget
+----------------------------------------------- */
+.cls-weather {
+  .widgettitle {
+    display: none;
+  }
+  .elementor-widget-sidebar {
+    .elementor-widget-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .wp_forecast_widget {
+    list-style: none;
+    padding: 0 15px;
+    .wp-forecast {
+      width: 125px;
+      margin: auto;
+      float: none;
+      position: relative;
+    }
+    .wp-forecast-curr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .wp-forecast-curr-head {
+      font-weight: normal;
+      font-size: 16px;
+      color: var(--primary);
+      padding: 0;
+    }
+    [style],
+    div:empty {
+      display: none;
+    }
+    .wp-forecast-curr-left {
+      position: relative;
+      top: 3px;
+    }
+    .wp-forecast-fc {
+      .wp-forecast-fc-head,
+      .wp-forecast-fc-left {
+        display: none;
+      }
+      .wp-forecast-fc-right {
+        width: max-content;
+        font-size: 14px;
+        font-weight: normal;
+        position: absolute;
+        top: 47px;
+        left: 72px;
+        * {
+          padding: 0;
+          float: none;
+        }
+      }
+    }
+  }
+  .mx-localize-time {
+    * {
+      color: #55575b;
+      font-size: 16px !important;
+      line-height: normal;
+    }
+  }
+  @media screen and (max-width: 860px) {
+    .elementor-widget-sidebar {
+      margin-bottom: 5px;
+      .elementor-widget-container {
+        flex-wrap: wrap;
+      }
+      .wp_forecast_widget {
+        padding: 0 15px 5px;
+      }
+    }
+    .wp_forecast_widget {
+      flex-basis: calc(100% / 3);
+      max-width: calc(100% / 3);
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .wp_forecast_widget {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+    .elementor-widget-wrap {
+      max-width: 360px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

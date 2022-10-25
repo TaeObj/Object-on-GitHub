@@ -1,0 +1,15 @@
+/* -----------------------------------------------
+    Page Banner
+----------------------------------------------- */
+.page-banner {
+  .elementor-column-gap-no,
+  .elementor-column,
+  .elementor-widget-wrap {
+    position: static !important;
+  }
+  .page-banner-bottom {
+    bottom: 0;
+    left: calc(50vw - 30px);
+    max-width: fit-content !important;
+  }
+}
