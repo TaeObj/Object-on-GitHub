@@ -50,4 +50,10 @@ body {
       }
     }
   }
+  // Bottom Arrow in Page Banner
+  .page-banner-bottom {
+    @media screen and (max-width: 767px) {
+      display: block !important;
+    }
+  }
 }

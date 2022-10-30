@@ -1,8 +1,6 @@
 // Remove "All" from Filter Items
-jQuery('.searchandfilter ul ul li:first-child label').each(function () {
-  let all = jQuery(this);
-  all.text(all.text().replace(/\w+[.!?]?$/, ''));
-});
+let all = jQuery('.searchandfilter ul ul li:first-child label');
+all.html(all.html().replace(/\w+[.!?]?$/, ''));
 
 //Remove "Department" From Title
 jQuery('h2.elementor-heading-title').each(function () {
@@ -25,3 +23,9 @@ jQuery('.elementor-icon-list-text').each(function () {
 if (jQuery('.searchandfilter ul ul').find('.current-cat').length === 0) {
   jQuery('.searchandfilter ul ul li:first-child').addClass('current-cat');
 }
+
+
+jQuery('.searchandfilter ul ul li:first-child label').each(function () {
+  let all = jQuery('.searchandfilter ul ul li:first-child label');
+  all.text(all.text().replace(/\w+[.!?]?$/, ''));
+});

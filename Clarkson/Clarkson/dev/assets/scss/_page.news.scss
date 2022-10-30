@@ -1,0 +1,46 @@
+/* -----------------------------------------------
+    Page :: News [Archive & Single]
+----------------------------------------------- */
+.cls-single-list-item {
+  .elementor-widget:last-child {
+    position: static;
+  }
+  .elementor-button {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    font-size: 0;
+  }
+}
+
+.cls-news-grid {
+  .elementor-section {
+    .elementor-widget-image {
+      overflow: hidden;
+      img {
+        transition: all 0.2s ease-in-out;
+      }
+    }
+    h3.elementor-heading-title {
+      display: inline;
+      background: linear-gradient(transparent calc(100% - 2px), #000 2px);
+      background-size: 0 100%;
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+      .elementor-widget-image {
+        img {
+          transform: scale(1.15);
+        }
+      }
+      h3.elementor-heading-title {
+        background: linear-gradient(transparent calc(100% - 2px), #000 2px);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

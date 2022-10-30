@@ -1,0 +1,128 @@
+/* -----------------------------------------------
+    Login Form
+----------------------------------------------- */
+%input {
+  border-radius: 0;
+  background: var(--gray-light);
+  color: var(--text);
+  border-color: #ddd;
+  font-weight: 300;
+}
+
+%submit {
+  background: var(--primary);
+  color: #fff;
+  transition: all 0.25s linear;
+  &:hover {
+    background: var(--secondary);
+  }
+}
+
+%form-title {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--primary);
+}
+
+.elementor-shortcode {
+  #user-registration {
+    margin-top: 40px;
+    position: relative;
+    &::before {
+      @extend %form-title;
+      content: "Please fill in username and password";
+    }
+    .user-registration-error {
+      display: flex;
+      align-items: center;
+      line-height: normal;
+      padding: 8px;
+    }
+    input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
+    select {
+      @extend %input;
+    }
+    a {
+      color: var(--text);
+      text-decoration: underline;
+      &:hover {
+        color: var(--secondary);
+        transition: all 0.25s linear;
+      }
+    }
+    .user-registration-form__label {
+      display: flex;
+    }
+    .lost_password {
+      margin-bottom: 5px;
+    }
+    [type="submit"] {
+      @extend %submit;
+    }
+    @media screen and (max-width: 575px) {
+      input[type="submit"] {
+        float: none;
+        margin-bottom: 15px;
+      }
+    }
+    .user-registration-message {
+      + p {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+/* Forgot Password Form ---------------------- */
+.user-registration-ur-lost-password {
+  .elementor-shortcode {
+    #user-registration {
+      &::before {
+        content: none;
+      }
+      .lost_reset_password {
+        .ur-form-grid {
+          p:first-child {
+            margin-top: 8px;
+          }
+        }
+      }
+      .user-registration-form-row:last-of-type {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* Registration Form ------------------------- */
+.user-registration[id^="user-registration-form"] {
+  &::before {
+    @extend %form-title;
+    content: "Please fill in all required fields";
+  }
+  label {
+    font-weight: 300;
+  }
+  input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
+  select {
+    @extend %input;
+  }
+  [type="submit"] {
+    @extend %submit;
+    margin: 0;
+  }
+  .user-registration-error {
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+  .ur-button-container {
+    justify-content: flex-end;
+  }
+}

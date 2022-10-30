@@ -2,10 +2,20 @@
     Design Elements
 ----------------------------------------------- */
 
-/* Button with Icon --------------------------- */
+/* Button ------------------------------------- */
+button,
+.button,
+[type="submit"] {
+  outline: none;
+}
+
 .elementor-button-wrapper {
   .elementor-button-icon {
     display: inherit;
     font-size: 22px;
   }
+}
+
+h6 {
+  font-weight: 300 !important;
 }
