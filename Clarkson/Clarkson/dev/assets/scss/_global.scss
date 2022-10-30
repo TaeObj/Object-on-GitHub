@@ -57,3 +57,19 @@ body {
     }
   }
 }
+
+// Icon Position in Icon List
+.elementor-icon-list-items {
+  .elementor-icon-list-item {
+    align-items: flex-start !important;
+    .elementor-icon-list-icon {
+      margin-top: 6px;
+      .fa-circle {
+        padding: 3px 18px 0 0;
+      }
+    }
+    .elementor-icon-list-text {
+      padding-left: 0 !important;
+    }
+  }
+}
