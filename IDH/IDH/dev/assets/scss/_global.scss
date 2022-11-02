@@ -1,0 +1,27 @@
+/* -----------------------------------------------
+    Global Custom Styles
+----------------------------------------------- */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+#content {
+  padding-top: 60px;
+  /* Page Title ----------------------------- */
+  .page-header {
+    margin-bottom: 45px;
+    .entry-title {
+      font-style: italic;
+      text-align: center;
+      &:after {
+        content: "";
+        display: block;
+        margin: 12px auto 0;
+        width: 60px;
+        height: 6px;
+        background: var(--primary);
+      }
+    }
+  }
+}
