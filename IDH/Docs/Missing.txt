@@ -1,0 +1,4 @@
+- Responsive overview
+- Commitment page banner styling
+- Italic Titles
+- Image hover effect

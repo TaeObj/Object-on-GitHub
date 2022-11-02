@@ -7,7 +7,11 @@
       margin-right: 5px;
     }
     .elementor-icon-wrapper {
+      width: 26px;
       padding: 2px 0px 0px 0px;
+      i {
+        top: 2px;
+      }
     }
   }
   .wpml-ls {
@@ -23,6 +27,16 @@
       }
       &:not(.wpml-ls-item-ar) {
         display: none;
+      }
+    }
+  }
+  &.shrink {
+    background: var(--blue);
+    .elementor-container {
+      min-height: 64px;
+      .elementor-nav-menu--main .elementor-item {
+        padding-top: 20px;
+        padding-bottom: 20px;
       }
     }
   }
