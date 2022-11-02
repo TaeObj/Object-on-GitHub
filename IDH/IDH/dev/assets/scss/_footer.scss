@@ -1,0 +1,18 @@
+/* -----------------------------------------------
+    Footer Custom Styles
+----------------------------------------------- */
+#idh-mob-footer {
+  .elementor-widget-image {
+    margin-left: auto;
+    + .elementor-widget-image {
+      margin-left: 10px;
+    }
+  }
+}
+
+body {
+  .wpml-ls-statics-footer,
+  .otgs-development-site-front-end {
+    display: none;
+  }
+}

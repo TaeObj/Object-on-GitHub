@@ -1,0 +1,15 @@
+/* -----------------------------------------------
+    Design Elements
+----------------------------------------------- */
+
+/* Set Icon list icon alignment to top -------- */
+#content {
+  .elementor-widget {
+    .elementor-icon-list-item {
+      align-items: flex-start;
+      .elementor-icon-list-icon {
+        margin-top: 5px;
+      }
+    }
+  }
+}
