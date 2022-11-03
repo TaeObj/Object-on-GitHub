@@ -59,6 +59,7 @@
 .time-sheet-container .tish-days form input:not([type="hidden"]).wcpm-disabled-day {
   color: #231f20 !important;
   background: #e6e7e9 !important;
+  cursor: not-allowed !important;
 }
 
 .time-sheet-container .tish-days form input:not([type="hidden"]).wcpm-completed-day {
@@ -173,6 +174,25 @@
 
 .time-sheet-container .tish-day-data .time-sheet-table .approve-all:hover {
   background: #1e28cc;
+}
+
+.time-sheet-container .tish-day-data .time-sheet-table .total_hours_worked .tish_toggle_turnaround {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-sheet-container .tish-day-data .time-sheet-table .total_hours_worked .tish_toggle_turnaround span {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.time-sheet-container .tish-day-data .time-sheet-table .total_hours_worked .tish_toggle_turnaround:hover span {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .time-sheet-container .tish-day-data .tish-totals-table {

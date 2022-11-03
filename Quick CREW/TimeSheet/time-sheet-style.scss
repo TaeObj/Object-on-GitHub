@@ -46,6 +46,7 @@ $dark: #231f20;
       &.wcpm-disabled-day {
         color: $dark !important;
         background: $gray !important;
+        cursor: not-allowed !important;
       }
       &.wcpm-completed-day {
         background: $green !important;
@@ -130,6 +131,20 @@ $dark: #231f20;
         transition: all 0.2s linear;
         &:hover {
           background: $blue;
+        }
+      }
+      .total_hours_worked {
+        .tish_toggle_turnaround {
+          display: inline-flex !important;
+          align-items: center;
+          span {
+            transition: all 0.2s linear;
+          }
+          &:hover {
+            span {
+              transform: rotate(180deg);
+            }
+          }
         }
       }
     }

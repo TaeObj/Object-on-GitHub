@@ -8,9 +8,21 @@ body {
 
 #content {
   padding-top: 60px;
+  @media screen and (max-width: 1024px) {
+    padding-top: 45px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 30px;
+  }
   /* Page Title ----------------------------- */
   .page-header {
     margin-bottom: 45px;
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
     .entry-title {
       font-style: italic;
       text-align: center;
