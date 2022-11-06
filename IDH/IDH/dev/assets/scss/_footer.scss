@@ -2,10 +2,30 @@
     Footer Custom Styles
 ----------------------------------------------- */
 #idh-mob-footer {
+  max-width: calc(100% - 40px);
+  margin-left: 20px;
+  margin-right: 20px;
+  @media screen and (min-width: 1180px) {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .elementor-widget-image {
     margin-left: auto;
     + .elementor-widget-image {
       margin-left: 10px;
+    }
+  }
+  .idh-footer-mobile {
+    @media screen and (max-width: 1024px) {
+    }
+  }
+}
+
+#idh-red-footer {
+  @media screen and (max-width: 767px) {
+    .elementor-nav-menu {
+      justify-content: center;
     }
   }
 }
