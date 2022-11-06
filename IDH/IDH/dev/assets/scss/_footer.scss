@@ -10,10 +10,17 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .elementor-container {
+    .elementor-col-33 {
+    }
+  }
   .elementor-widget-image {
     margin-left: auto;
     + .elementor-widget-image {
       margin-left: 10px;
+    }
+    @media screen and (max-width: 767px) {
+      position: relative;
     }
   }
   .idh-footer-mobile {
