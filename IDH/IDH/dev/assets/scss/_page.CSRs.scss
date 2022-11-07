@@ -10,7 +10,10 @@
       padding: 20px;
       text-align: center;
       a {
-        display: block;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         max-width: 245px;
         margin: 0 auto 15px;
         padding: 10px;
@@ -20,6 +23,12 @@
         img {
           max-width: 200px;
           transition: all 0.2s linear;
+        }
+        h3 {
+          min-height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         &:hover {
           background: #d4e4e7;
