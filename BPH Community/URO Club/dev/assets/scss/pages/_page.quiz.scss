@@ -31,6 +31,9 @@
       direction: ltr;
       text-align: left;
       line-height: normal;
+      .emoji {
+        display: none !important;
+      }
     }
   }
   .gf_list_3col_vertical {
@@ -120,6 +123,10 @@
     .gform_wrapper.gravity-theme .gfield_label {
       line-height: normal;
       margin-bottom: 15px;
+    }
+    .gfield.hidden_label .gfield_description.gfield_consent_description {
+      direction: rtl;
+      text-align: right;
     }
   }
 }
