@@ -48,6 +48,24 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('../dist/assets/css'))
 })
 
+// RTL Stylsheet
+gulp.task('sassRTL', function () {
+  return gulp.src('assets/scss/ar.scss')
+    .pipe(sass())
+    .pipe(minify({
+      minify: true,
+      collapseWhitespace: true,
+      conservativeCollapse: true,
+      minifyCSS: true,
+    }))
+    .pipe(autoprefixer({
+      browsersList: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(concat('ar.css'))
+    .pipe(gulp.dest('../dist/assets/css'))
+})
+
 // Compressing 'Dev' folder for backup
 gulp.task('zip', function () {
   return gulp.src('./**/**')
@@ -61,6 +79,7 @@ gulp.task('watch', function () {
   gulp.watch('./**/assets/imgs/**', gulp.series('imgs'));
   gulp.watch('./**/assets/imgs/**', gulp.series('tinypng'));
   gulp.watch('assets/scss/**/**/*.scss', gulp.series('sass'));
+  gulp.watch('assets/scss/ar.scss', gulp.series('sassRTL'));
 })
 
-gulp.task('default', gulp.series('imgs', 'tinypng', 'sass', 'watch'))
+gulp.task('default', gulp.series('imgs', 'tinypng', 'sassRTL', 'watch'))
