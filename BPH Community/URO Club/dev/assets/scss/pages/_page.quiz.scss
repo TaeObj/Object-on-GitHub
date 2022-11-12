@@ -112,6 +112,19 @@
       }
     }
   }
+  .gform_next_button {
+    transition: all 0.25s linear;
+    background: $main;
+    border-color: darken($main, 5%);
+    font-family: "Cairo", sans-serif !important;
+    &:hover,
+    &:focus {
+      color: #fff;
+      outline: none;
+      background: #0260c1;
+      border-color: darken(#0260c1, 2%);
+    }
+  }
 }
 
 .rtl {

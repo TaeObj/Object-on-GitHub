@@ -2703,7 +2703,15 @@ h6 {
 
 .buddypanel {
   z-index: 9999999999;
-  
+  box-shadow: none;
+}
+
+.side-panel-inner {
+  height: calc(100% - 76px);
+}
+
+.buddypanel #buddypanel-menu {
+  border-right: 1px solid #eee;
 }
 
 .sticky-header .site-header.has-scrolled {
