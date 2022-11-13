@@ -14,10 +14,13 @@
 }
 
 #idh-services-form {
+  margin-top: 10px;
   > div {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   .row {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
     .col {
@@ -25,6 +28,59 @@
       padding-right: 15px;
       flex-basis: 50%;
       max-width: 50%;
+      @media screen and (max-width: 575px) {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
     }
+  }
+  input,
+  textarea {
+    height: 48px;
+    border: 1px solid #b7b7b7;
+    border-radius: 0;
+    width: 100%;
+    &:focus {
+      outline-color: #b7b7b7;
+      outline-width: 1px;
+      outline-style: solid;
+    }
+  }
+  textarea {
+    height: 120px;
+  }
+  [data-name="add-attachment"] {
+    display: block;
+    width: 100%;
+  }
+  [type="file"] {
+    width: 100%;
+    padding: 8px;
+  }
+  [type="submit"] {
+    width: 100%;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: none;
+    outline: none;
+    text-transform: uppercase;
+    border-color: var(--primary);
+    background: var(--primary);
+    &:hover {
+      background: var(--primary-dark);
+    }
+  }
+  .wpcf7-spinner {
+    top: -35px;
+  }
+  .wpcf7-response-output {
+    font-size: 0.9rem;
+    margin: 0;
+    text-align: center;
+    min-height: 38px;
+  }
+  .wpcf7-not-valid-tip {
+    margin-bottom: -15px;
+    font-size: 0.8rem;
   }
 }
