@@ -49,6 +49,12 @@
         }
       }
     }
+    .content__add_question {
+      width: 100%;
+      button {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -72,5 +78,8 @@
   }
   .entry-content {
     padding: 15px;
+    p {
+      display: block;
+    }
   }
 }

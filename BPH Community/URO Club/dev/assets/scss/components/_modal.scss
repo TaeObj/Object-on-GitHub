@@ -1,0 +1,27 @@
+.modal {
+  .modal-header {
+    .btn-close {
+      margin-inline-start: auto;
+      margin-inline-end: 0;
+    }
+  }
+}
+
+[dir="rtl"] {
+  .alert-dismissible {
+    padding-right: 1rem;
+    padding-left: 3rem;
+    margin-bottom: 0;
+    p {
+      margin: 0;
+    }
+    .btn-close {
+      left: 0;
+      right: auto;
+      &:hover {
+        box-shadow: none;
+        background-color: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.wcpm-holidays-pagination {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wcpm-holidays-pagination > span:first-child {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .wcpm-holidays-pagination > span:not(:first-child),
+  .wcpm-holidays-pagination > a {
+    padding: 5px;
+    border: 1px solid #ccc;
+    min-width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 20px;
+    transition: all 0.25s linear;
+  }
+  
+  .wcpm-holidays-pagination > span:not(:first-child):hover,
+  .wcpm-holidays-pagination > a:hover {
+    background: #fff;
+  }
+  
+  .wcpm-holidays-pagination .current {
+    background: #fff;
+    font-weight: bold;
+  }
+  
