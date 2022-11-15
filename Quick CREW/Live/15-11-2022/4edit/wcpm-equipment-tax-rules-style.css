@@ -1,0 +1,141 @@
+/* Pagination -------------------------------- */
+.wcpm-holidays-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.wcpm-holidays-pagination > span:first-child {
+  flex-basis: 100%;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.wcpm-holidays-pagination > span:not(:first-child),
+.wcpm-holidays-pagination > a {
+  padding: 5px;
+  border: 1px solid #ccc;
+  min-width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 20px;
+  transition: all 0.25s linear;
+}
+
+.wcpm-holidays-pagination > span:not(:first-child):hover,
+.wcpm-holidays-pagination > a:hover {
+  background: #fff;
+}
+
+.wcpm-holidays-pagination .current {
+  background: #fff;
+  font-weight: bold;
+}
+/* END Pagination ---------------------------- */
+
+/* Accordion --------------------------------- */
+.wcpm-add-rule {
+  margin: 15px 0;
+}
+
+.wcpm-add-rule .ui-accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wcpm-add-rule .ui-state-active {
+  border-color: #2271b1;
+  background: #2271b1;
+}
+
+.wcpm-add-rule .ui-accordion-header span {
+  order: 1;
+  position: static !important;
+  margin-left: 10px;
+}
+
+/* Add New Form */
+#wcpm-create-new-rule-form {
+  margin-top: 15px;
+  padding: 1em 2.2em;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #333333;
+}
+
+.wcpm-add-rule .wcpm-equipment-tax-rules-form .form-input {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.wcpm-add-rule .wcpm-equipment-tax-rules-form .form-input select {
+  min-width: 186px;
+}
+
+.wcpm-add-rule .wcpm-equipment-tax-rules-form .form-input label {
+  flex-basis: 150px;
+  min-width: fit-content;
+  font-weight: 600;
+}
+
+.wcpm-add-rule .wcpm-equipment-tax-rules-form .form-input p {
+  flex-basis: 100%;
+  margin-top: 5px;
+}
+
+.wcpm-add-rule .wcpm-equipment-tax-rules-form .options-group label {
+  font-weight: normal;
+}
+
+.wcpm-add-rule .wcpm-equipment-tax-rules-form .options-group label:not(:last-child) {
+  margin-right: 20px;
+}
+
+.wcpm-add-rule .wcpm-equipment-tax-rules-form .form-action {
+  text-align: right;
+}
+
+.wcpm-add-rule .wcpm-equipment-tax-rules-form .form-action input,
+.wcpm-add-rule .wcpm-equipment-tax-rules-form .form-action a {
+  transition: all 0.25s linear;
+  text-transform: capitalize;
+}
+
+.wcpm-add-rule .wcpm-equipment-tax-rules-form .form-action input {
+  color: #2271b1;
+  border-color: #2271b1;
+}
+
+.wcpm-add-rule .wcpm-equipment-tax-rules-form .form-action input:hover {
+  color: #fff;
+  background: #2271b1;
+}
+
+.wcpm-add-rule .wcpm-equipment-tax-rules-form .form-action a:hover {
+  color: #fff;
+  background: #e14d43;
+}
+
+/* if / then */
+.wcpm-if p,
+.wcpm-then p {
+  margin: 0 0 10px;
+  padding: 0px 10px;
+  font-weight: 600;
+  display: inline-block;
+  color: #fff;
+}
+.wcpm-if p {
+  background: #2bb371;
+}
+.wcpm-then p {
+  background: #26a8e6;
+}
+/* END Accordion ----------------------------- */

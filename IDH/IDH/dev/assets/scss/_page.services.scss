@@ -15,24 +15,9 @@
 
 #idh-services-form {
   margin-top: 10px;
-  > div {
+  > div,
+  > section > div {
     margin-bottom: 30px;
-  }
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    .col {
-      padding-left: 15px;
-      padding-right: 15px;
-      flex-basis: 50%;
-      max-width: 50%;
-      @media screen and (max-width: 575px) {
-        flex-basis: 100%;
-        max-width: 100%;
-      }
-    }
   }
   input,
   textarea {
@@ -47,6 +32,7 @@
     }
   }
   textarea {
+    display: block;
     height: 120px;
   }
   [data-name="add-attachment"] {
@@ -71,16 +57,75 @@
     }
   }
   .wpcf7-spinner {
-    top: -35px;
-  }
-  .wpcf7-response-output {
-    font-size: 0.9rem;
-    margin: 0;
-    text-align: center;
-    min-height: 38px;
+    top: 13px;
+    left: 0;
+    margin: 0 11px;
+    position: absolute;
   }
   .wpcf7-not-valid-tip {
     margin-bottom: -15px;
     font-size: 0.8rem;
+  }
+  .narrow {
+    max-width: 70%;
+  }
+  .bottom {
+    display: flex;
+    .form-group {
+      width: 70%;
+      margin-right: 30px;
+    }
+    .form-submit {
+      position: relative;
+      margin-left: auto;
+      min-width: 140px;
+    }
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    .col {
+      padding-left: 15px;
+      padding-right: 15px;
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 45px;
+    > div,
+    > section > div {
+      margin-bottom: 15px;
+    }
+    .narrow {
+      max-width: 100%;
+    }
+    .row {
+      margin-bottom: 0;
+      .col {
+        margin-bottom: 15px;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+    .bottom {
+      flex-wrap: wrap;
+      .form-group {
+        width: 100%;
+        margin-right: 0;
+      }
+      .form-submit {
+        width: 100%;
+      }
+    }
+  }
+  + .wpcf7-response-output {
+    font-size: 0.9rem;
+    margin: 0;
+    text-align: center;
+    min-height: 42px;
+    padding-top: 6px;
   }
 }
