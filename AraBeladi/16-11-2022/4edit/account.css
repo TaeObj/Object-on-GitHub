@@ -1,0 +1,219 @@
+.pmpro_invoice_wrap,
+.pmpro_billing_wrap,
+.pmpro_confirmation_wrap {
+  background: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  border: 1px solid #e7e9ec;
+  padding: 30px;
+}
+
+.pmpro_invoice_wrap h3 {
+  color: #cc9903;
+}
+
+.pmpro_invoice_wrap ul,
+.pmpro_billing_wrap ul,
+.pmpro_confirmation_wrap ul {
+  margin-left: 0;
+}
+
+.pmpro_invoice_wrap ul li,
+.pmpro_billing_wrap ul li,
+.pmpro_confirmation_wrap ul li {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.pmpro_invoice_wrap ul li strong,
+.pmpro_billing_wrap ul li strong,
+.pmpro_confirmation_wrap ul li strong {
+  margin-right: 5px;
+}
+
+.pmpro_invoice_wrap ul li::before,
+.pmpro_billing_wrap ul li::before,
+.pmpro_confirmation_wrap ul li::before {
+  content: "\f15e";
+  font-family: dashicons;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
+  border-radius: 50%;
+  margin-right: 8px;
+  color: #cc9903;
+  font-size: 18px;
+}
+
+.pmpro_actions_nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+form.pmpro_form .pmpro_submit {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pmpro_btn.pmpro_btn-cancel {
+  width: auto;
+  min-height: 50px;
+  height: auto;
+  line-height: normal;
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: capitalize;
+  box-shadow: none;
+  padding: 13px 29px;
+  border-radius: 0px;
+  border: none;
+  color: #cc9903 !important;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  border: 2px solid #cc9903;
+  background: #fff;
+  margin-left: 10px;
+}
+
+@media print {
+  .hide-print {
+    display: none;
+  }
+}
+
+#secondary .widget_bp_profile_completion_widget .widget-title {
+  font-family: "SF UI Display";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.side-panel-menu li:hover a,
+.side-panel-menu li.current-menu-item a,
+.side-panel-menu li.current_page_item a {
+  background: #f7f6f3;
+  color: #bc8d01;
+}
+
+.elementor-widget-wp-widget-bp_xprofile_profile_completion_widget .profile_completion_wrap .pc_progress_wrap .progress_text_wrap .progress_text,
+.widget.widget_bp_profile_completion_widget .profile_completion_wrap .pc_progress_wrap .progress_text_wrap .progress_text {
+  color: #666;
+}
+
+#buddypress .only-grid-view.button-wrap.member-button-wrap.footer-button-wrap > div a {
+  width: 100%;
+  display: block;
+}
+
+#buddypress .only-grid-view.button-wrap.member-button-wrap.footer-button-wrap > div i {
+  font-size: 22px;
+  color: #666666;
+}
+
+#buddypress .only-grid-view.button-wrap.member-button-wrap.footer-button-wrap .not_friends {
+  color: #cc9903;
+}
+
+#buddypress .only-grid-view.button-wrap.member-button-wrap.footer-button-wrap div.friendship-button,
+#buddypress .only-grid-view.button-wrap.member-button-wrap.footer-button-wrap #send-private-message {
+  /* background: #f7f6f3; */
+  background: #f7f6f3;
+}
+
+#buddypress .only-grid-view.button-wrap.member-button-wrap.footer-button-wrap > .friendship-button.pending_friend {
+  background: #c4c3c0;
+}
+
+#buddypress .only-grid-view.button-wrap.member-button-wrap.footer-button-wrap > .friendship-button.pending_friend i {
+  color: #fff;
+}
+
+#buddypress .only-grid-view.button-wrap.member-button-wrap.footer-button-wrap > div:hover {
+  background: #cc9903 !important;
+}
+
+#buddypress .only-grid-view.button-wrap.member-button-wrap.footer-button-wrap > div:hover i {
+  color: #fff !important;
+}
+
+/* Added by @hmed :: 23-02-2022 ------------------------ */
+[data-balloon]:after,
+[data-bp-tooltip]:after {
+  font-size: 14px !important;
+  background-color: rgba(59, 72, 80, 0.9) !important;
+}
+
+#friend-list.item-list .list-wrap:hover,
+#members-list.item-list .list-wrap:hover,
+.item-list.bp-search-results-list .list-wrap:hover,
+.item-list.groups-list .list-wrap:hover {
+  border-color: #cb9902;
+}
+
+#arbaladi_bb_birthday_div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#arbaladi_bb_birthday_div label {
+  width: calc(100% - 35px);
+  order: -2;
+}
+
+#arbaladi_bb_birthday_div .pmpro_asterisk {
+  order: -1;
+}
+
+#arbaladi_bb_birthday_div select {
+  width: fit-content;
+  min-width: calc(50% - 22px);
+  flex-basis: calc(50% - 22px);
+  margin-right: 2px;
+}
+
+#arbaladi_bb_birthday_div input,
+#arbaladi_bb_birthday_div #arbaladi_bb_birthday_d,
+#arbaladi_bb_birthday_div #arbaladi_bb_birthday_y {
+  min-width: calc(25% - 11px);
+  flex-basis: calc(25% - 11px);
+  border: none;
+  border-bottom: 1px solid #cc9903;
+}
+
+#arbaladi_bb_birthday_div input:first-of-type,
+#arbaladi_bb_birthday_div #arbaladi_bb_birthday_d {
+  margin-right: 2px;
+}
+
+#arbaladi_bb_birthday_div input:last-of-type,
+#arbaladi_bb_birthday_div #arbaladi_bb_birthday_y {
+  margin-right: 0;
+}
+
+/* Added by @hmed :: 21-07-2022 ------------------------ */
+.single-events-item #mec-bp-groups + .button {
+  height: 31.5px;
+  border-radius: 0;
+  margin-top: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#bp-mec-single-events .btn-edit,
+#bp-mec-single-events .btn-remove {
+  min-width: 140px;
+}

@@ -1,0 +1,388 @@
+.content-area {
+  text-align: left;
+}
+
+#post-70 .entry-header h1 {
+  text-align: center;
+}
+
+form.pmpro_form > div {
+  margin: 30px 0;
+}
+
+#pmpro_form .pmpro_checkout h3 {
+  color: #cc9903;
+  background: transparent;
+  text-align: center;
+  padding: 20px 20px 0;
+  border-radius: 0px;
+  border: 0;
+  text-align: left;
+  margin-top: 0;
+}
+
+.pmpro_checkout h3 span {
+  margin: 10px 10px 0;
+}
+
+hr {
+  display: none;
+}
+
+.pmpro_checkout-fields {
+  margin: 20px 0 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#pmpro_tos_fields .pmpro_checkout-fields {
+  display: block;
+}
+
+.pmpro_checkout-fields > * {
+  width: 100%;
+}
+
+div#pmpro_tos_fields .pmpro_checkout-fields > * {
+  width: auto;
+}
+
+form.pmpro_form .pmpro_checkout-field {
+  width: 50%;
+  display: block;
+}
+
+form.pmpro_form .pmpro_checkout-field.pmpro_checkout-field-username {
+  width: 100%;
+}
+
+form.pmpro_form .input,
+form.pmpro_form textarea,
+form.pmpro_form select,
+#loginform input[type="text"],
+#loginform input[type="password"] {
+  max-width: calc(100% - 40px);
+}
+
+form.pmpro_form #pmpro_tos_fields .pmpro_checkout-field {
+  width: 100%;
+}
+
+.pmpro_checkout .pmpro_checkout-fields .pmpro_checkout-field label {
+  text-align: left;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+form.pmpro_form .input {
+  font-size: 16px;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 1px solid #cc9903;
+  border-radius: 0;
+}
+
+form.pmpro_form .pmpro_payment-expiration select {
+  border-color: #cc9903;
+  border-radius: 0;
+}
+
+form.pmpro_form .input:focus,
+form.pmpro_form select {
+  outline: none;
+}
+
+form.pmpro_form .pmpro_submit {
+  text-align: left;
+}
+
+.pmpro_submit #pmpro_submit_span {
+  display: flex;
+}
+
+.pmpro_btn.pmpro_btn-submit-checkout {
+  min-height: 50px;
+  height: auto;
+  line-height: normal;
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: capitalize;
+  box-shadow: none;
+  padding: 13px 29px;
+  border-radius: 0px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  background: #cc9903;
+}
+
+.pmpro_btn.pmpro_btn-submit-checkout:hover {
+  background: #b48803;
+}
+
+form.pmpro_form select {
+  width: 45%;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #1a83be;
+  box-shadow: none;
+}
+
+.pmpro_checkout-field.pmpro_payment-cvv {
+  clear: right;
+}
+
+.pmpro_checkout h3 span.pmpro_checkout-h3-name {
+  margin: 0;
+}
+
+.pmpro_checkout_gateway-none .pmpro_checkout .pmpro_checkout-fields #pmprosp-password-notice {
+  display: block;
+}
+
+.pmprosp-progressbar {
+  display: none;
+}
+
+.pmpro_checkout .pmpro_checkout-fields .pmpro_checkout-field-username {
+  display: block;
+}
+
+.pmpro_checkout-fields #pmprosp-container {
+  display: none;
+}
+
+.pmpro_checkout h3 span.pmpro_checkout-h3-msg a {
+  text-decoration: underline;
+}
+
+.pmpro_message {
+  background: #fff;
+  border: 1px solid #e7e9ec;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-left: 50px;
+  overflow: hidden;
+  color: #0a0000;
+  width: 100%;
+}
+
+.pmpro_message:before {
+  content: "\f348";
+  font-family: dashicons;
+  left: 0;
+  margin-right: 10px;
+  position: relative;
+  padding: 0 0.5em;
+  background: #007cff;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.pmpro_message.pmpro_error::before {
+  background: #ef3e46;
+}
+
+.pmpro_checkout {
+  background: #fff;
+  padding-bottom: 1px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  border: 1px solid #e7e9ec;
+}
+
+form.pmpro_form .pmpro_asterisk abbr {
+  color: #ff0000;
+}
+
+.pmpro_checkout-fields ul {
+  margin-left: 0;
+}
+
+.pmpro_checkout-fields ul li {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+}
+
+.pmpro_checkout-fields ul li::before {
+  content: "\f15e";
+  font-family: dashicons;
+  min-width: 23px;
+  height: 23px;
+  top: 3px;
+  position: relative;
+  text-align: center;
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
+  border-radius: 50%;
+  margin-right: 8px;
+  color: #cc9903;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 992px) {
+  .pmpro_checkout .pmpro_checkout-fields .pmpro_payment-account-number {
+    display: block;
+  }
+  .pmpro_checkout .pmpro_checkout-fields .pmpro_payment-expiration {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pmpro_checkout h3 span.pmpro_checkout-h3-msg {
+    margin-bottom: 0;
+  }
+  form.pmpro_form .pmpro_checkout-field {
+    width: 100%;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+#arbaladi_bb_business_zipcode::-webkit-outer-spin-button,
+#arbaladi_bb_business_zipcode::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#arbaladi_bb_business_zipcode {
+  -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 767px) {
+  #pmpro_pricing_fields .pmpro_checkout-fields {
+    margin: 20px;
+  }
+}
+
+.pmpro_checkout h3 span.pmpro_checkout-h3-msg {
+  line-height: normal;
+}
+
+#pmpro_payment_method.pmpro_checkout h3 {
+  text-align: center !important;
+  margin: 15px 0 0 !important;
+}
+
+#pmpro_payment_method .pmpro_checkout-fields {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#pmpro_payment_method .pmpro_checkout-fields .gateway_stripe,
+#pmpro_payment_method .pmpro_checkout-fields .gateway_paypalexpress {
+  max-width: 333px;
+  max-height: 49px;
+  margin: 0 10px 10px;
+}
+
+#pmpro_payment_method .pmpro_checkout-fields .gateway_stripe input,
+#pmpro_payment_method .pmpro_checkout-fields .gateway_paypalexpress input {
+  display: none;
+}
+
+#pmpro_payment_method .pmpro_checkout-fields .gateway_stripe .pmpro_radio,
+#pmpro_payment_method .pmpro_checkout-fields .gateway_paypalexpress .pmpro_radio {
+  color: #666;
+  text-align: center;
+  display: block;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  max-height: 49px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+
+#pmpro_payment_method .pmpro_checkout-fields .payment-selected .pmpro_radio,
+#pmpro_payment_method .pmpro_checkout-fields :not(.payment-selected) .pmpro_radio:hover {
+  border-color: #cb9902;
+  color: #cb9902;
+}
+
+@media screen and (max-width: 390px) {
+  #pmpro_payment_method .pmpro_checkout-fields .gateway_stripe,
+  #pmpro_payment_method .pmpro_checkout-fields .gateway_paypalexpress {
+    font-size: 14px;
+  }
+}
+
+.pmpro_checkout_gateway-stripe form.pmpro_form #pmpro_payment_information_fields .pmpro_checkout-fields {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 0;
+  padding: 0 20px;
+}
+
+#pmpro_payment_information_fields .pmpro_checkout-fields .pmpro_checkout-field {
+  flex-basis: calc(100% / 3);
+  max-width: calc(100% / 3);
+}
+
+.pmpro_checkout_gateway-stripe form.pmpro_form #pmpro_payment_information_fields #AccountNumber,
+.pmpro_checkout_gateway-stripe form.pmpro_form #pmpro_payment_information_fields #Expiry,
+.pmpro_checkout_gateway-stripe form.pmpro_form #pmpro_payment_information_fields #CVV {
+  border: none !important;
+  border-bottom: 1px solid #cc9903 !important;
+  border-radius: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .pmpro_checkout_gateway-stripe form.pmpro_form #pmpro_payment_information_fields .pmpro_checkout-fields {
+    flex-wrap: wrap;
+  }
+  #pmpro_payment_information_fields .pmpro_checkout-fields .pmpro_checkout-field {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.pmpro_submit [style="visibility: hidden;"] {
+  width: 0;
+}
+
+#pmpro_tos_fields .pmpro_checkout-fields {
+  display: flex !important;
+  align-items: center;
+}
+
+#pmpro_tos_fields .pmpro_checkout-fields input {
+  margin-right: 5px;
+}
+
+#pmpro_tos_fields .pmpro_label-inline.pmpro_clickable {
+  font-weight: normal;
+}
+
+#pmpro_form .pmpro_submit #pmpro_processing_message {
+  flex-basis: 100%;
+  text-align: right;
+  order: 1;
+}
+
+#pmpro_form .pmpro_btn-submit-checkout:not(.pmpro_btn) {
+  border: none;
+  background: transparent;
+}

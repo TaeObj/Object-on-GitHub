@@ -1,0 +1,15 @@
+/* -----------------------------------------------
+    Page :: Precautions
+----------------------------------------------- */
+.idh-pre-nav {
+  .elementor-icon-list-text {
+    text-decoration: underline;
+  }
+  .idh-pre-nav-inner {
+    @media screen and (max-width: 767px) {
+      background-size: cover !important;
+      padding: 10px;
+      border: 1px solid #eee;
+    }
+  }
+}
