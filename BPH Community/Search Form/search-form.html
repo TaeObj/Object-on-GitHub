@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Form</title>
+</head>
+
+<body>
+    <section class="uro-search-wrapper">
+        <div class="row">
+            <div class="col-lg-8 mb-3 mb-lg-0 content__search">
+                <form class="d-flex">
+                    <input type="text" class="form-control" name="s" placeholder="ابحث هنا">
+                    <button type="submit" class="btn btn-primary px-4 h-auto w-auto mr-3">بحث</button>
+                </form>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-lg-end">
+                <div class="content__add_question w-auto">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        اضف سؤال </button>
+                </div>
+                <a href="https://bph-community-test.objectsdev.com/video/"
+                    class="btn btn-primary btn-lg fw-normal mr-3 text-nowrap">Watch Videos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="uro-video-filter mt-4">
+        <h5>Filter videos by category</h5>
+        <form class="d-flex">
+            <select class="form-control px-3 py-2" name="search" id="search_category" style="width:50%;">
+                <option value="bph-sub-1-ar">BPH Sub 1 AR</option>
+                <option value="me">me</option>
+                <option value="new-sub-22">New sub 22</option>
+                <option value="bph-ar">أمراض البروستاتا الحميدة</option>
+                <option value="bph2-sub">تصنيف ب 1</option>
+                <option value="ed-sub3">تصنيف د</option>
+                <option value="%d8%ba%d9%8a%d8%b1-%d9%85%d8%b5%d9%86%d9%81">غير مصنف</option>
+                <option value="ed-ar">قصور الانتصاب</option>
+            </select>
+            <button type="submit" class="btn btn-primary mr-3">Search</button>
+        </form>
+    </section>
+</body>
+
+</html>
