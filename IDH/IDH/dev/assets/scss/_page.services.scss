@@ -19,6 +19,17 @@
   > section > div {
     margin-bottom: 30px;
   }
+  .form-group {
+    position: relative;
+    .fa {
+      position: absolute;
+      color: red;
+      font-size: 8px;
+      right: 10px;
+      top: 45px;
+      z-index: 1;
+    }
+  }
   input,
   textarea {
     height: 48px;
