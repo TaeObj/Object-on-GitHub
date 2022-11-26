@@ -61,12 +61,13 @@ body {
       }
     }
     &.shrink {
-      background: var(--blue);
+      box-shadow: 0 2px 7px -2px #999;
+      background: var(--primary);
       .elementor-container {
         min-height: 64px;
         .elementor-nav-menu--main .elementor-item {
-          padding-top: 20px;
-          padding-bottom: 20px;
+          // padding-top: 20px;
+          // padding-bottom: 20px;
         }
       }
     }
@@ -83,18 +84,18 @@ body {
       }
     }
     .elementor-nav-menu--dropdown {
-      margin-top: 0 !important;
-      top: 42px !important;
+      // margin-top: 0 !important;
+      // top: 42px !important;
     }
   }
   &.admin-bar {
     #idh-header {
       top: 32px;
       @media screen and (max-width: 1200px) {
-        top: 46px;
-        &.shrink {
-          top: 0;
-        }
+        top: 32px;
+        // &.shrink {
+        //   top: 0;
+        // }
       }
     }
   }

@@ -54,15 +54,28 @@
     width: 100%;
     padding: 8px;
   }
+  [type="reset"],
   [type="submit"] {
-    width: 100%;
-    color: #fff;
     font-weight: 500;
     box-shadow: none;
     outline: none;
+    width: auto;
+    min-width: 110px;
     text-transform: uppercase;
+  }
+  [type="reset"] {
+    cursor: pointer;
+    color: #666;
+    transition: all 0.2s linear;
+    &:hover {
+      background: #ddd;
+    }
+  }
+  [type="submit"] {
+    color: #fff;
     border-color: var(--primary);
     background: var(--primary);
+    margin-left: 10px;
     &:hover {
       background: var(--primary-dark);
     }
@@ -89,7 +102,9 @@
     .form-submit {
       position: relative;
       margin-left: auto;
-      min-width: 140px;
+      min-width: 240px;
+      display: flex;
+      justify-content: flex-end;
     }
   }
   .row {
