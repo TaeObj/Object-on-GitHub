@@ -64,6 +64,11 @@
   padding: 35px 35px 35px 35px;
 }
 
+#idh-user-wrapper * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #idh-user-wrapper > .row > div {
   display: -webkit-box;
   display: -ms-flexbox;
