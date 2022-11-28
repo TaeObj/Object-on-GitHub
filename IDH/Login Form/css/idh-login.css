@@ -69,6 +69,48 @@
           box-sizing: border-box;
 }
 
+#idh-user-wrapper .idh-form-msg {
+  padding: 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+#idh-user-wrapper .idh-form-msg.msg-success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
+
+#idh-user-wrapper .idh-form-msg.msg-error {
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+}
+
+#idh-user-wrapper .idh-form-msg .fa {
+  width: 28px;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 #idh-user-wrapper > .row > div {
   display: -webkit-box;
   display: -ms-flexbox;

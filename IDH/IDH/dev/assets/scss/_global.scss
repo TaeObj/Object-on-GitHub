@@ -22,7 +22,8 @@ body {
     @media screen and (max-width: 767px) {
       margin-bottom: 15px;
     }
-    .entry-title {
+    .entry-title,
+    .elementor-heading-title {
       font-style: italic;
       text-align: center;
       &:after {
