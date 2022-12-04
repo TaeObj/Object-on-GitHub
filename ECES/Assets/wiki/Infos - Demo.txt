@@ -1,0 +1,21 @@
+URL : https://eces-demo.objectsdev.com/wp-admin
+user : admin-eces-demo
+pass : voGPG566IXgPbR7V
+
+User: Taekwo
+Pass: #s*uk5%fP(5CdX5m2v%U9kvB
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+db-u : https://eces-demo.objectsdev.com/phpmyadmin
+db-n : eces-demo_db
+db-u : eces-demo_u
+db-p : GVDyfDWsfvVWJReM
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ssh-ip : 139.162.162.52
+ssh-user : eces-demo
+ssh-port : 4455
+ssh-command : ssh -p 4455 eces-demo@139.162.162.52
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

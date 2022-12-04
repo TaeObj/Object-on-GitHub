@@ -1,0 +1,19 @@
+URL : https://eces-test.objectsdev.com/wp-admin
+user : admin-eces-test
+pass : qwtGbQmpUsTRtadn
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+db-u : https://eces-test.objectsdev.com/phpmyadmin
+db-n : eces-test_db
+db-u : eces-test_u
+db-p : D0bpTND8R6FcCy7K
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ssh-ip : 139.162.162.52
+ssh-user : eces-test
+ssh-port : 4455
+ssh-command : ssh -p 4455 eces-test@139.162.162.52
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -

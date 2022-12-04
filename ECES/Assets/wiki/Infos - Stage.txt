@@ -1,0 +1,19 @@
+URL : https://eces-staging.objectsdev.com/wp-admin
+user : admin-eces-staging
+pass : PMG532U5NxHmFdCR
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+db-u : https://eces-staging.objectsdev.com/phpmyadmin
+db-n : eces-staging_db
+db-u : eces-staging_u
+db-p : evl0N2C7Q0ZmpEoJ
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ssh-ip : 139.162.162.52
+ssh-user : eces-staging
+ssh-port : 4455
+ssh-command : ssh -p 4455 eces-staging@139.162.162.52
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

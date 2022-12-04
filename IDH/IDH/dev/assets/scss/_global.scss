@@ -3,6 +3,17 @@
 ----------------------------------------------- */
 body {
   font-family: "Segoe UI", sans-serif;
+  @media screen and (min-width: 1440px) {
+    // .elementor-container,
+    // #idh-header .elementor-container {
+    //   max-width: 90% !important;
+    // }
+    // .elementor-inner-section {
+    //   .elementor-container {
+    //     max-width: 100% !important;
+    //   }
+    // }
+  }
 }
 
 #content {
