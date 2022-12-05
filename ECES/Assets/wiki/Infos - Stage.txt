@@ -2,6 +2,9 @@ URL : https://eces-staging.objectsdev.com/wp-admin
 user : admin-eces-staging
 pass : PMG532U5NxHmFdCR
 
+user: Taekwo
+pass: z4w^oyW$frvdUED%@GA@GKt0
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 db-u : https://eces-staging.objectsdev.com/phpmyadmin

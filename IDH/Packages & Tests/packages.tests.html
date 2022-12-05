@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/packages.tests.css">
+    <title>Packages & Tests</title>
+
+    <!-- Owl Carousel -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="page-header">
+        <h1 class="entry-title">Al Mokhtabar Tests & Packages</h1>
+    </header>
+    <section class="idh-search-box">
+        <form action="">
+            <input type="search" name="" id="" placeholder="Search tests and packages">
+            <input type="submit" value="Search">
+        </form>
+    </section>
+    <section id="idh-packages-slider">
+        <div class="owl-carousel">
+            <div class="package-wrapper">
+                <figure>
+                    <span class="package-discount"><span class="discount-percent">40%</span> Off</span>
+                    <img src="imgs/package-feature.jpg" alt="...">
+                </figure>
+                <figcaption>
+                    <h4>Package Title Goes Here</h4>
+                    <p class="package-cost">
+                        <span class="cost-before">2200 EGP</span>
+                        <span class="cost-after">1500 EGP</span>
+                    </p>
+                    <p class="package-details">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque non, dolores adipisci commodi
+                        cum exercitationem tenetur tempora odit harum temporibus nemo deserunt similique sint fugiat
+                        iste rem quasi autem. Dolore.
+                    </p>
+                    <div class="d-flex package-actions justify-content-between">
+                        <a class="package-more" href="#!">Learn More</a>
+                        <button class="package-add">Add to Cart <i class="fa fa-plus"></i></button>
+                    </div>
+                </figcaption>
+            </div>
+        </div>
+    </section>
+
+    <section class="idh-tests">
+        <h2 class="entry-title">Test List</h2>
+        <ul class="tests-list row">
+            <li class="col-md-4 col-sm-6">
+                <div class="test-wrapper">
+                    <h3 class="test-title">Test Title Goes Here</h3>
+                    <p class="test-cost"><span>123</span> EGP</p>
+                    <p class="test-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium impedit
+                        culpa et eum necessitatibus sequi similique mollitia molestias, hic facilis? Beatae libero
+                        officiis assumenda nihil quidem nisi! Cumque, quas perferendis.</p>
+                    <button class="test-add">Add to Cart <i class="fa fa-plus"></i></button>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="idh-paging">
+            <li>
+                <a href="#!"><i class="fa fa-chevron-left"></i></a>
+            </li>
+            <li>
+                <span class="crnt">01</span>
+            </li>
+            <li>
+                <a href="#!">02</a>
+            </li>
+            <li>
+                <a href="#!">03</a>
+            </li>
+            <li>
+                <a href="#!">04</a>
+            </li>
+            <li>
+                <a href="#!">05</a>
+            </li>
+            <li>
+                <a href="#!"><i class="fa fa-chevron-right"></i></a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 4,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                nav: true,
+                navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+            });
+        });
+    </script>
+</body>
+
+
+</html>
