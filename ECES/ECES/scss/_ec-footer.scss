@@ -1,0 +1,30 @@
+/* -----------------------------------------
+    Footer
+----------------------------------------- */
+#site-footer {
+  li,
+  a,
+  a span {
+    transition: all ease 0.3s;
+  }
+  a:hover {
+    .elementor-icon-list-text {
+      color: $accent;
+    }
+  }
+  .elementor-widget-social-icons {
+    &::before {
+      color: #fff;
+      display: block;
+      content: "Follow Us";
+    }
+  }
+}
+
+.footer-canvas-menu-wrapper {
+  .footer-canvas-menu-bg,
+  .footer-canvas-menu-btn-container {
+    right: 15px;
+    bottom: 15px;
+  }
+}

@@ -1,0 +1,84 @@
+/* -----------------------------------------
+    Variables
+----------------------------------------- */
+$primary: #1fbacf;
+$secondary: #3b7e9a;
+$accent: #ef767a;
+$dark: #011c37;
+$gray: #f7ece1;
+
+/* -----------------------------------------
+    Social Icons Hover Colors
+----------------------------------------- */
+.elementor-social-icon-facebook {
+  &:hover {
+    background: #1877f2 !important;
+  }
+}
+.elementor-social-icon-twitter {
+  &:hover {
+    background: #1da1f2 !important;
+  }
+}
+.elementor-social-icon-linkedin {
+  &:hover {
+    background: #0a66c2 !important;
+  }
+}
+.elementor-social-icon-youtube {
+  &:hover {
+    background: #cd201f !important;
+  }
+}
+
+/* -----------------------------------------
+    Grid
+----------------------------------------- */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  > div {
+    padding: 0 10px;
+  }
+  @media screen and (min-width: 769px) {
+    .col-sm-6 {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 993px) {
+    .col-md-4 {
+      flex-basis: calc(100% / 3);
+      max-width: calc(100% / 3);
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    .col-lg-3 {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+  }
+}
+
+/* -----------------------------------------
+    Hover Effect on Post Items
+----------------------------------------- */
+.post-item {
+  &:hover {
+    .title {
+      a {
+        color: $accent !important;
+        background-size: 100% 2px;
+      }
+    }
+  }
+}
+
+/* -----------------------------------------
+    Slider Post Item Padding
+----------------------------------------- */
+.rivax-post-modern-widget .swiper-wrapper .post-wrapper .content-wrapper {
+  padding: 10px 0;
+  text-align: center !important;
+}
