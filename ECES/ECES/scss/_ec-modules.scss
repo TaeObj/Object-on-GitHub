@@ -1,0 +1,148 @@
+/* -----------------------------------------
+    ECES to Extend
+----------------------------------------- */
+%btn {
+  padding: 10px 25px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+  transition: 0.3s;
+  user-select: none;
+  cursor: pointer;
+  margin: 30px 0px 0px 0px;
+  background-color: $primary;
+  color: #ffffff;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, 0.35);
+  &:hover {
+    background: $accent;
+  }
+}
+
+%icon-element {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+%white-container {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 40px 0px rgb(143 143 143 / 22%);
+}
+
+/* -----------------------------------------
+    Listing BLocks
+----------------------------------------- */
+.ec-listing {
+  .item-wrapper {
+    @extend %white-container;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+    }
+    .item-heading {
+      padding: 10px 0;
+      margin: 0;
+      word-wrap: break-word;
+      font-size: 1.1rem;
+      height: 104px;
+      display: table-cell;
+      vertical-align: middle;
+      span {
+        color: $dark;
+        word-break: break-word;
+        background-image: linear-gradient(90deg, currentColor, currentColor);
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        background-position: left bottom;
+        transition: 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+        display: inline;
+        padding: 2px 0;
+      }
+    }
+    &:hover {
+      .item-heading {
+        span {
+          color: $accent;
+          background-size: 100% 2px;
+        }
+      }
+    }
+  }
+}
+/* -----------------------------------------
+    Newsletter
+----------------------------------------- */
+.ec-newsletter {
+  .mc4wp-form-fields {
+    display: flex;
+    align-items: stretch;
+    [type="email"] {
+      flex-grow: 1;
+      border-radius: 3px 0 0 3px;
+      &:focus {
+        background: #fff;
+      }
+    }
+    [type="submit"] {
+      background: $dark;
+      border-radius: 0 3px 3px 0;
+      &:hover {
+        background: $accent;
+      }
+    }
+  }
+}
+
+/* -----------------------------------------
+    Publications Periodical 
+----------------------------------------- */
+.ec-periodical-in-page {
+  .rivax-posts-wrapper {
+    @extend %white-container;
+    grid-template-columns: repeat(5, 1fr);
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 480px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .rivax-post-modern-widget .post-wrapper {
+    .content-wrapper {
+      padding: 5px;
+    }
+  }
+}
+
+/* -----------------------------------------
+    Newsletter
+----------------------------------------- */
+.ec-newsletter {
+  h3 {
+    margin: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .elementor-col-50 {
+      + .elementor-col-50 {
+        > .elementor-widget-wrap {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

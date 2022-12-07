@@ -1,0 +1,22 @@
+#eces_calendar {
+  @extend %white-container;
+  display: block;
+  .fc-toolbar-title {
+    font-size: 1.25em;
+    font-weight: normal;
+  }
+}
+
+.register-now {
+  margin: 30px auto 0;
+  max-width: fit-content;
+  padding: 5px 15px;
+  a {
+    @extend %btn;
+  }
+  &::before {
+    @extend %icon-element;
+    content: "\f4ff";
+    margin-inline-end: 7px;
+  }
+}

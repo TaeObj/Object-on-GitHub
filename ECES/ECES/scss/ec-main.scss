@@ -1,11 +1,16 @@
 /* -----------------------------------------
-    ECES Layout
+    ECES cross-site
 ----------------------------------------- */
 @import "global";
+@import "ec-modules";
+
+/* -----------------------------------------
+    ECES Layout
+----------------------------------------- */
 @import "ec-header";
 @import "ec-footer";
 
 /* -----------------------------------------
-    ECES Taxonomies List
+    ECES Calendar
 ----------------------------------------- */
-@import "_ec-tax-archive";
+@import "_events-calendar";

@@ -8,6 +8,68 @@ $dark: #011c37;
 $gray: #f7ece1;
 
 /* -----------------------------------------
+    Grid
+----------------------------------------- */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  > div {
+    padding: 0 10px;
+  }
+  [class^="col-"] {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  @media screen and (min-width: 576px) {
+    .col-xs-6 {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .col-sm-6 {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 993px) {
+    .col-md-4 {
+      flex-basis: calc(100% / 3);
+      max-width: calc(100% / 3);
+    }
+    .col-md-6 {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    .col-lg-3 {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+    .col-lg-4 {
+      flex-basis: calc(100% / 3);
+      max-width: calc(100% / 3);
+    }
+    .col-lg-12 {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .col-xl-3 {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+    .col-lg-12 {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+/* -----------------------------------------
     Social Icons Hover Colors
 ----------------------------------------- */
 .elementor-social-icon-facebook {
@@ -32,36 +94,6 @@ $gray: #f7ece1;
 }
 
 /* -----------------------------------------
-    Grid
------------------------------------------ */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px;
-  > div {
-    padding: 0 10px;
-  }
-  @media screen and (min-width: 769px) {
-    .col-sm-6 {
-      flex-basis: 50%;
-      max-width: 50%;
-    }
-  }
-  @media screen and (min-width: 993px) {
-    .col-md-4 {
-      flex-basis: calc(100% / 3);
-      max-width: calc(100% / 3);
-    }
-  }
-  @media screen and (min-width: 1025px) {
-    .col-lg-3 {
-      flex-basis: 25%;
-      max-width: 25%;
-    }
-  }
-}
-
-/* -----------------------------------------
     Hover Effect on Post Items
 ----------------------------------------- */
 .post-item {
@@ -82,3 +114,4 @@ $gray: #f7ece1;
   padding: 10px 0;
   text-align: center !important;
 }
+
