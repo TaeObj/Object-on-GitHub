@@ -13,7 +13,7 @@
   background-color: $primary;
   color: #ffffff;
   border-radius: 50px 50px 50px 50px;
-  box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, 0.35);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
   &:hover {
     background: $accent;
   }
@@ -34,7 +34,7 @@
   padding: 15px;
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0px 6px 40px 0px rgb(143 143 143 / 22%);
+  box-shadow: 0px 6px 40px 0px rgba(143, 143, 143, 0.22);
 }
 
 /* -----------------------------------------
@@ -145,4 +145,18 @@
       }
     }
   }
+}
+
+/* -----------------------------------------
+    ECES People
+----------------------------------------- */
+.ec-member-block {
+  height: 100%;
+  img {
+    object-position: top;
+  }
+}
+
+[id^="elementor-popup-modal"] .dialog-widget-content {
+  border-radius: 12px;
 }

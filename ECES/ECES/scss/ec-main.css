@@ -1,0 +1,443 @@
+/* -----------------------------------------
+    ECES cross-site
+----------------------------------------- */
+/* -----------------------------------------
+    Variables
+----------------------------------------- */
+/* -----------------------------------------
+    Grid
+----------------------------------------- */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.row > div {
+  padding: 0 10px;
+}
+
+.row [class^="col-"] {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .row .col-xs-6 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .row .col-sm-6 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .row .col-md-4 {
+    -ms-flex-preferred-size: calc(100% / 3);
+        flex-basis: calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+  .row .col-md-6 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .row .col-lg-3 {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%;
+  }
+  .row .col-lg-4 {
+    -ms-flex-preferred-size: calc(100% / 3);
+        flex-basis: calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+  .row .col-lg-12 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .row .col-xl-3 {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%;
+  }
+  .row .col-lg-12 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+/* -----------------------------------------
+    Social Icons Hover Colors
+----------------------------------------- */
+.elementor-social-icon-facebook:hover {
+  background: #1877f2 !important;
+}
+
+.elementor-social-icon-twitter:hover {
+  background: #1da1f2 !important;
+}
+
+.elementor-social-icon-linkedin:hover {
+  background: #0a66c2 !important;
+}
+
+.elementor-social-icon-youtube:hover {
+  background: #cd201f !important;
+}
+
+/* -----------------------------------------
+    Hover Effect on Post Items
+----------------------------------------- */
+.post-item:hover .title a {
+  color: #ef767a !important;
+  background-size: 100% 2px;
+}
+
+/* -----------------------------------------
+    Slider Post Item Padding
+----------------------------------------- */
+.rivax-post-modern-widget .swiper-wrapper .post-wrapper .content-wrapper {
+  padding: 10px 0;
+  text-align: center !important;
+}
+
+/* -----------------------------------------
+    ECES to Extend
+----------------------------------------- */
+.register-now a {
+  padding: 10px 25px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  margin: 30px 0px 0px 0px;
+  background-color: #1fbacf;
+  color: #ffffff;
+  border-radius: 50px 50px 50px 50px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+.register-now a:hover {
+  background: #ef767a;
+}
+
+.register-now::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.ec-listing .item-wrapper, .ec-periodical-in-page .rivax-posts-wrapper, #eces_calendar {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 6px 40px 0px rgba(143, 143, 143, 0.22);
+          box-shadow: 0px 6px 40px 0px rgba(143, 143, 143, 0.22);
+}
+
+/* -----------------------------------------
+    Listing BLocks
+----------------------------------------- */
+.ec-listing .item-wrapper {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.ec-listing .item-wrapper img {
+  width: 100%;
+}
+
+.ec-listing .item-wrapper .item-heading {
+  padding: 10px 0;
+  margin: 0;
+  word-wrap: break-word;
+  font-size: 1.1rem;
+  height: 104px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.ec-listing .item-wrapper .item-heading span {
+  color: #011c37;
+  word-break: break-word;
+  background-image: -webkit-gradient(linear, left top, right top, from(currentColor), to(currentColor));
+  background-image: linear-gradient(90deg, currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-position: left bottom;
+  -webkit-transition: 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: inline;
+  padding: 2px 0;
+}
+
+.ec-listing .item-wrapper:hover .item-heading span {
+  color: #ef767a;
+  background-size: 100% 2px;
+}
+
+/* -----------------------------------------
+    Newsletter
+----------------------------------------- */
+.ec-newsletter .mc4wp-form-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.ec-newsletter .mc4wp-form-fields [type="email"] {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 3px 0 0 3px;
+}
+
+.ec-newsletter .mc4wp-form-fields [type="email"]:focus {
+  background: #fff;
+}
+
+.ec-newsletter .mc4wp-form-fields [type="submit"] {
+  background: #011c37;
+  border-radius: 0 3px 3px 0;
+}
+
+.ec-newsletter .mc4wp-form-fields [type="submit"]:hover {
+  background: #ef767a;
+}
+
+/* -----------------------------------------
+    Publications Periodical 
+----------------------------------------- */
+.ec-periodical-in-page .rivax-posts-wrapper {
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+@media screen and (max-width: 1024px) {
+  .ec-periodical-in-page .rivax-posts-wrapper {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ec-periodical-in-page .rivax-posts-wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ec-periodical-in-page .rivax-posts-wrapper {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.ec-periodical-in-page .rivax-post-modern-widget .post-wrapper .content-wrapper {
+  padding: 5px;
+}
+
+/* -----------------------------------------
+    Newsletter
+----------------------------------------- */
+.ec-newsletter h3 {
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .ec-newsletter .elementor-col-50 + .elementor-col-50 > .elementor-widget-wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* -----------------------------------------
+    ECES People
+----------------------------------------- */
+.ec-member-block {
+  height: 100%;
+}
+
+.ec-member-block img {
+  -o-object-position: top;
+     object-position: top;
+}
+
+[id^="elementor-popup-modal"] .dialog-widget-content {
+  border-radius: 12px;
+}
+
+/* -----------------------------------------
+    ECES Layout
+----------------------------------------- */
+/* -----------------------------------------
+    Header
+----------------------------------------- */
+#ec-header .elementor-widget-social-icons {
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 1024px) {
+  #ec-header .ec-mobile-menu .elementor-widget-container {
+    width: 45px;
+    height: 45px;
+    margin-left: 15px;
+  }
+  #ec-header .ec-mobile-menu .elementor-menu-toggle {
+    -webkit-transition: none;
+    transition: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 !important;
+  }
+  #ec-header .ec-mobile-menu .elementor-nav-menu__container {
+    position: absolute;
+    width: 100vw;
+    right: -10px;
+    top: 55px;
+  }
+  #ec-header .ec-mobile-menu .elementor-nav-menu__container .elementor-nav-menu--dropdown {
+    background: #eee;
+  }
+  #ec-header .ec-mobile-menu .elementor-nav-menu__container .elementor-item,
+  #ec-header .ec-mobile-menu .elementor-nav-menu__container .elementor-sub-item {
+    border: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #ec-header .ec-mobile-menu .elementor-nav-menu__container .elementor-sub-item {
+    border-bottom: 1px solid #ddd !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #ec-header .ec-mobile-menu .elementor-nav-menu__container {
+    margin-top: 0;
+  }
+}
+
+#ec-nav .eces-menu-list .rivax-posts-wrapper {
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+}
+
+#ec-nav .post-wrapper .image-wrapper {
+  height: 128px;
+}
+
+#ec-nav .post-wrapper .title a {
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: normal;
+  background: none;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+#ec-nav .post-wrapper:hover .title a {
+  color: #ef767a;
+  background-size: 100% 2px;
+}
+
+#ec-nav .post-wrapper .content-wrapper {
+  padding: 5px;
+}
+
+/* -----------------------------------------
+    Footer
+----------------------------------------- */
+#site-footer li,
+#site-footer a,
+#site-footer a span {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+#site-footer a:hover .elementor-icon-list-text {
+  color: #ef767a;
+}
+
+#site-footer .elementor-widget-social-icons::before {
+  color: #fff;
+  display: block;
+  content: "Follow Us";
+}
+
+.footer-canvas-menu-wrapper .footer-canvas-menu-bg,
+.footer-canvas-menu-wrapper .footer-canvas-menu-btn-container {
+  right: 15px;
+  bottom: 15px;
+}
+
+/* -----------------------------------------
+    ECES Calendar
+----------------------------------------- */
+#eces_calendar {
+  display: block;
+}
+
+#eces_calendar .fc-toolbar-title {
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+.register-now {
+  margin: 30px auto 0;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 5px 15px;
+}
+
+.register-now::before {
+  content: "\f4ff";
+  -webkit-margin-end: 7px;
+          margin-inline-end: 7px;
+}
+/*# sourceMappingURL=ec-main.css.map */
