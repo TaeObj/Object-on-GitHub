@@ -1,0 +1,284 @@
+/* ------------- Cairo Font ------------- */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap");
+
+/* ------------- Variables ------------- */
+$green: #80bd38;
+$dark: #333;
+$cairo: "Cairo", sans-serif;
+
+/* ------------- Helper Classes ------------- */
+.z-idv {
+  a {
+    text-decoration: none;
+    color: $green;
+  }
+  img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  small {
+    font-size: 10px;
+    line-height: 14px;
+    b {
+      display: block;
+    }
+  }
+  .action-btn {
+    height: 60px;
+    background: $green;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.2s linear;
+    &:hover {
+      background: darken($green, 5%);
+    }
+  }
+  .z-powered {
+    padding: 10px;
+    margin-top: 25px;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin: 0;
+      max-width: 24px;
+      margin-inline-end: 10px;
+    }
+    a {
+      margin-inline-start: 5px;
+    }
+  }
+}
+
+/* ------------- Layout ------------- */
+.z-idv {
+  font-family: $cairo;
+  font-weight: 400;
+  @media screen and (min-width: 768px) {
+    background: url(../imgs/top-bg.png) right top / 15% no-repeat;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .z-idv-container {
+    padding: 20px;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    @media screen and (min-width: 768px) {
+      max-width: 480px;
+    }
+  }
+  .wrapper {
+    &.with-border {
+      background: #fff;
+      position: relative;
+      padding: 20px;
+      border-radius: 25px;
+      margin-bottom: 137px;
+      border: 1px solid #e7e7e7;
+      &:after {
+        content: "";
+        height: 137px;
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: -137px;
+        background: url(../imgs/bottom-bg.png) center top / contain no-repeat;
+        width: 80%;
+        left: 10%;
+      }
+    }
+    .z-header {
+      text-align: center;
+      margin-bottom: 30px;
+      img {
+        max-height: 30px;
+      }
+    }
+    .z-body {
+      .z-title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 40px;
+        padding: 0;
+        margin: 0 0 5px;
+      }
+      /* Step 01 ---------*/
+      label {
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 15px;
+        line-height: 20px;
+      }
+      input,
+      label,
+      button {
+        display: block;
+        border-radius: 10px;
+        width: 100%;
+      }
+      label {
+        color: $dark;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      input {
+        border: 1px solid #e7e7e7;
+        height: 60px;
+        padding: 0 15px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        &:focus {
+          outline-color: lighten($green, 40%);
+        }
+      }
+    }
+    .z-footer {
+      margin-top: 45px;
+      padding-top: 15px;
+      border-top: 1px solid #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .footer-nav {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 10px;
+        font-weight: 400;
+        a {
+          color: $dark;
+          transition: all 0.2s linear;
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+      select {
+        color: $dark;
+        font-size: 14px;
+        font-weight: 400;
+        border: none;
+        &:focus {
+          outline-color: lighten($green, 40%);
+        }
+      }
+    }
+    /* Step 02 ---------*/
+    .id-note {
+      font-size: 14px;
+      color: $dark;
+      padding: 9px 25px;
+      border: 1px solid #e7e7e7;
+      max-width: fit-content;
+      margin: 0 auto 15px;
+      border-radius: 10px;
+      p {
+        line-height: 20px;
+        padding: 0;
+        margin: 0;
+      }
+      b {
+        margin-inline-end: 10px;
+      }
+      a {
+        font-weight: 700;
+      }
+    }
+    .step-02 {
+      .text-center {
+        color: $dark;
+        h2 {
+          + p {
+            color: $dark;
+            padding: 0;
+            margin: 0 0 20px;
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+        img {
+          max-width: 240px;
+          margin-bottom: 30px;
+          + p {
+            padding: 0;
+            margin: 0 0 24px;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+    /* Step 03 ---------*/
+    .step-03 {
+      .char-wrapper {
+        background: #efeded;
+        border: 1px solid #b9b9b9;
+        border-radius: 20px;
+        text-align: center;
+        padding: 25px;
+        margin-bottom: 10px;
+        img {
+          max-width: 260px;
+        }
+        + p {
+          padding: 0;
+          max-width: 250px;
+          margin: 0 auto 15px;
+          line-height: 14px;
+        }
+      }
+    }
+    /* Result ---------*/
+    .z-result-header {
+      color: $green;
+      padding-bottom: 13px;
+      border-bottom: 1px solid #e7e7e7;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+    .rec-result {
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      .z-title {
+        margin-bottom: 0;
+        + p {
+          font-size: 13px;
+          color: $dark;
+          margin-bottom: 5px;
+          + p {
+            font-size: 14px;
+            line-height: 20px;
+            a {
+              margin-inline-start: 5px;
+            }
+          }
+        }
+      }
+      .result-img {
+        margin-top: 60px;
+        margin-bottom: 45px;
+      }
+    }
+  }
+}
