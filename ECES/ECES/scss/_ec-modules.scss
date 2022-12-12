@@ -152,11 +152,40 @@
 ----------------------------------------- */
 .ec-member-block {
   height: 100%;
+  cursor: pointer;
+  transition: all 0.2s linear !important;
   img {
     object-position: top;
+  }
+  .elementor-heading-title {
+    transition: all 0.2s linear !important;
+  }
+  &:hover {
+    transform: translateY(-10px);
+    .ec-member-name .elementor-heading-title {
+      color: $accent !important;
+    }
   }
 }
 
 [id^="elementor-popup-modal"] .dialog-widget-content {
   border-radius: 12px;
+}
+
+/* -----------------------------------------
+    Language Switcher
+----------------------------------------- */
+body {
+  &:not(.rtl) .wpml-ls {
+    .wpml-ls-item-en {
+      display: none;
+    }
+  }
+  &.rtl {
+    .wpml-ls {
+      .wpml-ls-item-ar {
+        display: none;
+      }
+    }
+  }
 }

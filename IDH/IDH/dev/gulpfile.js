@@ -77,9 +77,8 @@ gulp.task('zip', function () {
 gulp.task('watch', function () {
   require('./server.js');
   gulp.watch('./**/assets/imgs/**', gulp.series('imgs'));
-  gulp.watch('./**/assets/imgs/**', gulp.series('tinypng'));
   gulp.watch('assets/scss/**/**/*.scss', gulp.series('sass'));
   gulp.watch('assets/scss/ar.scss', gulp.series('sassRTL'));
 })
 
-gulp.task('default', gulp.series('imgs', 'tinypng', 'sassRTL', 'watch'))
+gulp.task('default', gulp.series('imgs', 'sassRTL', 'sass', 'watch'))

@@ -23,3 +23,34 @@
     }
   }
 }
+
+/* Pagination --------------------------------- */
+.idh-paging {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  li:not(:first-child):not(:last-child) {
+    a {
+      span {
+        color: var(--text);
+        font-weight: 500;
+        display: block;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        line-height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        &.crnt {
+          color: var(--white);
+          background: var(--primary);
+          border-color: var(--primary);
+        }
+      }
+    }
+  }
+}

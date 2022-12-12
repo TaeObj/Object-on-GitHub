@@ -1,0 +1,216 @@
+/* ---------------------------------------
+    Packages & Tests
+--------------------------------------- */
+.idh-tests {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    [class^="col-"] {
+      padding-left: 10px;
+      padding-right: 10px;
+      flex-basis: 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    .col-md-4,
+    .col-sm-6 {
+      @media screen and (min-width: 576px) {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+    }
+    .col-md-4 {
+      @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 3);
+        max-width: calc(100% / 3);
+      }
+    }
+  }
+}
+/* Top Search Form -------------------- */
+.idh-search-box {
+  margin-bottom: 45px;
+  form {
+    display: flex;
+    box-shadow: 0px 1px 5px -4px #000;
+  }
+  #key {
+    background: #eeeeee;
+    border: 1px solid #dedede;
+    border-right: 0;
+    height: 48px;
+    border-radius: 5px 0 0 5px;
+  }
+  [type="submit"] {
+    border-radius: 0 5px 5px 0 !important;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    height: 48px;
+    font-weight: 500;
+    text-transform: uppercase !important;
+  }
+}
+
+/* Packages Slider -------------------- */
+#idh-packages-slider {
+  .owl-carousel {
+    direction: ltr;
+  }
+  .no-slide {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 30px;
+    gap: 20px;
+    .package-wrapper {
+      flex-basis: 100%;
+      @media screen and (min-width: 576px) {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+      @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 3);
+        max-width: calc(100% / 3);
+      }
+      @media screen and (min-width: 1024px) {
+        flex-basis: 25%;
+        max-width: 25%;
+      }
+    }
+  }
+  .owl-stage-outer {
+    padding: 10px 2px;
+  }
+  .owl-stage {
+    display: flex;
+    .owl-item {
+      padding: 0 5px;
+    }
+    .package-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      figcaption {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        .package-actions {
+          margin-top: auto;
+        }
+      }
+    }
+  }
+  .owl-nav {
+    text-align: center;
+    margin: 30px auto 0;
+    button {
+      width: 36px;
+      height: 36px;
+      border: none;
+      outline: none;
+      color: var(--dark);
+      font-size: 24px;
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+}
+.package-wrapper {
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px 0px #ddd;
+  figure {
+    margin-bottom: 10px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 2px 3px #ccc;
+    img {
+      display: block;
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 5px 5px 0 0;
+    }
+  }
+  figcaption {
+    padding: 0 20px 20px;
+    font-style: normal;
+    h4 {
+      color: var(--primary);
+      font-size: 1rem;
+      font-weight: normal;
+      margin-bottom: 0;
+      line-height: normal;
+    }
+    .package-cost {
+      margin-bottom: 15px;
+      .cost-before {
+        text-decoration: line-through;
+        &:only-child {
+          margin-inline-end: 30px;
+          text-decoration: none;
+        }
+      }
+    }
+    .package-add {
+      margin-inline-start: auto;
+    }
+  }
+}
+
+.package-add,
+.test-add {
+  display: block;
+  border-radius: 50px !important;
+  padding: 8px 24px;
+  border-color: #ccc;
+  color: #999;
+  .fa {
+    margin-inline-start: 5px;
+  }
+  &:hover {
+    color: var(--white);
+    border-color: var(--primary);
+  }
+}
+
+/* Packages Slider -------------------- */
+.idh-tests {
+  margin-top: 30px;
+  .entry-title {
+    font-style: italic;
+    text-align: center;
+    &:after {
+      content: "";
+      display: block;
+      margin: 12px auto 0;
+      width: 60px;
+      height: 6px;
+      background: var(--primary);
+    }
+  }
+}
+#tests-ul-id {
+  padding: 10px 0 0;
+  margin: 0;
+  list-style: none;
+  .test-wrapper {
+    text-align: center;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    color: var(--dark);
+    padding: 25px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 5px -4px #000;
+    .test-title {
+      margin: 0;
+      font-size: 1rem;
+    }
+    .test-add {
+      margin: auto auto 0;
+    }
+  }
+}
