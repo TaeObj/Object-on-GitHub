@@ -148,9 +148,9 @@
 }
 
 /* -----------------------------------------
-    ECES People
+    ECES Team
 ----------------------------------------- */
-.ec-member-block {
+.ec-team-block {
   height: 100%;
   cursor: pointer;
   transition: all 0.2s linear !important;
@@ -159,6 +159,17 @@
   }
   .elementor-heading-title {
     transition: all 0.2s linear !important;
+  }
+  .elementor-icon-box-wrapper {
+    justify-content: center;
+  }
+  .elementor-icon-box-content {
+    max-width: fit-content;
+    word-break: break-all;
+    font-size: 14px;
+  }
+  .elementor-icon-box-title {
+    margin-bottom: 0;
   }
   &:hover {
     transform: translateY(-10px);
@@ -172,10 +183,57 @@
   border-radius: 12px;
 }
 
+.rtl {
+  .ec-team-block {
+    .elementor-icon-box-wrapper {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+/* -----------------------------------------
+    ECES Board
+----------------------------------------- */
+.ec-board-block {
+  .elementor-widget-image {
+    .elementor-widget-container {
+      border-radius: 25px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        background-color: rgba(black, 35%);
+      }
+    }
+  }
+  .ec-board-pos {
+    padding: 15px 20px;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 25px;
+    .ec-member-name {
+      margin-bottom: 10px;
+    }
+  }
+}
+
 /* -----------------------------------------
     Language Switcher
 ----------------------------------------- */
 body {
+  #site-header {
+    .elementor-icon-wrapper .elementor-icon {
+      vertical-align: top;
+    }
+    .wpml-ls-item {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
   &:not(.rtl) .wpml-ls {
     .wpml-ls-item-en {
       display: none;
@@ -187,5 +245,8 @@ body {
         display: none;
       }
     }
+  }
+  .wpml-ls-link {
+    color: #fff;
   }
 }
