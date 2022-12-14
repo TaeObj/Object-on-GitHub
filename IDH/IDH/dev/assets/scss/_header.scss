@@ -134,3 +134,66 @@ body {
     }
   }
 }
+
+/* User Menu ---------------------------------- */
+.test-user-menu {
+  background: var(--primary);
+  height: 76px;
+  display: flex;
+}
+.user-menu {
+  position: relative;
+  display: flex;
+  #idh-user-menu-btn {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    line-height: 76px;
+    font-weight: 500;
+    &::after {
+      content: "";
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transition: all 0.2s linear;
+      opacity: 0;
+      background: #fff;
+    }
+    &:hover,
+    &.active {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+  #idh-user-menu {
+    display: none;
+    position: absolute;
+    background: var(--primary);
+    top: calc(100% - 4px);
+    margin: 0;
+    width: 100%;
+    max-width: fit-content;
+    list-style: none;
+    border-top: 4px solid #fff;
+    a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.2s linear;
+      &:hover {
+        color: var(--primary);
+        background: #ededed;
+      }
+    }
+  }
+  #idh-user-menu-btn {
+    &:hover {
+      + #idh-user-menu {
+      }
+    }
+  }
+}

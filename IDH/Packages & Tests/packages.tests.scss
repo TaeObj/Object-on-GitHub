@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* ---------------------------------------
     Packages & Tests
 --------------------------------------- */
@@ -42,6 +41,10 @@
     border-right: 0;
     height: 48px;
     border-radius: 5px 0 0 5px;
+    &:focus {
+      outline: none;
+      border-color: #999;
+    }
   }
   [type="submit"] {
     border-radius: 0 5px 5px 0 !important;
@@ -58,26 +61,50 @@
 #idh-packages-slider {
   .owl-carousel {
     direction: ltr;
+    position: relative;
+    display: flex;
+    align-items: center;
   }
   .no-slide {
     display: flex;
-    justify-content: center;
+    align-items: stretch;
+    // justify-content: center;
     margin: 0;
     padding: 0 0 30px;
+    flex-wrap: wrap;
     gap: 20px;
     .package-wrapper {
       flex-basis: 100%;
+      display: flex;
+      flex-direction: column;
+      figcaption {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        .package-actions {
+          margin-top: auto;
+        }
+      }
+      &:nth-child(4) {
+        flex-grow: 0;
+      }
       @media screen and (min-width: 576px) {
-        flex-basis: 50%;
-        max-width: 50%;
+        flex-grow: 1;
+        flex-basis: calc(25% - 10px);
       }
-      @media screen and (min-width: 768px) {
-        flex-basis: calc(100% / 3);
-        max-width: calc(100% / 3);
+      @media screen and (min-width: 671px) and (max-width: 1024px) {
+        &:nth-child(4) {
+          flex-grow: 1;
+          max-width: calc((100% / 3) - 13px);
+        }
       }
-      @media screen and (min-width: 1024px) {
-        flex-basis: 25%;
-        max-width: 25%;
+      @media screen and (min-width: 1025px) {
+        flex-basis: calc(25% - 15px);
+      }
+      @media screen and (max-width: 670px) {
+        &:nth-child(4) {
+          flex-grow: 1;
+        }
       }
     }
   }
@@ -113,9 +140,21 @@
       outline: none;
       color: var(--dark);
       font-size: 24px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid #ccc;
+      position: absolute;
       &:hover {
-        color: var(--primary);
+        color: #fff;
+        background: var(--primary);
+        border-color: var(--primary);
       }
+    }
+    .owl-prev {
+      left: -18px;
+    }
+    .owl-next {
+      right: -18px;
     }
   }
 }
@@ -215,7 +254,6 @@
     }
   }
 }
-=======
 /* ---------------------------------------
     Packages & Tests
 --------------------------------------- */
@@ -290,21 +328,6 @@
         .package-actions {
           margin-top: auto;
         }
-      }
-    }
-  }
-  .owl-nav {
-    text-align: center;
-    margin: 30px auto 0;
-    button {
-      width: 36px;
-      height: 36px;
-      border: none;
-      outline: none;
-      color: var(--dark);
-      font-size: 24px;
-      &:hover {
-        color: var(--primary);
       }
     }
   }
@@ -386,4 +409,16 @@
     }
   }
 }
->>>>>>> 60706e9c778b5ccdc68f4b010409ca3743d73d5b
+
+#sucess-msg-div,
+#error-msg-div {
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  text-align: center;
+  border-left: 0;
+  border-right: 0;
+}
