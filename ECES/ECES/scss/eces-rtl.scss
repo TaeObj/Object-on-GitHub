@@ -1,0 +1,30 @@
+/* -----------------------------------------
+    RTL Style
+----------------------------------------- */
+.rtl {
+  /* Header ------------------------------- */
+  #site-header {
+    .rivax-logo {
+      text-align: start;
+    }
+    .elementor-social-icons-wrapper {
+      text-align: end;
+    }
+  }
+  /* Footer ------------------------------- */
+  #site-footer {
+    * {
+      text-align: start;
+    }
+    .rivax-divider-heading {
+      justify-content: start;
+    }
+  }
+  /* Elements ----------------------------- */
+  .elementor-icon-list-item {
+    .elementor-icon-list-text {
+      padding-left: 0 !important;
+      padding-inline-start: 5px !important;
+    }
+  }
+}

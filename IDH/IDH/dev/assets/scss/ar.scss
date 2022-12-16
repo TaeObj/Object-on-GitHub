@@ -1,7 +1,7 @@
 /* -----------------------------------------------
-    LTR 
+    RTL
 ----------------------------------------------- */
-.rtl {
+body.rtl {
   /* Header ------------------------------------- */
   #idh-header {
     .elementor-widget-shortcode {
@@ -48,5 +48,14 @@
   .elementor-widget .elementor-icon-list-icon + .elementor-icon-list-text {
     padding-left: 0;
     padding-right: 5px;
+  }
+  /* Tests & Packages --------------------------- */
+  .idh-search-box {
+    #key {
+      border-radius: 0 5px 5px 0;
+    }
+    [type="submit"] {
+      border-radius: 5px 0 0 5px !important;
+    }
   }
 }

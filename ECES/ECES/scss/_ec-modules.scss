@@ -197,7 +197,7 @@
 .rtl {
   .ec-team-block {
     .elementor-icon-box-wrapper {
-      flex-direction: row-reverse;
+      flex-direction: row-reverse !important;
     }
   }
 }
@@ -264,5 +264,43 @@ body {
   }
   .wpml-ls-link {
     color: #fff;
+  }
+}
+
+/* -----------------------------------------
+    Pagination
+----------------------------------------- */
+.pagination {
+  padding: 0;
+  margin: 45px 0 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  span,
+  a {
+    color: #ccc;
+    font-weight: 500;
+    display: block;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    &.next,
+    &.prev {
+      overflow: hidden;
+      font-size: 27px;
+      color: $accent;
+      border-color: $accent;
+    }
+    &.current,
+    &:hover {
+      color: #fff;
+      background: $accent;
+      border-color: darken($accent, 5%);
+    }
   }
 }
