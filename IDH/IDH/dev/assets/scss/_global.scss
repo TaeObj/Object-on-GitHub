@@ -27,12 +27,12 @@ body {
   /* Page Title ----------------------------- */
   .page-header {
     margin-bottom: 45px;
-    @media screen and (max-width: 1024px) {
-      margin-bottom: 30px;
-    }
-    @media screen and (max-width: 767px) {
-      margin-bottom: 15px;
-    }
+    // @media screen and (max-width: 1024px) {
+    //   margin-bottom: 30px;
+    // }
+    // @media screen and (max-width: 767px) {
+    //   margin-bottom: 15px;
+    // }
     .entry-title,
     .elementor-heading-title {
       font-style: italic;
@@ -52,5 +52,25 @@ body {
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* Custom Button ------------------ */
+.btn {
+  max-width: fit-content;
+  padding: 0 30px;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 7.5px;
+  transition: all 0.2s linear;
+  &.btn-primary {
+    background: var(--primary);
+    &:hover {
+      color: #fff;
+      background: var(--primary-dark);
+    }
   }
 }

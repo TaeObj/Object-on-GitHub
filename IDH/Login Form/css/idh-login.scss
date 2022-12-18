@@ -285,4 +285,22 @@
       }
     }
   }
+  &.idh-user-edit {
+    .row > div {
+      h3 {
+        @media screen and (min-width: 992px) {
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-bottom: 30px;
+          border-radius: 7.5px;
+        }
+      }
+      .form-action {
+        margin-bottom: 0;
+        button {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
