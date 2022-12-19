@@ -18,22 +18,22 @@
     position: relative;
     line-height: 76px;
     font-weight: 500;
-
     &:hover {
       color: #cecece;
     }
   }
   #idh-user-menu {
     display: none;
+    opacity: 0;
+    transition: all 0.2s linear;
     position: absolute;
     background: rgba(#4a4d4c, 0.76);
-    top: calc(100% - 4px);
+    top: 61px;
     padding: 0;
     margin: 0;
     width: 100%;
     max-width: fit-content;
     list-style: none;
-    border-top: 4px solid #fff;
     a {
       display: block;
       padding: 13px 20px;
@@ -41,15 +41,14 @@
       text-decoration: none;
       transition: all 0.2s linear;
       &:hover {
-        color: var(--primary);
-        background: #ededed;
+        color: #ececec;
       }
     }
   }
-  #idh-user-menu-btn {
-    &:hover {
-      + #idh-user-menu {
-      }
+  &:hover {
+    #idh-user-menu {
+      display: block;
+      opacity: 1;
     }
   }
 }

@@ -10,6 +10,21 @@
     .elementor-social-icons-wrapper {
       text-align: end;
     }
+    @media screen and (max-width: 767px) {
+      .rivax-logo {
+        text-align: center;
+      }
+    }
+  }
+
+  #ec-header .ec-mobile-menu .elementor-nav-menu__container {
+    @media screen and (max-width: 1024px) {
+      right: auto;
+      left: -10px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: -4px;
+    }
   }
   /* Footer ------------------------------- */
   #site-footer {
@@ -20,11 +35,15 @@
       justify-content: start;
     }
   }
-  /* Elements ----------------------------- */
+  /* Elementor Elements ------------------- */
   .elementor-icon-list-item {
     .elementor-icon-list-text {
       padding-left: 0 !important;
       padding-inline-start: 5px !important;
     }
+  }
+  /* Pagination --------------------------- */
+  .pagination .fa {
+    transform: rotate(180deg);
   }
 }

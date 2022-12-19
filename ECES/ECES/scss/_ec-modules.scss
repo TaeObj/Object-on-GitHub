@@ -191,7 +191,7 @@
 }
 
 [id^="elementor-popup-modal"] .dialog-widget-content {
-  border-radius: 12px;
+  // border-radius: 12px;
 }
 
 .rtl {
@@ -277,7 +277,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   span,
   a {
     color: #ccc;
@@ -292,9 +292,13 @@ body {
     &.next,
     &.prev {
       overflow: hidden;
-      font-size: 27px;
+      font-size: 16px;
       color: $accent;
       border-color: $accent;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     &.current,
     &:hover {

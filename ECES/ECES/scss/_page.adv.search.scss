@@ -1,0 +1,29 @@
+/* -----------------------------------------
+    ECES Advanced Search
+----------------------------------------- */
+.eces-advanced-search-wrapper {
+  .row {
+    align-items: flex-end;
+  }
+  .form-input {
+    margin-bottom: 15px;
+    > * {
+      width: 100%;
+    }
+  }
+  .adv-col {
+    flex-basis: 50%;
+    max-width: 50%;
+    @media screen and (max-width: 575px) {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+  label {
+    font-weight: 600;
+  }
+  .adv-author {
+    display: flex;
+    flex-direction: column;
+  }
+}

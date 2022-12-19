@@ -11,11 +11,12 @@
 @import "ec-footer";
 
 /* -----------------------------------------
-    ECES Calendar
+    ECES Calendar & Important
 ----------------------------------------- */
-@import "_events-calendar";
+@import "_events";
 
 /* -----------------------------------------
     ECES Pages
 ----------------------------------------- */
 @import "_page.glossary";
+@import "_page.adv.search";
