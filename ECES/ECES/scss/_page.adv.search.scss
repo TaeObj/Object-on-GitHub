@@ -9,6 +9,7 @@
     margin-bottom: 15px;
     > * {
       width: 100%;
+      font-weight: normal;
     }
   }
   .adv-col {
@@ -19,11 +20,17 @@
       max-width: 100%;
     }
   }
-  label {
+  .form-input label {
     font-weight: 600;
+    display: block;
+    margin-bottom: 7px;
   }
   .adv-author {
     display: flex;
     flex-direction: column;
+  }
+  [type="submit"] {
+    font-weight: bold;
+    font-size: 18px;
   }
 }

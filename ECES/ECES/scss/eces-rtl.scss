@@ -1,6 +1,13 @@
 /* -----------------------------------------
     RTL Style
 ----------------------------------------- */
+html[dir="rtl"],
+body.rtl {
+  font-size: 18px;
+  .single-content {
+    padding: 0;
+  }
+}
 .rtl {
   /* Header ------------------------------- */
   #site-header {
@@ -15,8 +22,19 @@
         text-align: center;
       }
     }
+    .wpml-ls-native {
+      font-size: 14px;
+    }
   }
-
+  #ec-nav {
+    .elementor-widget-wrap {
+      padding-top: 4px !important;
+      padding-bottom: 4px !important;
+      .menu-item span {
+        font-weight: bold;
+      }
+    }
+  }
   #ec-header .ec-mobile-menu .elementor-nav-menu__container {
     @media screen and (max-width: 1024px) {
       right: auto;
@@ -26,6 +44,19 @@
       margin-top: -4px;
     }
   }
+  /* Sticky Header  ----------------------- */
+  #site-sticky-header {
+    .rivax-header-nav {
+      li.menu-item {
+        line-height: normal;
+      }
+      a {
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
   /* Footer ------------------------------- */
   #site-footer {
     * {
@@ -33,6 +64,12 @@
     }
     .rivax-divider-heading {
       justify-content: start;
+    }
+    .elementor-icon-list-item {
+      justify-content: start;
+      a {
+        justify-content: start;
+      }
     }
   }
   /* Elementor Elements ------------------- */
@@ -45,5 +82,83 @@
   /* Pagination --------------------------- */
   .pagination .fa {
     transform: rotate(180deg);
+  }
+  /* Newsletter & Map --------------------- */
+  .ec-newsletter {
+    .elementor-widget-icon-box.elementor-position-left .elementor-icon-box-icon {
+      margin-right: 0;
+      margin-left: 15px;
+    }
+  }
+  /* ECES Board --------------------------- */
+  .ec-board-block {
+    .ec-board-pos {
+      .ec-member-name {
+        margin-bottom: 5px;
+        .elementor-heading-title {
+          font-size: 26px;
+        }
+      }
+    }
+    .ec-member-pos {
+      .elementor-heading-title {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+      }
+    }
+  }
+  /* ECES Member -------------------------- */
+  .ec-member-block {
+    .elementor-heading-title {
+      direction: rtl;
+      text-align: start;
+    }
+    .ec-member-name {
+      margin-bottom: 8px;
+      .elementor-heading-title {
+        font-size: 21px !important;
+      }
+    }
+    h3.elementor-heading-title {
+      font-size: 17px !important;
+    }
+  }
+  /* ECES Team --------------------------- */
+  .ec-team-block {
+    .elementor-widget {
+      margin-bottom: 13px !important;
+    }
+    .ec-member-name {
+      .elementor-heading-title {
+        font-size: 20px !important;
+        height: auto;
+      }
+    }
+    .ec-member-pos {
+      .elementor-heading-title {
+        min-height: 0;
+        font-size: 16px !important;
+      }
+    }
+    .elementor-icon-box-wrapper {
+      flex-direction: row-reverse !important;
+      .elementor-icon-box-icon {
+        margin-left: 0 !important;
+        margin-right: 5px !important;
+      }
+    }
+  }
+  /* Advanced search --------------------- */
+  .eces-advanced-search-wrapper label {
+    display: block;
+    margin-bottom: 7px;
+  }
+  /* Glossary ---------------------------- */
+  .eces-glossary-results-wrapper table {
+    td,
+    th {
+      direction: rtl;
+      text-align: right;
+    }
   }
 }

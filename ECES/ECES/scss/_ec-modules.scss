@@ -146,21 +146,27 @@
     }
   }
 }
-
 /* -----------------------------------------
-    ECES Member
+    ECES People Loops
 ----------------------------------------- */
-.rtl {
-  .ec-member-block {
-    .elementor-heading-title {
-      direction: rtl;
-      text-align: start;
+.elementor-loop-container {
+  .elementor-heading-title {
+    line-height: normal;
+  }
+  .elementor-widget-icon-box.elementor-mobile-position-top .elementor-icon-box-wrapper {
+    display: flex;
+    .elementor-icon-box-icon {
+      margin-inline-start: 0;
+      margin-inline-end: 5px;
     }
   }
 }
 /* -----------------------------------------
     ECES Team
 ----------------------------------------- */
+.e-loop-item {
+  min-width: 0;
+}
 .ec-team-block {
   height: 100%;
   cursor: pointer;
@@ -171,6 +177,26 @@
   .elementor-heading-title {
     transition: all 0.2s linear !important;
   }
+  @media screen and (min-width: 768px) {
+    .ec-member-name {
+      .elementor-heading-title {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .ec-member-pos {
+      .elementor-heading-title {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        white-space: pre-wrap;
+        min-height: 50px;
+      }
+    }
+  }
   .elementor-icon-box-wrapper {
     justify-content: center;
   }
@@ -178,9 +204,14 @@
     max-width: fit-content;
     word-break: break-all;
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .elementor-icon-box-title {
     margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &:hover {
     transform: translateY(-10px);
@@ -192,14 +223,6 @@
 
 [id^="elementor-popup-modal"] .dialog-widget-content {
   // border-radius: 12px;
-}
-
-.rtl {
-  .ec-team-block {
-    .elementor-icon-box-wrapper {
-      flex-direction: row-reverse !important;
-    }
-  }
 }
 
 /* -----------------------------------------

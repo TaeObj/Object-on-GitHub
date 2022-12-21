@@ -56,12 +56,23 @@
   }
   li:not(:first-child):not(:last-child) {
     a {
+      cursor: pointer;
       span {
         @extend %pagi-elm;
       }
       &[title="Next"],
       &[title="Prev"] {
         @extend %pagi-elm;
+      }
+    }
+  }
+  li:first-child,
+  li:last-child {
+    a {
+      cursor: pointer;
+      transition: all 0.2s linear;
+      &:hover {
+        color: var(--primary);
       }
     }
   }

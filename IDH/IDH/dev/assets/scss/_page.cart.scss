@@ -17,6 +17,9 @@
     line-height: 16px;
     text-align: center;
   }
+  &:hover {
+    color: var(--primary);
+  }
 }
 /* -----------------------------------------------
     Cart
