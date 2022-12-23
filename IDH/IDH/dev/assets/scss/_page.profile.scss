@@ -21,6 +21,10 @@
     &:hover {
       color: #cecece;
     }
+    @media screen and (max-width: 480px) {
+      width: 89px;
+      overflow: hidden;
+    }
   }
   #idh-user-menu {
     display: none;
