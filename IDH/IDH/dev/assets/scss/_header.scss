@@ -77,8 +77,12 @@ body {
     }
     @media screen and (max-width: 767px) {
       .elementor-column {
+        &:nth-child(1) {
+          max-width: none !important;
+        }
         &:nth-child(2) {
           order: 1;
+          max-width: fit-content;
           .elementor-widget-wrap {
             padding-right: 0;
           }

@@ -18,12 +18,15 @@
     position: relative;
     line-height: 76px;
     font-weight: 500;
+    max-width: 225px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     &:hover {
       color: #cecece;
     }
     @media screen and (max-width: 480px) {
-      width: 89px;
-      overflow: hidden;
+      width: 110px;
     }
   }
   #idh-user-menu {

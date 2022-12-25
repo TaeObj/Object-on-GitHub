@@ -14,16 +14,16 @@
   justify-content: center;
   flex-wrap: wrap;
   .branch-filter {
-    flex-basis: 68%;
-    max-width: 68%;
+    flex-basis: 80%;
+    max-width: 805%;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     .col {
       padding: 0 15px 30px;
-      flex-basis: 50%;
-      max-width: 50%;
+      flex-basis: calc(100% / 3);
+      max-width: calc(100% / 3);
       select {
         width: 100%;
       }
