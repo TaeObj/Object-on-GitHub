@@ -47,6 +47,9 @@
     text-align: center;
     text-decoration: none;
     margin-bottom: 20px;
+    .img-wrapper {
+      display: table-row;
+    }
     img {
       width: 100%;
     }
@@ -56,6 +59,7 @@
       word-wrap: break-word;
       font-size: 1.1rem;
       height: 104px;
+      line-height: normal;
       display: table-cell;
       vertical-align: middle;
       span {
