@@ -51,3 +51,56 @@
     }
   }
 }
+
+/* -----------------------------------------
+    Single Event
+----------------------------------------- */
+.event-attachments-wrapper {
+  padding: 15px 15px 5px;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  h3 {
+    font-size: 1rem;
+  }
+  .event-pdfs {
+    margin: 0 -5px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    li {
+      margin: 0 5px 10px;
+      a {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 5px 15px;
+        border: 1px solid #ccc;
+        i {
+          font-size: 1.5em;
+        }
+        &:hover {
+          border-color: $accent;
+          color: $accent;
+        }
+      }
+    }
+  }
+}
+
+.event-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  .event-link {
+    background: #2d8cffc7 !important;
+    img {
+      max-height: 18px;
+      margin-right: 10px;
+    }
+    &:hover {
+      background: #42474e;
+    }
+  }
+}
