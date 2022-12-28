@@ -335,3 +335,34 @@ body {
     }
   }
 }
+
+/* -----------------------------------------
+    ECES Form
+----------------------------------------- */
+.eces-form {
+  br {
+    display: none;
+  }
+  .row {
+    > div {
+      margin-bottom: 15px;
+    }
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .wpcf7-form-control-wrap {
+    display: block;
+    > * {
+      display: block;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+  }
+  [type="submit"] {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
