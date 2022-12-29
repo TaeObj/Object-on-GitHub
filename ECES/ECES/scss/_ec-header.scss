@@ -68,6 +68,15 @@
   }
 }
 
+#site-header {
+  .rivax-header-nav .sub-menu.mega-menu-content {
+    padding: 25px 25px 0;
+  }
+  .rivax-post-modern-widget .post-wrapper .title {
+    margin-bottom: 0;
+  }
+}
+
 #ec-nav {
   .eces-menu-list {
     .rivax-posts-wrapper {
@@ -81,9 +90,9 @@
       height: 128px;
     }
     .title a {
-      color: #ccc;
+      color: #333;
       font-size: 1rem;
-      font-weight: normal;
+      font-weight: 600;
       background: none;
       text-align: center;
       display: -webkit-box;
@@ -93,7 +102,7 @@
     }
     &:hover {
       .title a {
-        color: $accent;
+        color: $primary;
         background-size: 100% 2px;
       }
     }

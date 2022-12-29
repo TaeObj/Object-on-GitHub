@@ -182,6 +182,21 @@
     transition: all 0.2s linear !important;
   }
   @media screen and (min-width: 768px) {
+    > {
+      .elementor-container,
+      .elementor-container .elementor-section,
+      .elementor-container .elementor-section > .elementor-container {
+        height: 100%;
+      }
+    }
+    .elementor-widget-wrap {
+      flex-direction: column;
+      > .elementor-widget-icon-box {
+        margin-top: auto;
+        margin-bottom: 10px;
+      }
+    }
+    /*
     .ec-member-name {
       .elementor-heading-title {
         height: 50px;
@@ -200,6 +215,7 @@
         min-height: 50px;
       }
     }
+    */
   }
   .elementor-icon-box-wrapper {
     justify-content: center;
@@ -263,7 +279,14 @@
     }
   }
 }
-
+/* -----------------------------------------
+    ECES Members
+----------------------------------------- */
+.ec-member-block {
+  .ec-member-name {
+    margin-bottom: 5px !important;
+  }
+}
 /* -----------------------------------------
     Language Switcher
 ----------------------------------------- */
