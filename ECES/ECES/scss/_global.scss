@@ -1,12 +1,41 @@
 /* -----------------------------------------
     Variables
 ----------------------------------------- */
-$primary: #016274;
-$secondary: #b3dce7;
-$accent: #1fbacf /*ef767a*/;
+$primary: #1fbacf;
+$secondary: #cf34a9 /*b3dce7*/;
+$accent: #cf34a9 /*ef767a*/;
 $dark: #011c37;
 $gray: #f7ece1;
 
+* {
+  letter-spacing: 0 !important;
+}
+
+%item-heading {
+  margin: 0;
+  word-wrap: break-word;
+  line-height: normal;
+  letter-spacing: 0;
+  display: table-cell;
+  vertical-align: middle;
+  span {
+    color: $primary;
+    word-break: break-word;
+    background-image: linear-gradient(90deg, currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    transition: 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: inline;
+    padding: 2px 0;
+  }
+}
+%item-heading-hover {
+  span {
+    color: $accent;
+    background-size: 100% 2px;
+  }
+}
 /* -----------------------------------------
     Grid
 ----------------------------------------- */
@@ -113,4 +142,12 @@ $gray: #f7ece1;
 .rivax-post-modern-widget .swiper-wrapper .post-wrapper .content-wrapper {
   padding: 10px 0;
   text-align: center !important;
+}
+.elementor-blockquote {
+  p {
+    margin-bottom: 0;
+    &:empty {
+      display: none;
+    }
+  }
 }
