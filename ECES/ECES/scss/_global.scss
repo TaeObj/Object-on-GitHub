@@ -39,7 +39,7 @@ $gray: #f7ece1;
 /* -----------------------------------------
     Grid
 ----------------------------------------- */
-.row {
+.ecrow {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
@@ -143,11 +143,22 @@ $gray: #f7ece1;
   padding: 10px 0;
   text-align: center !important;
 }
+
+/* -----------------------------------------
+    Elementor Elements
+----------------------------------------- */
 .elementor-blockquote {
   p {
     margin-bottom: 0;
     &:empty {
       display: none;
+    }
+  }
+}
+.rivax-advanced-heading-tag {
+  .rivax-advanced-heading-wrap .rivax-advanced-heading-border {
+    &::after {
+      bottom: -10px;
     }
   }
 }
