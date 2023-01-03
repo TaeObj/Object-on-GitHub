@@ -156,9 +156,17 @@ $gray: #f7ece1;
   }
 }
 .rivax-advanced-heading-tag {
-  .rivax-advanced-heading-wrap .rivax-advanced-heading-border {
-    &::after {
-      bottom: -10px;
+  .rivax-advanced-heading-wrap {
+    .rivax-advanced-heading-border {
+      &::after {
+        bottom: -10px;
+      }
     }
+  }
+}
+.archive .rivax-advanced-heading-tag {
+  .rivax-advanced-heading-wrap {
+    min-width: 100%;
+    justify-content: center;
   }
 }
