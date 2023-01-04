@@ -7,8 +7,26 @@ body.rtl {
   .single-content {
     padding: 0;
   }
+  .elementor-widget-theme-post-content,
+  .elementor-posts-container .elementor-post__title a {
+    font-family: "amiri", "cairo", "Sinkin Sans", Sans-serif !important;
+  }
 }
 .rtl {
+  /* Typography --------------------------- */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600 !important;
+    font-family: "Cairo", sans-serif !important;
+    span {
+      font-weight: 600 !important;
+      font-family: "Cairo", sans-serif !important;
+    }
+  }
   /* Header ------------------------------- */
   #site-header {
     .rivax-logo {
@@ -34,7 +52,11 @@ body.rtl {
         font-weight: bold;
       }
     }
+    .post-item .post-wrapper .title {
+      line-height: 30px;
+    }
   }
+
   #ec-header .ec-mobile-menu .elementor-nav-menu__container {
     @media screen and (max-width: 1024px) {
       right: auto;
@@ -42,6 +64,11 @@ body.rtl {
     }
     @media screen and (max-width: 767px) {
       margin-top: -4px;
+    }
+  }
+  #site-sticky-header {
+    .rivax-header-nav > li.menu-item-has-children > a {
+      padding-left: 1.25em;
     }
   }
   /* Sticky Header  ----------------------- */
@@ -54,6 +81,49 @@ body.rtl {
         span {
           font-weight: bold;
         }
+      }
+    }
+  }
+  /* Advanced Search ---------------------- */
+  .elementor-location-popup {
+    .elementor-search-form__container {
+      display: flex;
+      transition: 0.2s;
+      overflow: hidden;
+      border: 0 solid transparent;
+      background: #eceeef;
+    }
+    .elementor-search-form__icon {
+      opacity: 0.6;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      color: #55595c;
+      fill: #55595c;
+      padding-right: calc(50px / 3);
+    }
+    .elementor-search-form__input {
+      margin: 0;
+      border: 0;
+      padding: 0;
+      display: inline-block;
+      vertical-align: middle;
+      white-space: normal;
+      background: none;
+      line-height: 1;
+      min-width: 0;
+      font-size: 18px;
+      appearance: none;
+    }
+    .rivax-advanced-button {
+      .title {
+        font-family: "Cairo";
+        font-size: 20px;
+      }
+      i {
+        margin-right: 10px;
+        margin-left: 0;
+        transform: rotate(180deg);
       }
     }
   }
@@ -78,12 +148,18 @@ body.rtl {
     }
   }
   /* Elementor Elements ------------------- */
-  .elementor-icon-list-item {
+  .elementor-icon-list-item:not(.elementor-post-info) {
     .elementor-icon-list-text {
       padding-left: 0 !important;
       padding-inline-start: 5px !important;
     }
   }
+  .elementor-icon-list-items.elementor-post-info {
+    .elementor-icon-list-text {
+      padding-inline-start: 0px !important;
+    }
+  }
+
   /* Pagination --------------------------- */
   .pagination .fa {
     transform: rotate(180deg);
@@ -170,16 +246,50 @@ body.rtl {
   .rivax-advanced-heading-wrap {
     padding-bottom: 10px;
   }
-}
-/* Publications ------------------------ */
-.pub-normal-list .item {
-  .item-heading {
-    font-size: 18px;
-  }
-  .item-meta li {
-    font-size: 14px;
-    b {
+  /* Publications ------------------------ */
+  .pub-normal-list .item {
+    .item-heading {
       font-size: 18px;
+    }
+    .item-meta li {
+      font-size: 14px;
+      b {
+        font-size: 18px;
+      }
+    }
+  }
+  .pub-books-list {
+    .item-heading {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    .item-date {
+      font-size: 14px;
+    }
+  }
+  .pub-reports-list.post-attachs {
+    .item .item-info .heading-title {
+      font-size: 16px;
+    }
+  }
+  /* Events ------------------------------ */
+  .single-eces_event {
+    .elementor-post-info {
+      .elementor-post-info__item--type-date {
+        font-size: 14px;
+      }
+    }
+    .elementor-icon-box-wrapper .elementor-icon-box-content {
+      order: -1;
+    }
+  }
+  .rivax-advanced-heading-tag {
+    .rivax-advanced-heading-wrap {
+      .rivax-advanced-heading-border {
+        &::after {
+          bottom: 0;
+        }
+      }
     }
   }
 }

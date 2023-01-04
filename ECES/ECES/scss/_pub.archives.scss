@@ -11,7 +11,7 @@
     display: flex;
     .item-thumb {
       min-width: 48px;
-      margin-inline-end: 15px;
+      margin-inline-end: 10px;
       img {
         width: 100%;
       }
@@ -41,6 +41,9 @@
     }
     .item-date {
       color: #999;
+      display: flex;
+      align-items: center;
+      gap: 7px;
     }
   }
   &.post-attachs {
@@ -90,6 +93,9 @@
     color: #bbb;
     margin-top: auto;
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
   }
   .item {
     &:hover {
@@ -145,6 +151,9 @@
       }
       .item-date {
         color: #bbb;
+        display: flex;
+        align-items: center;
+        gap: 7px;
       }
     }
     &:hover {

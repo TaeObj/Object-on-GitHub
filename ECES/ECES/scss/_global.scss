@@ -159,12 +159,12 @@ $gray: #f7ece1;
   .rivax-advanced-heading-wrap {
     .rivax-advanced-heading-border {
       &::after {
-        bottom: -10px;
+        bottom: -12px;
       }
     }
   }
 }
-.archive .rivax-advanced-heading-tag {
+.archive:not(.tax-eces_event_category) .rivax-advanced-heading-tag {
   .rivax-advanced-heading-wrap {
     min-width: 100%;
     justify-content: center;

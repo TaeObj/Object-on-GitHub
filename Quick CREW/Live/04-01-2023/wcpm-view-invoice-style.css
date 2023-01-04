@@ -1,0 +1,72 @@
+.wcpm-view-job-container .invoice-data {
+  margin-bottom: 15px;
+}
+
+.wcpm-view-job-container .invoice-data h4 {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.wcpm-view-job-container .days-table {
+  font-size: 15px;
+}
+
+.wcpm-view-job-container .days-table th {
+  vertical-align: middle;
+}
+
+.wcpm-view-job-container .days-table p {
+  margin: 0;
+}
+
+.wcpm-view-job-container .days-table tr:first-child {
+  background: #eee;
+}
+
+.wcpm-view-job-container .days-table tr:first-child td {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  font-weight: 500;
+}
+
+.wcpm-view-job-container .days-table tr:nth-child(2) th {
+  color: #fff;
+  background: #0c5395;
+  border: 1px solid #0c5395;
+  border-top: 0;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.wcpm-view-job-container .days-table tr:nth-child(2) ~ tr td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.wcpm-view-job-container .days-table .day-total ~ tr td:not(:nth-last-child(1)):not(:nth-last-child(2)) {
+  border: none;
+}
+
+.wcpm-view-job-container .days-table .day-total ~ tr:not(:last-child) td {
+}
+
+.wcpm-view-job-container .invoice-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #e7e7e7;
+  margin-bottom: -10px;
+}
+
+.wcpm-view-job-container .invoice-actions > * {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.wcpm-view-job-container .invoice-actions label {
+  margin: 0 0 0 5px;
+}
