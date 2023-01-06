@@ -29,8 +29,8 @@
 ----------------------------------------- */
 .ec-important-event-list {
   .event-col {
-    flex-basis: calc(100% / 3);
-    max-width: calc(100% / 3);
+    flex-basis: 50%;
+    max-width: 50%;
     .item-wrapper {
       height: 100%;
       margin-bottom: 0;
@@ -108,6 +108,42 @@
 .single-eces_event {
   .elementor-widget-theme-post-featured-image {
     max-height: 400px;
-    object-fit: cover;
+    .elementor-widget-container {
+      height: 100%;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* -----------------------------------------
+    Calendar
+----------------------------------------- */
+.fc-event-main .fc-event-title-container {
+  white-space: normal;
+}
+
+/* -----------------------------------------
+    Events Archive
+----------------------------------------- */
+.rivax-posts-wrapper.layout-grid {
+  .meta-wrapper {
+    .date {
+      i {
+        display: inline-block;
+        &:before {
+          content: "\f133";
+          font-style: normal;
+          font-variant: normal;
+          text-rendering: auto;
+          line-height: 1;
+          font-family: "Font Awesome 5 Free" !important;
+          font-weight: 900 !important;
+          color: #999;
+        }
+      }
+    }
   }
 }

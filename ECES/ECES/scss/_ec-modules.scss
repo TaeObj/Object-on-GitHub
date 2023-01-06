@@ -122,6 +122,10 @@
   .rivax-post-modern-widget .post-wrapper {
     .content-wrapper {
       padding: 5px;
+      .title {
+        text-align: center;
+        line-height: 25px;
+      }
     }
   }
 }

@@ -292,4 +292,24 @@ body.rtl {
       }
     }
   }
+  .fc-event-main .fc-event-title-container {
+    text-align: right;
+  }
+  /* Homepage ---------------------------- */
+  .layout-carousel .carousel-nav-wrapper {
+    left: 33px;
+  }
+  /* Publications Periodical -------------- */
+  .ec-periodical-in-page {
+    .rivax-post-modern-widget .post-wrapper {
+      .content-wrapper {
+        .title {
+          line-height: 1.4;
+          a {
+            background-position: 100% 36px;
+          }
+        }
+      }
+    }
+  }
 }

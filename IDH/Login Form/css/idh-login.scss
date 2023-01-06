@@ -304,3 +304,53 @@
     }
   }
 }
+
+/* Reset Password ---------------------*/
+.idh-reset-password-wrapper {
+  .form-control {
+    display: flex;
+    flex-wrap: wrap;
+    label {
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    #email {
+      flex-basis: calc(100% - 120px);
+      max-width: calc(100% - 120px);
+      border-right-width: 0;
+      border-color: #ccc;
+      border-radius: 5px 0 0 5px;
+      height: 52px;
+      outline: 0;
+      &:focus {
+        border-color: var(--ocean);
+      }
+    }
+    #resetPWSubmitBtn {
+      flex-basis: 120px;
+      max-width: 120px;
+      color: #fff;
+      font-weight: 500;
+      background: var(--primary);
+      border-radius: 0 5px 5px 0;
+      height: 52px;
+      outline: none;
+      text-transform: uppercase;
+      &:hover {
+        background: var(--primary-dark);
+      }
+    }
+    @media screen and (max-width: 480px) {
+      #email,
+      #resetPWSubmitBtn {
+        flex-basis: 100%;
+        max-width: 100%;
+        border-width: 1px;
+        border-radius: 5px;
+      }
+      #email {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
