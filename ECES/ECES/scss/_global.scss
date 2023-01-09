@@ -2,8 +2,8 @@
     Variables
 ----------------------------------------- */
 $primary: #1fbacf;
-$secondary: #cf34a9 /*b3dce7*/;
-$accent: #cf34a9 /*ef767a*/;
+$secondary: #cf34a9;
+$accent: #1995a6 /*ef767a*/;
 $dark: #011c37;
 $gray: #f7ece1;
 
@@ -168,5 +168,28 @@ $gray: #f7ece1;
   .rivax-advanced-heading-wrap {
     min-width: 100%;
     justify-content: center;
+  }
+}
+/* -----------------------------------------
+    Site Map
+----------------------------------------- */
+.elementor-sitemap-wrap {
+  .elementor-sitemap-item {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    a {
+      transition: all 0.25s linear;
+      &:hover {
+        color: $secondary;
+      }
+    }
+    ul {
+      margin-top: 12px;
+      margin-left: 10px;
+      li {
+        color: #999 !important;
+        list-style-type: "= ";
+      }
+    }
   }
 }

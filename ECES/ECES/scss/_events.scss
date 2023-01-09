@@ -106,6 +106,9 @@
 }
 
 .single-eces_event {
+  .elementor-pagination-position-outside .swiper-container {
+    padding-bottom: 45px;
+  }
   .elementor-widget-theme-post-featured-image {
     max-height: 400px;
     .elementor-widget-container {
@@ -114,6 +117,17 @@
     img {
       height: 100%;
       object-fit: cover;
+    }
+  }
+  .elementor-widget-image-carousel .swiper-slide {
+    height: auto;
+    .swiper-slide-inner,
+    img {
+      height: 100%;
+    }
+    .swiper-slide-inner img {
+      object-fit: cover;
+      border: 1px solid #eee;
     }
   }
 }

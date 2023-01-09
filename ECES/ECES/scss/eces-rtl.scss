@@ -1,4 +1,8 @@
 /* -----------------------------------------
+    Almarai Google Fonts
+----------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Noto+Kufi+Arabic&display=swap");
+/* -----------------------------------------
     RTL Style
 ----------------------------------------- */
 html[dir="rtl"],
@@ -9,7 +13,7 @@ body.rtl {
   }
   .elementor-widget-theme-post-content,
   .elementor-posts-container .elementor-post__title a {
-    font-family: "amiri", "cairo", "Sinkin Sans", Sans-serif !important;
+    font-family: "Almarai", "Sinkin Sans", Sans-serif !important;
   }
 }
 .rtl {
@@ -21,10 +25,10 @@ body.rtl {
   h5,
   h6 {
     font-weight: 600 !important;
-    font-family: "Cairo", sans-serif !important;
+    // font-family: "Cairo", sans-serif !important;
     span {
       font-weight: 600 !important;
-      font-family: "Cairo", sans-serif !important;
+      // font-family: "Cairo", sans-serif !important;
     }
   }
   /* Header ------------------------------- */
@@ -117,7 +121,7 @@ body.rtl {
     }
     .rivax-advanced-button {
       .title {
-        font-family: "Cairo";
+        // font-family: "Cairo";
         font-size: 20px;
       }
       i {
