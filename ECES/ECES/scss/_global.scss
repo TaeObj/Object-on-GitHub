@@ -171,8 +171,10 @@ body {
     justify-content: center;
   }
 }
-body .eces-advanced-search-wrapper [type="submit"] {
-  font-size: 1rem;
+.elementor-element .rivax-advanced-heading-wrap:before {
+  @media screen and (max-width: 480px) {
+    font-size: 85px !important;
+  }
 }
 /* -----------------------------------------
     Search Results

@@ -31,7 +31,12 @@
   }
   [type="submit"] {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1rem;
+    background: $primary;
+    &:hover,
+    &:focus {
+      background: $accent;
+    }
   }
 }
 

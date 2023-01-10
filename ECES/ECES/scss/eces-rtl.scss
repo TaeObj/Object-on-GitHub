@@ -61,15 +61,25 @@ body.rtl {
     }
   }
 
-  #ec-header .ec-mobile-menu .elementor-nav-menu__container {
+  #ec-header {
     @media screen and (max-width: 1024px) {
-      right: auto;
-      left: -10px;
+      .elementor-widget-icon {
+        .elementor-widget-container {
+          margin: 2px 0 0 6px;
+        }
+      }
+      .ec-mobile-menu .elementor-nav-menu__container .elementor-widget-icon {
+        right: auto;
+        left: -10px;
+      }
     }
     @media screen and (max-width: 767px) {
-      margin-top: -4px;
+      .ec-mobile-menu .elementor-nav-menu__container .elementor-widget-icon {
+        margin-top: -4px;
+      }
     }
   }
+
   #site-sticky-header {
     .rivax-header-nav > li.menu-item-has-children > a {
       padding-left: 1.25em;

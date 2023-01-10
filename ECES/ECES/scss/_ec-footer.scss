@@ -24,6 +24,12 @@
       content: "Follow Us";
     }
   }
+  .elementor-heading-title {
+    @media screen and (max-width: 991px) {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+    }
+  }
 }
 .footer-canvas-menu-wrapper {
   .footer-canvas-menu-bg,
