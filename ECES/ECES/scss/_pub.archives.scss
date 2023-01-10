@@ -202,7 +202,11 @@
     }
     [type="submit"] {
       font-weight: 500;
+      background: $primary;
       text-transform: uppercase;
+      &:hover {
+        background: $accent;
+      }
     }
   }
 }

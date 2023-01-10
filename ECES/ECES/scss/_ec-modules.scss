@@ -93,7 +93,7 @@
       }
     }
     [type="submit"] {
-      background: $dark;
+      background: darken($primary, 15%);
       border-radius: 0 3px 3px 0;
       &:hover {
         background: $accent;

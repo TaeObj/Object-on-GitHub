@@ -277,6 +277,13 @@ body.rtl {
     }
   }
   /* Events ------------------------------ */
+  .tax-eces_event_category {
+    h3.title a {
+      font-size: 18px;
+      line-height: 1.5;
+      display: block;
+    }
+  }
   .single-eces_event {
     .elementor-post-info {
       .elementor-post-info__item--type-date {

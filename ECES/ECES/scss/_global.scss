@@ -2,9 +2,10 @@
     Variables
 ----------------------------------------- */
 $primary: #1fbacf;
-$secondary: #cf34a9;
-$accent: #1995a6 /*ef767a*/;
+$secondary: #1fbacf;
+$accent: #cf34a9 /*ef767a*/;
 $dark: #011c37;
+$text: #333;
 $gray: #f7ece1;
 
 * {
@@ -125,14 +126,13 @@ $gray: #f7ece1;
 /* -----------------------------------------
     Hover Effect on Post Items
 ----------------------------------------- */
-.post-item {
-  &:hover {
-    .title {
-      a {
-        color: $accent !important;
-        background-size: 100% 2px;
-      }
-    }
+body {
+  .post-item:hover .title a {
+    color: $accent !important;
+    background-size: 100% 2px;
+  }
+  .rivax-post-kenzo-widget .post-item:hover .title a {
+    color: lighten($accent, 15%) !important;
   }
 }
 
@@ -160,6 +160,7 @@ $gray: #f7ece1;
     .rivax-advanced-heading-border {
       &::after {
         bottom: -12px;
+        border-color: $accent;
       }
     }
   }
@@ -168,6 +169,20 @@ $gray: #f7ece1;
   .rivax-advanced-heading-wrap {
     min-width: 100%;
     justify-content: center;
+  }
+}
+body .eces-advanced-search-wrapper [type="submit"] {
+  font-size: 1rem;
+}
+/* -----------------------------------------
+    Search Results
+----------------------------------------- */
+.advanced-search-results {
+  .rivax-advanced-heading-one {
+    color: $text;
+  }
+  .srch-keyword {
+    color: $primary;
   }
 }
 /* -----------------------------------------
@@ -190,6 +205,30 @@ $gray: #f7ece1;
         color: #999 !important;
         list-style-type: "= ";
       }
+    }
+  }
+}
+/* -----------------------------------------
+    Colors Override
+----------------------------------------- */
+body {
+  .post-wrapper .terms-wrapper .term-item {
+    background: $primary;
+    &:hover {
+      background: $accent !important;
+    }
+  }
+
+  .elementor-element #menu-eces-header-nav li.menu-item > a:hover,
+  .elementor-element #menu-eces-header-nav li.current-menu-item > a,
+  .elementor-element #menu-eces-header-nav li.current-menu-ancestor > a,
+  .rivax-header-nav-wrapper.hover-style-1 > #menu-eces-mobile-nav > li.menu-item > a,
+  .rivax-advanced-heading-three,
+  .rivax-advanced-heading-one,
+  .rivax-advanced-heading-two {
+    color: $primary;
+    &::before {
+      background: $accent;
     }
   }
 }

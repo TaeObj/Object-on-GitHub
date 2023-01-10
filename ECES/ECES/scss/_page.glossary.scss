@@ -44,13 +44,13 @@
     }
     th {
       white-space: nowrap;
-      background: $accent;
+      background: #999;
       color: #fff;
       &:first-child {
-        border-left-color: $accent;
+        border-left-color: #999;
       }
       &:last-child {
-        border-right-color: $accent;
+        border-right-color: #999;
       }
     }
     tr {
