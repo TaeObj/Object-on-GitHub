@@ -381,11 +381,11 @@
   color: #999;
   &[disabled] {
     background: #eee;
-    border-color: #ccc;
     border-color: #e7e4e4;
     &:hover {
-      color: #ccc;
+      color: #999;
       background: #eee;
+      border-color: #e7e4e4;
     }
   }
   .fa {

@@ -6,6 +6,7 @@
   color: #fff;
   margin-inline-end: 10px;
   .items-count {
+    color: #fff;
     position: absolute;
     top: -10px;
     background: darkred;
@@ -18,7 +19,7 @@
     text-align: center;
   }
   &:hover {
-    color: var(--primary);
+    color: #fff;
   }
 }
 /* -----------------------------------------------

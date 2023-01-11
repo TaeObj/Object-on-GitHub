@@ -8,3 +8,12 @@
     }
   }
 }
+
+.more-btn {
+  margin-top: -15px;
+  a {
+    &:hover {
+      border: none !important;
+    }
+  }
+}
